@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://localhost:35729/livereload.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+<script type="text/javascript">
+// var results = JSON.parse(_REST.responses[0].body);
+
+window.onload=function(){
+	var jsonResults = {"data":[{"n":"1","dictcode":"Mc39-51","match":"koti","ltext":"pakaru toku potae i te kohatu. Kei te noho kau au, ko taku kiri kau, ko te ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":5194,"rtext":" i homai e korua ko Kawana, kei Taranaki. He tono tenei naku ki tetahi "},{"n":"2","dictcode":"Mc39-51","match":"koti","ltext":"koti i homai e korua ko Kawana, kei Taranaki. He tono tenei naku ki tetahi ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":5195,"rtext":" moku ki a koe, tetahi paraikete wero, ki a rua ki[a] mahana au ki "},{"n":"3","dictcode":"Mc39-51","match":"koti","ltext":"kia hoki te utu o te taonga - o te paraikete, o te hu, o te tarau, o te ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":6633,"rtext":", o te aha o te aha o nga tini hanga o te Pakeha. Ki te pai mai koe, "},{"n":"4","dictcode":"Mc39-51","match":"Koti","ltext":"te ei mai Ki uta Nei, Kia whi wi au i te Pu i te toke i te Ngaihi He ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":8165,"rtext":" Koti i aku pane E Kore e mutu e mau Ana i tona Ko iwi. Ka Eke tona ringa "},{"n":"5","dictcode":"Mc39-51","match":"Koti","ltext":"Hori e he ana te tikanga a taua Pakeha, mo te tae mai ra ki te whare i a ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":4528,"rtext":" [?]. Heoi ano. Na tou hoa aroha, na Te Kawana Te Hakeke, e noho ana ki "},{"n":"6","dictcode":"Mc39-51","match":"koti","ltext":"wha koti maori[?], ko tetahi koti kuru moku. Na, e matau ana koe ki nga ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":4115,"rtext":" kuru i a Te Tahana ma, ehara tera, kaore ranei koe i kite ana i te koti "},{"n":"7","dictcode":"Mc39-51","match":"koti","ltext":"korero a te Kawana. I karanga ia kia tuhi pukapuka ahau mo etahi kakahu, ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":4114,"rtext":" kuru i a ia, potae hoki na, engari katahi ki tau karanga mo matou etahi "},{"n":"8","dictcode":"Mc39-51","match":"koti","ltext":"hoki he kupu ki muri atu. Tenei ano taku kupu ki a koe. Homai tetahi ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":3956,"rtext":" moku, kia wha nga koti, tetahi koti kuru hoki noku. Heoi ano taku "},{"n":"9","dictcode":"Mc39-51","match":"koti","ltext":"noa iho ai i konei, a, pirau noa iho i konei. Na, he korero tenei mo te ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":2652,"rtext":" i homai na e koe, kahore ano i tae noa mai ki ahau, heoi ke te rapurapu "},{"n":"10","dictcode":"Mc39-51","match":"koti","ltext":"E hoa, e Makari[ni], Tenei ano taku kupu ki a koe, e mea ana ha[ahau?] te ","startdate":"1839-01-01 00:00:00","workid":338,"sentenceposition":2539,"rtext":"[?]. Kei a koe te tikanga mo nga moi [moni?]o te tau.E hoa, e Ma, kua oti "}]};
+	var obj = jsonResults;
+	
+
+	// var foo = JSON.stringify(obj.data[5].startdate);
+	//var foo = jsonResults;
+	//var allData = {"word": foo};
+
+
+	// var count = Object.keys(obj.data).length;
+
+	// for(var i=0;
+	// 	var count = Object.keys(obj.data).length;
+	// 	i<count;
+	// 	i++){
+
+	var arr = obj.data;
+	
+	for(var i=0; i<arr.length; i++){
+		obj.data[i].startdate = moment(obj.data[i].startdate).format("DD-MM-YYYY");
+	};
+
+	// var bubbles = ;
+	// var bang = moment(obj.data[5].startdate).format("D-M-YYYY");
+
+
+	var mustacheNewsBlockTemplate = $("#template").html();
+	
+	//Mustache.parse(mustacheNewsBlockTemplate);
+
+	var output = Mustache.render(mustacheNewsBlockTemplate, obj);
+
+	$('#test').html(output);
+	// $('#json').html(foo);
+	// $('#monkey').html(count);
+
+	// $('#derp').html(bang);
+
+}
+
+</script>
+
+<script type="text/javascript"></script>
+
+<!-- <div class="news_block" itemscope="" itemtype="http://schema.org/NewsArticle">
+    {{#U}}<a href="{{U}}" itemprop="url">{{/U}} 
+<h3 itemprop="datePublished">{{MT["DCTERMS.issued"]}}</h3> 
+<h4 itemprop="name">{{MT["DC.title"]}}</h4> 
+{{#MT.description}}<p itemprop="description">{{MT.description}}</p>{{/MT.description}} 
+{{#U}}</a>{{/U}}
+</div>
+
+
+ -->
+
+ <style type="text/css">
+	* { font-family: Arial;}
+	p { color: darkred;}
+	h4 { color: darkgreen;}
+	h5 {color: purple;}
+
+ </style>
+
+<script id="template" type="x-tmpl-mustache">
+
+
+{{#data}}  
+
+{{n}}
+{{dictcode}}
+{{startdate}}
+{{ltext}}
+{{match}}
+{{rtext}}
+<br>
+
+
+{{/data}}  
+
+</script>
+
+</head>
+<body onload="">
+
+<div id="test"></div>
+<div id="json"></div>
+<div id="monkey"></div>
+<div id="derp"></div>
+
+
+
+</body>
+</html>

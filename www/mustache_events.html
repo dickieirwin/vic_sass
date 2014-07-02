@@ -1,0 +1,11 @@
+{{#GSP.RES.R}}
+<div class="news_block" itemscope="" itemtype="http://schema.org/NewsArticle">
+	<a href="{{U}}" itemprop="url">
+		{{#MT.keyimage}}<img class="news_img" src="{{MT.keyimage}}">{{/MT.keyimage}}
+		<h4 itemprop="name">{{MT.title}}</h4>{{#MT.restriction}}<div class="restriction_flag">Staff only</div>{{/MT.restriction}}
+		<h5 itemprop="datePublished">{{MT.issued}}</h5>
+		<p>{{MT.description}}</p>
+		<h5>
+	</a>
+</div>
+{{/GSP.RES.R}}

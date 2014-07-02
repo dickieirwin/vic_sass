@@ -1,0 +1,42 @@
+so, gruntfile.js is new
+
+install its dependencies first, running "npm install" in this directory would
+pick up devDependencies in package.json and install them into local
+node_modules (which should remain unversioned/ignored)
+
+you can run grunt tasks from command line after you've npm installed grunt :)
+
+grunt sass:dev
+  compiles sass to css in the same "expanded" format as is kept in the repo
+  protip - if you do a lot of diffs on compiled css, add the following as
+  "unimportant" to your diff tool rules:
+    \/\*.*?\*\/
+  yup, that's just a lazy regex matching css comments that will prevent
+  different paths traced in sass lineNumbers comments from being picked up
+
+grunt sass:prod
+  compiles sass to css in the "compressed" format suitable for deployment to
+  vuw master assets directory
+
+grunt watch
+  monitors scss files for changes and automatically compiles them with dev
+  settings; this is handy when paired with burpsuite local style injections
+
+<!--UPDATE 21/5/14-->
+grunt watch 
+  as above but will refresh the browser on save, runs with a script placed before the </body>
+  tag. Will run on save for all file types, will only compile sass when saving a .scss file.
+
+  grunt watch:sass
+  to refesh browser on .scss save only. 
+
+  livereload script
+        <!--Live Reload script-->
+        <script src="//localhost:35729/livereload.js"></script>
+        <!--Live Reload script /end-->
+
+  more info: https://github.com/gruntjs/grunt-contrib-watch
+
+NB: since config.rb has to be "located close to the Gruntfile.js" it is just a
+clone of www/assets/config.rb with updated paths, this is needed for
+grunt-contrib-sass compass support. You still need sass and compass gems :)

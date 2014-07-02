@@ -1,0 +1,325 @@
+// Mixin for bullet link
+//----------------------------------
+
+@mixin bullet-link {
+
+    padding-left: 1.5em;
+    display: inline-block;
+
+    &:before {
+        content:'\2014  ';
+        width: 1.5em;
+        margin-left: -1.5em;
+        display: inline-block;
+        @include theme-color(
+            $use: key-plus,
+            $property: color
+        );
+    }
+}
+
+@-webkit-keyframes target { // currently only used for divider list links, will move if needed elsewhere
+    from { background:#ffffff; }
+    10% { background:$alert_background_solid; }
+    to { background:#ffffff; }
+}
+
+// Used in sidebar, maybe more?
+.divider_list {
+
+    list-style: none !important;
+    border-bottom: 1px solid $color_border;
+    padding-left: 0 !important;
+
+    &> li {
+
+        border-top: 1px solid $color_border;
+        margin-bottom: 0 !important;
+
+        a {
+
+           display: block;
+           padding-top: 0.5em;
+           padding-bottom: 0.5em;
+		   
+		   
+		   &:target {
+				-webkit-animation:target 6s normal;
+		   }
+
+        }
+    }
+    
+    // Remove the border if nothing follows the ul within a givn container
+    
+    &:last-child { 				
+    	border-bottom: none;
+    }
+    
+    // Remove the top border if it follows another 'solid' object
+    
+    header + & { 				
+    	
+    	li:first-child { 				
+    		border-top: none;
+    	}
+    }
+}
+
+
+// Single link with bullet infront
+//----------------------------------
+
+.bullet_link {
+    @include bullet-link;
+}
+
+.bullet_list {
+
+    list-style: none !important; // Override anything set on .entry for general type styling
+    padding-left: 0 !important; // Override anything set on .entry for general type styling
+
+    a {
+        @include bullet-link;
+        display: block; // remove the faux float
+        padding-right: 0; // remove the rhs space
+    }
+
+    .no_link {
+        @include bullet-link;
+        display: block; // remove the faux float
+        padding-right: 0; // remove the rhs space
+        display: block;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+
+
+// List of links
+//----------------------------------
+.list_block {
+    padding: 0;
+    list-style: none;
+    li {
+        padding: 5px 0;
+        a {
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+
+// used on hubs for main links
+//-----------------------------------
+/*
+.link_block {
+    border-top: 4px solid;
+    padding: 0.5em 0 2em 0;
+    @include theme-color(
+        $use: key,
+        $property: border-top-color
+    );
+*/
+    
+/*
+	h2:first-child {
+		text-transform: uppercase;
+		
+		a {
+			color: #323232;
+			font-family: $font_display;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 1;
+			margin-bottom: 15px;
+		}
+		
+    }
+*/
+	
+	// a {
+        // &:first-child {
+            // text-transform: uppercase;
+            // color: #323232;
+            // font-family: $font_display;
+            // font-weight: bold;
+            // font-size: 24px;
+            // line-height: 1;
+            // margin-bottom: 15px;
+        // }
+    // }
+//}
+
+
+
+// Used in aside column
+//------------------------------
+
+//	partial refactor to create .news_block -KB 2014-02-04
+//  -----------------------------------------------------
+//	- create %aside_block for common styles between .date_block and .news_block
+//	- still need to clean up the explicit overrides for .date_block and create further use-specific extensions
+//	- at the moment .date_block is used on lots of things that aren't dates e.g. related stories widget
+//	- see also ui-elements/_info-block, ui-elements/_link-blocks, ui-elements/_block-lists - scope to combine/unify into a single inheritance tree?
+
+%aside_block {
+	padding: 0.75em 0;
+	border-bottom: 1px solid $color_border;
+	
+	h3 {
+		margin: 0;
+		text-transform: inherit;
+	}
+
+	// the extra specificity of this selector is needed for some rules; this is a bug and should be fixed -KB 2014-02-04
+	aside[role="complementary"] & {
+		a {
+			h3 {
+				display: inline;
+				text-transform: inherit;
+			}
+
+			p {
+				margin:0;
+				color: $color_text;
+			}
+
+			&:hover p {
+				color: $color_links_hover;
+			}
+		}
+	}
+}
+
+.date_block {
+	@extend %aside_block;
+	
+	a h3 {
+		@extend %heading_link;
+	}
+	
+	.info_block:first-child & {
+			padding-top: 0;
+	}
+	h4, h5 {
+			margin: 0;
+	}
+	h4 {
+			font-size: 16px;
+            margin-bottom: 0.5em;
+            line-height: 1.3125em;
+	}
+	p:last-child {
+			margin-bottom: 0;
+	}
+	a {
+			// font-weight: bold;
+            font-weight: inherit;
+	}
+	@include mobile {
+		clear: both; 
+	}
+}
+
+	
+	
+.news_block {
+	@extend %aside_block;
+
+    overflow: auto;
+	
+	&:last-child {
+		border-bottom: 0px none;
+	}
+
+    & header + p[itemprop="description"] {
+        margin-top: 0.75em;
+    }
+
+    & h4[itemprop="name"] { 
+        display: inline;
+    }
+
+    & a h4[itemprop="name"] {
+        color: #146999; 
+        border-bottom: 1px solid #b8d2e0;
+    }
+
+    a p {
+        color: #444;
+    }
+}
+
+.news_img {
+        display: block;
+        float: right;
+        width: 30%;
+        margin-top: 2em;
+
+        @include phone_mobile {
+            float: none;
+            max-width: 240px;
+            width: auto;
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+}
+
+
+// Used for lists of documents in content column
+// Example: /staff/our-structure/consultation
+//------------------------------
+.document_list {
+
+	// (\/) (°,,,°) (\/) FIXME: over-specific selector, to beat core/_typography.scss .entry ul li
+	.entry & li {
+		position: relative;
+		padding-left: 3.8em;
+	}
+
+	.result_flag {
+		position: absolute;
+		top: 0.75em;
+		left: 0;
+	}
+	
+}
+
+
+// Used in footer
+//------------------------------
+.link_list {
+    padding: 0;
+    list-style: none;
+}
+
+
+
+// Used in footer
+//------------------------------
+.link_list_alt {
+    list-style: none;
+    font-size: 12px;
+    li {
+        float: left;
+        padding: 0 10px;
+        &.active {
+            a {
+                font-weight: bold;
+                color: #333;
+            }
+        }
+        a {
+            float: left;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,148 @@
+<?php
+
+require_once "inc/bootstrap.php";
+
+$GLOBALS['_body_class'] = 'theme-default template-drilldown no_sidebar';
+
+
+
+?>
+
+<!DOCTYPE html >
+<!--[if lt IE 7]>      <html class="ie6 old_ie no_border_box <?php if (isset($GLOBALS['_html_class']) && !empty($GLOBALS['_html_class'])) { print ' ' . $GLOBALS['_html_class']; } ?>"> <![endif]-->
+<!--[if IE 7]>         <html class="ie7 old_ie no_border_box <?php if (isset($GLOBALS['_html_class']) && !empty($GLOBALS['_html_class'])) { print ' ' . $GLOBALS['_html_class']; } ?>"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8 old_ie <?php if (isset($GLOBALS['_html_class']) && !empty($GLOBALS['_html_class'])) { print ' ' . $GLOBALS['_html_class']; } ?>"> <![endif]-->
+<!--[if gt IE 8]>         <html class="no-js modern_ie nav_closed <?php if (isset($GLOBALS['_html_class']) && !empty($GLOBALS['_html_class'])) { print ' ' . $GLOBALS['_html_class']; } ?>"> <![endif]-->
+<!--[if !IE]><!--> <html lang='en' class='no-js nav_closed <?php if (isset($GLOBALS['_html_class']) && !empty($GLOBALS['_html_class'])) { print ' ' . $GLOBALS['_html_class']; } ?>'>        <!--<![endif]-->
+
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Strategic Plan feedback</title>
+
+        <meta name="viewport" id="h_viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name = "format-detection" content = "telephone=no">
+        <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
+        
+        <link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icon-ipad.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="touch-icon-ipad-retina.png" />
+
+        <!-- Feature detection (rgba, opacity, touch, generated content) & HTML5 shiv -->
+        <script src="/assets/js/modernizr.custom.23652.js"></script>
+        <script src='/assets/js/jquery-1.10.2.min.js'></script>
+        
+        <!-- Sitewide styles -->
+        <link href="/assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+
+        <!--[if lte IE 8]><link href="/assets/css/ie8.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+
+        <script type="text/javascript">
+           document.write("<style type='text/css'>\n");
+           document.write(".js_hide{display:none !important;}\n");
+           document.write(".js_show_block{display:block !important;}\n");
+           document.write("</style>\n");
+        </script>
+
+        <noscript>
+            <style type='text/css'>
+                .no_js_hide{display:none !important;}
+                .no_js_show_block{display:block !important;}
+            </style>
+        </noscript>
+
+        <title>Uni</title>
+
+    </head>
+    <body class='theme-default template-drilldown no_sidebar'>
+    
+    <div role='navigation' id='masthead'>
+		<img src="/assets/images/print-logo.png" width="200" class="print-only"  />
+        <nav class='global_nav wrap'>
+            <a href='homepage.php' class='vic_logo'>Victoria University of Wellington</a>
+        </nav><!-- /primary_nav -->
+    </div><!-- /container -->
+
+    <div id='wrapper'>
+        
+        <nav id='mobile_masthead'>
+            <ul>
+                <li><a href='homepage.php' class='vic_logo'>Victoria University of Wellington</a></li>
+            </ul>
+        </nav>
+        
+        <div id='page' class='wrap'>
+
+
+
+
+	<aside id='section_menu'>
+        <div id='menu_toggle' class='toggle'><span>Current Students</span></div>
+        <div class='toggle_block'>
+        <nav>
+            <h2 class='menu_title'><a href=''>Current Students</a></h2>
+            <ul class='section_tree'>
+                <li><a href=''>Manage your studies</a></li>
+                <li><a href=''>Manage your money</a></li>
+                <li><a href=''>Services and support</a></li>
+                <li><a href=''>On Campus</a></li>
+                <li><a href=''>New Students</a></li>
+                <li><a href=''>Get Involved</a></li>
+            </ul>
+        </nav>
+<!--         <div class='additional_complementary' >
+            <h2>Student Services</h2>
+            <ul class='bullet_list divider_list'>
+                <li><a href=''>Accommodation</a></li>
+                <li><a href=''>Advocacy &amp; equity</a></li>
+                <li><a href=''>Bookshop</a></li>
+                <li><a href=''>Careers &amp; employment</a></li>
+                <li><a href=''>Chaplains</a></li>
+                <li><a href=''>Childcare</a></li>
+            </ul>
+        </div>
+        </div> -->
+    </aside>
+
+
+
+
+
+
+    <div id='content'>
+    <section role='main' class='primary'>
+    	<div class="entry">
+              		              		<h1 class="page_title">Strategic Plan feedback</h1>                            		              		<div class="intro"><p>The first step in developing a draft Strategic Plan for Victoria is to gain your feedback on what Victoria’s vision, values, distinctiveness and goals might be.</p></div>              		              
+		<p>Please use this form to provide your views on the preliminary strategic direction and issues&nbsp;I have been discussing at various forums and in Victoria News during the past few months.&nbsp;</p>
+
+<p>I ask that you provide any thoughts you have by Monday 30 June. This will allow us to draft a short document for further consultation.&nbsp;</p>
+
+<p><strong>Professor Grant Guilford</strong><br>
+Vice-Chancellor&nbsp;</p>
+
+<div class="bleed" id="content_div_243082">
+<form class="highlight highlight_tertiary form_large" id="form_email_241906" enctype="multipart/form-data" action="https://www.victoria.ac.nz/staff/your-university/consultation/strategic-plan/feedback" method="post"><input type="hidden" name="SQ_FORM_241906_PAGE" value="1" class="sq-form-field" id="SQ_FORM_241906_PAGE"><input type="hidden" name="form_email_241906_referral_url" value="https://www.victoria.ac.nz/my.policy"><fieldset class="sq-form-section"><h2> </h2><div class="field_container"><label class="sq-form-question-title" for="q242023_q1">Your name <em>(required)</em></label><div class="field"><input type="text" name="q242023:q1" value="" size="30" maxlength="70" id="q242023_q1" class="sq-form-field"></div></div></fieldset><fieldset class="sq-form-section"><h2> </h2><p class="form_help">We may publish excerpts from your submission to help promote further discussion. If we do, may we identify you?</p><div class="field_container"><div class=""><ul class="radio_list "><li><label class="form_checkbox"><input type="checkbox" name="q243079:q1[]" id="q243079_q1_0" value="0" checked="checked" override-layout="full-width" before="We may publish excerpts from your submission to help promote further discussion. If we do, may we identify you?" class="sq-form-field">It’s OK to include my name if you publish my feedback.</label></li></ul></div></div></fieldset><fieldset class="sq-form-section"><h2>Values</h2><p class="form_help">Our core values will include respect, responsibility, honesty/integrity, fairness, compassion/empathy. What other values do you think we need to celebrate and champion across our organisation?</p><div class="field_container"><div class=""><textarea name="q242020:q1" cols="30" rows="5" override-layout="full-width" before="Our core values will include respect, responsibility, honesty/integrity, fairness, compassion/empathy. What other values do you think we need to celebrate and champion across our organisation?" id="q242020_q1" class="sq-form-field"></textarea></div></div></fieldset><fieldset class="sq-form-section"><h2>Vision</h2><p class="form_help">Should our capital city location play a part in our positioning within the tertiary system and our vision?</p><div class="field_container"><div class=""><textarea name="q242019:q1" cols="30" rows="5" override-layout="full-width" before="Should our capital city location play a part in our positioning within the tertiary system and our vision?" id="q242019_q1" class="sq-form-field"></textarea></div></div><p class="form_help">Should we position ourselves as New Zealand’s globally-ranked capital city university?</p><div class="field_container"><div class=""><textarea name="q242019:q2" cols="30" rows="5" override-layout="full-width" before="Should we position ourselves as New Zealand’s globally-ranked capital city university?" id="q242019_q2" class="sq-form-field"></textarea></div></div><p class="form_help">What opportunities and responsibilities arising from our capital city location should we embrace?</p><div class="field_container"><div class=""><textarea name="q242019:q3" cols="30" rows="5" override-layout="full-width" before="What opportunities and responsibilities arising from our capital city location should we embrace?" id="q242019_q3" class="sq-form-field"></textarea></div></div><p class="form_help">Any other thoughts or alternative ideas?</p><div class="field_container"><div class=""><textarea name="q242019:q4" cols="30" rows="5" override-layout="full-width" before="Any other thoughts or alternative ideas?" id="q242019_q4" class="sq-form-field"></textarea></div></div></fieldset><fieldset class="sq-form-section"><h2>Areas of academic emphasis/distinctiveness</h2><p class="form_help">At the staff forums we discussed 10 possible areas of academic emphasis. Do you have any comments on the suggested areas, or are there any gaps?</p><div class="field_container"><div class=""><textarea name="q242021:q1" cols="15" rows="15" override-layout="full-width" before="At the staff forums we discussed 10 possible areas of academic emphasis. Do you have any comments on the suggested areas, or are there any gaps?" id="q242021_q1" class="sq-form-field"></textarea></div></div></fieldset><fieldset class="sq-form-section"><h2>Any other comments?</h2><div class="field_container"><div class=""><textarea name="q242022:q1" cols="15" rows="10" override-layout="full-width" id="q242022_q1" class="sq-form-field"></textarea></div></div></fieldset>
+<div class="field_container form_actions"><input type="submit" name="form_email_241906_submit" value="Submit" class="button primary" id="form_email_241906_submit"></div></form>
+
+<!--
+<form id="form_email_241906" enctype="multipart/form-data" action="https://www.victoria.ac.nz/staff/your-university/consultation/strategic-plan/feedback" method="post"><input type="hidden" name="SQ_FORM_241906_PAGE" value="1"  class="sq-form-field" id="SQ_FORM_241906_PAGE" /><input type="hidden" name="form_email_241906_referral_url" value="https://www.victoria.ac.nz/my.policy" /><fieldset class="sq-form-section"><legend class="sq-form-section-title"> </legend><div class="sq-form-question sq-form-question-text "><label class="sq-form-question-title" for="q242023_q1">Your name <abbr class="sq-form-required-field" title="required">*</abbr></label> <div class="sq-form-question-answer" ><input type="text" name="q242023:q1" value="" size="30" maxlength="70"  id="q242023_q1" class="sq-form-field" /></div>
+</div></fieldset><fieldset class="sq-form-section"><legend class="sq-form-section-title"> </legend><div class="sq-form-question sq-form-question-tickbox-list "><fieldset><legend class="sq-form-question-title">Publish name</legend> <div class="sq-form-question-answer" ><ul><li><input type="checkbox" name="q243079:q1[]" id="q243079_q1_0" value="0" checked="checked" override-layout="full-width" before="We may publish excerpts from your submission to help promote further discussion. If we do, may we identify you?" class="sq-form-field" /> <label for="q243079_q1_0">It’s OK to include my name if you publish my feedback.</label></li></ul></div>
+</fieldset></div></fieldset><fieldset class="sq-form-section"><legend class="sq-form-section-title">Values</legend><div class="sq-form-question sq-form-question-text "><label class="sq-form-question-title" for="q242020_q1">What other values do you think we need to celebrate and champion across our organisation?</label> <div class="sq-form-question-answer" ><textarea name="q242020:q1" cols="30" rows="5" override-layout="full-width" before="Our core values will include respect, responsibility, honesty/integrity, fairness, compassion/empathy. What other values do you think we need to celebrate and champion across our organisation?" id="q242020_q1" class="sq-form-field"></textarea></div>
+</div></fieldset><fieldset class="sq-form-section"><legend class="sq-form-section-title">Vision</legend><div class="sq-form-question sq-form-question-text "><label class="sq-form-question-title" for="q242019_q1">Should our capital city location play a part in our positioning and vision?</label> <div class="sq-form-question-answer" ><textarea name="q242019:q1" cols="30" rows="5" override-layout="full-width" before="Should our capital city location play a part in our positioning within the tertiary system and our vision?" id="q242019_q1" class="sq-form-field"></textarea></div>
+</div><div class="sq-form-question sq-form-question-text "><label class="sq-form-question-title" for="q242019_q2">Should we position ourselves as New Zealand’s globally-ranked capital city university?</label> <div class="sq-form-question-answer" ><textarea name="q242019:q2" cols="30" rows="5" override-layout="full-width" before="Should we position ourselves as New Zealand’s globally-ranked capital city university?" id="q242019_q2" class="sq-form-field"></textarea></div>
+</div><div class="sq-form-question sq-form-question-text "><label class="sq-form-question-title" for="q242019_q3">What opportunities and responsibilities of our capital city location should we embrace?</label> <div class="sq-form-question-answer" ><textarea name="q242019:q3" cols="30" rows="5" override-layout="full-width" before="What opportunities and responsibilities arising from our capital city location should we embrace?" id="q242019_q3" class="sq-form-field"></textarea></div>
+</div><div class="sq-form-question sq-form-question-text "><label class="sq-form-question-title" for="q242019_q4">Any other thoughts or alternative ideas?</label> <div class="sq-form-question-answer" ><textarea name="q242019:q4" cols="30" rows="5" override-layout="full-width" before="Any other thoughts or alternative ideas?" id="q242019_q4" class="sq-form-field"></textarea></div>
+</div></fieldset><fieldset class="sq-form-section"><legend class="sq-form-section-title">Areas of academic emphasis/distinctiveness</legend><div class="sq-form-question sq-form-question-text "><label class="sq-form-question-title" for="q242021_q1">Do you have any comments on the ten suggested areas, or are there any gaps?</label> <div class="sq-form-question-answer" ><textarea name="q242021:q1" cols="15" rows="15" override-layout="full-width" before="At the staff forums we discussed 10 possible areas of academic emphasis. Do you have any comments on the suggested areas, or are there any gaps?" id="q242021_q1" class="sq-form-field"></textarea></div>
+</div></fieldset><fieldset class="sq-form-section"><legend class="sq-form-section-title">Any other comments?</legend><div class="sq-form-question sq-form-question-text "><label class="sq-form-question-title" for="q242022_q1">Any other comments?</label> <div class="sq-form-question-answer" ><textarea name="q242022:q1" cols="15" rows="10" override-layout="full-width" id="q242022_q1" class="sq-form-field"></textarea></div>
+</div></fieldset>
+<input type="submit" name="form_email_241906_submit" value="Submit" class="sq-form-submit" id="form_email_241906_submit" /></form>
+-->
+</div>
+            
+            </div>
+		
+		</section><!-- /main -->
+    </div>
+<?php
+includeFile("footer-lite.php");
