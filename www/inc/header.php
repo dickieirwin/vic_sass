@@ -65,12 +65,13 @@
         <nav class='global_nav wrap'>
             <a href='homepage.php' class='vic_logo'>Victoria University of Wellington</a>
 						<ul id="nav_support" class="nav_support">
-							<li><a href="http://library.victoria.ac.nz/library/">Library</a></li>
-							<li><a href="https://my.vuw.ac.nz/">MyVictoria</a></li>
-							<li><a href="http://blackboard.vuw.ac.nz/">Blackboard</a></li>
-							<li><a href="http://www.victoria.ac.nz/about/explore-victoria/campuses">Maps</a></li>
-							<!--<li><a href="http://www.victoria.ac.nz/services-and-support">Support</a></li>-->
-						</ul>
+                          <li><a href="https://www.victoria.ac.nz/staff">Staff</a></li>
+                          <li><a href="http://library.victoria.ac.nz/library/">Library</a></li>
+                          <li><a href="https://my.vuw.ac.nz/">MyVictoria</a></li>
+                          <li><a href="http://blackboard.vuw.ac.nz/">Blackboard</a></li>
+                          <li><a href="http://www.victoria.ac.nz/about/explore-victoria/campuses">Maps</a></li>
+                          <!--<li><a href="http://www.victoria.ac.nz/services-and-support">Support</a></li>-->
+                        </ul>
             <ul class='nav_main'>
                 <li class='study'><a data-short-title='Study at Vic' href='study-hub.php'>Future students</a></li>
                 <li class='current_students'><a data-short-title='Students' href='students-hub.php'>Current students</a></li>

@@ -12,11 +12,38 @@ includeFile('header.php');
 
 	<?php includeFile('search.php'); ?>
 
+	<style type="text/css">
+		
+		.bigger_heading {
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: smaller;
+			margin-top: -5px;
+
+		}
+
+		#hero.grid .info {
+			background-color: #1d2624;
+			height: 50%;
+			padding: 0.5em 0 0.5em 0.5em;
+
+		}
+
+		#hero.grid .info h2 {
+			color: #fff;
+			font-size: 2em;
+		}
+		 #hero.grid .info h4 {
+			color: #fff;
+		}
+
+	</style>
+
     <div class='homepage_feature'>
         <div id='hero' class='grid style1'>
             <a href='#'>
                 <div class='imagery'>
-					<img src="assets/images/bear_banner.jpg" />
+					<img src="assets/images/maori_language_2.jpg" />
 					<span class='vr vr1'></span><span class='vr vr2'></span><span class='vr vr3'></span><span class='vr vr4'></span><span class='vr vr5'></span><span class='vr vr6'></span><span class='vr vr7'></span><span class='vr vr8'></span><span class='vr vr9'></span>
                     <span class='hr hr1'></span><span class='hr hr2'></span><span class='hr hr3'></span>
                     <span class='sq a1'></span><span class='sq a2'></span><span class='sq a3'></span><span class='sq a4'></span><span class='sq a5'></span><span class='sq a6'></span><span class='sq a7'></span><span class='sq a8'></span><span class='sq a9'></span><span class='sq a10'></span>
@@ -24,8 +51,9 @@ includeFile('header.php');
                     <span class='sq c1'></span><span class='sq c2'></span><span class='sq c3'></span><span class='sq c4'></span><span class='sq c5'></span><span class='sq c6'></span><span class='sq c7'></span><span class='sq c8'></span><span class='sq c9'></span><span class='sq c10'></span>
                     <span class='sq d1'></span><span class='sq d2'></span><span class='sq d3'></span><span class='sq d4'></span><span class='sq d5'></span><span class='sq d6'></span><span class='sq d7'></span><span class='sq d8'></span><span class='sq d9'></span><span class='sq d10'></span>
                 </div>
-                <div class='info w30 left0 bottom50 wht even_bigger'>
-                    <h3>Hi! Cool</h3>
+                <div class='info w45 left0 bottom25 blk even_bigger'>
+                    <h2>Mā Te Mōhio.<br> Whakamātauhia.</h2>
+                    <h4 class="bigger_heading">Know Your Mind. Apply it now.</h4>
                 </div>
 				
             </a>
