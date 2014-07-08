@@ -28,26 +28,67 @@ window.onload=function(){
 	var arr = obj.data;
 	
 	for(var i=0; i<arr.length; i++){
-		obj.data[i].startdate = moment(obj.data[i].startdate).format("DD-MM-YYYY");
+		var oldEnd = obj.data[i].n;
+		var newMatch = obj.data[i].match;
 	};
+
+	var newStart = parseInt(oldEnd) + 1;
+
+	var moreUrl = 'https://vuwunicolegweb1.ods.vuw.ac.nz/lm/freelex/corpusapi?a=word&w=' + newMatch + '&start=' + newStart + '&count=10';
 
 	// var bubbles = ;
 	// var bang = moment(obj.data[5].startdate).format("D-M-YYYY");
 
-
 	var mustacheNewsBlockTemplate = $("#template").html();
-	
-	//Mustache.parse(mustacheNewsBlockTemplate);
-
 	var output = Mustache.render(mustacheNewsBlockTemplate, obj);
 
-	$('#test').html(output);
-	// $('#json').html(foo);
-	// $('#monkey').html(count);
 
+
+
+	$('#test').html(output);
+	$('#json').html(newStart);
+	$('.match').html(newMatch).attr('href', moreUrl);
 	// $('#derp').html(bang);
 
 }
+
+
+$('#page').on('click', 'a.copus_more', function() {
+
+        var $this = $(this);
+
+        $this.addClass('pink');
+        
+        // $.ajax({
+        //     url: 'https://vuwunicolegweb1.ods.vuw.ac.nz/lm/freelex/corpusapi?a=word&w=tika&start=' + newStart + '&count=10',
+        //     dataType: 'jsonp'
+        // }).done(function(data) {
+
+        // 	console.log(data);
+
+        // 	var foo = data;
+
+        // 	$('#monkey').html(foo);
+
+        //     var $foldout = $(Mustache.render($('#foldout-template').html(), data));
+        //     $foldout.insertAfter($this.closest('p'));
+        //     // console.log($foldout);
+        //     $this.removeClass('loading').addClass('open').data('foldout', $foldout);
+
+            
+        // });
+        
+
+        // e.preventDefault();
+        // return false;
+
+
+
+
+    });
+
+
+
 
 </script>
 
@@ -69,6 +110,7 @@ window.onload=function(){
 	p { color: darkred;}
 	h4 { color: darkgreen;}
 	h5 {color: purple;}
+	.pink { color: pink;}
 
  </style>
 
@@ -90,13 +132,31 @@ window.onload=function(){
 
 </script>
 
+
+<script id="more_link" type="x-tmpl-mustache">
+
+
+{{#data}}  
+
+
+<br>
+
+{{/data}}  
+
+</script>
+
 </head>
 <body onload="">
 
 <div id="test"></div>
 <div id="json"></div>
-<div id="monkey"></div>
-<div id="derp"></div>
+<div id="monkey"><a href="" class="match"></a>
+</div>
+<div id="derp"><a href="#" class="corpus_more">More</a>
+
+<p data-more></p>
+
+</div>
 
 
 
