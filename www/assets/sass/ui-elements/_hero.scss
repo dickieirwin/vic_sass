@@ -1,3 +1,196 @@
+
+
+// Prototype for Vic banner
+// ---------------------------------------------
+
+.hero-container {
+    background-color: transparent;
+    position: relative;
+    overflow: visible;
+    clear: both;
+    overflow: hidden;
+}
+
+%hero-image--primary {
+    width: 67.77%;
+}
+
+%hero-image--thirds {
+    width: (100% / 3);
+    float: left;
+}
+
+.hero-container--gallery-1 {
+    .hero-image--primary {
+        width: 100%;
+    }
+}
+
+.hero-container--gallery-1 + .spotlight_intro {
+    margin-top: -6px;
+}
+
+.hero-container--gallery-3 {
+
+    .hero-image--primary {
+        width: 66.66%;
+        float: left;
+
+        @include mobile {
+            width: 100%;
+            display: block!important;
+        }
+
+    }
+
+    .hero-image {
+        @extend %hero-image--thirds;
+
+        @include mobile {
+            width: 100%;
+            // display: none;
+        }
+
+    }
+
+}
+
+.hero-container--gallery-6 {
+
+    .hero-image--primary {
+        @include mobile {
+            width: 100%;
+            display: block!important;
+        }
+    }
+
+    .hero-image {
+        @extend %hero-image--thirds;
+
+        @include mobile {
+            width: 100%;
+        }
+
+    }
+
+}
+
+.hero-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    img {
+        max-width: 101%;
+    }
+
+    &:hover {
+        img {
+            opacity: 0.9;
+        }
+    }
+
+}
+
+.hero-image:after {
+    padding-top: 56.25%; /*16:9 ratio*/
+    display: block;
+    content: '';
+}
+
+.hero-image__container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; /*fill parent*/
+}
+
+.hero-image--text-only {
+        background: #1D2624;
+
+    h3 {
+        color: white;
+    }
+
+}
+
+.hero-image__text {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    padding: 1em 1em 0.75em 1em;
+    background: rgba(179, 33, 40, 0.7);
+    color: #fff;
+    min-width: 8.5em;
+    width: 30%;
+    max-height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    h5, p {
+        position: relative;
+        z-index: 10;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+}
+
+// used to hide images on mobile - primary hero is only one visible by default
+[data-mobile-hidden] {
+    @include skinny {
+        display: block!important;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+// used to control message at the bottom of the heros
+.spotlight_intro {
+    margin-top: -1px;
+    z-index: 2;
+    position: relative;
+}
+
+.spotlight_intro * {
+    margin-top: 0;
+}
+
+.hero-image-nav__link {
+    text-align: center;
+    cursor: pointer;
+    width: 49%;
+}
+
+[data-toggle-menu] {
+    display: none;
+    @include mobile {
+        display: inline-block;
+    }
+}
+
+.spotlight_intro_message-out {
+    @include mobile {
+        width: 49%;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.spotlight_intro_message {
+    display: inline-block;
+    @include mobile {
+        display: none;
+    }
+}
+
+
+
+
 #hero {
     width: 100%;
     overflow: hidden;
