@@ -386,6 +386,8 @@
     .info {
 
         padding: 0.5em 3%;
+        background-color: $color_links; // Override themeing one
+
 
         @include skinny {
             padding-left: 0.7em;
@@ -405,13 +407,21 @@
         );
 */
 
-        background-color: $color_links; // Override themeing one
 		
 		h3 {
 			color: inherit;
             margin-bottom:0;
             line-height: 1;
 		}
+
+        h4 {
+            color: #fff;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 2em;
+        }
 		
         .action {
             border-bottom: 1px solid #fff;
@@ -420,6 +430,19 @@
             &:hover, &:focus {
                 border-bottom-color: #fff;
             }
+        }
+
+        &.double {
+            height: 50%;
+            padding: 0.5em 0 0.5em 0.5em;
+        }
+
+        .bigger_heading {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: smaller;
+            margin-top: -5px;
+
         }
     }
 
@@ -552,6 +575,11 @@
             width: 40%; // default modifiers available
             height: 25%; // default modifiers available
 			color: $white;
+
+            &.double {
+                height: 50%;
+                padding: 0.5em 0 0.5em 0.5em;
+            }
 			
 			h3 {
 				color: inherit;

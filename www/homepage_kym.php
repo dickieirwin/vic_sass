@@ -142,7 +142,7 @@ includeFile('header.php');
 		}
 
 		a.hero-image.sub {
-			border-top: 1px solid black;
+
 		}
 
 		.left_box {
