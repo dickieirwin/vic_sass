@@ -380,6 +380,10 @@ section[role="main"] .content a.external:after {
 	  background: #FCECDA;
 	  color: #794E0F;
 	}
+      &.flag_mp3 {
+      background: #fdc98c;
+      color: #FF4500;
+    }
 }
 
 .restriction_flag {

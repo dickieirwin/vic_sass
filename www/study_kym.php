@@ -4,7 +4,7 @@ require_once 'inc/bootstrap.php';
 
 $GLOBALS['_html_class'] = '';
 $GLOBALS['_html_title'] = 'Homepage | Victoria University of Wellington';
-$GLOBALS['_body_class'] = 'homepage';
+$GLOBALS['_body_class'] = 'homepage theme-study';
 
 includeFile('header.php');
 
@@ -21,10 +21,26 @@ includeFile('header.php');
 
 	<style type="text/css">
 
-		@media all {
-			.homepage .entry .news_container .info_block p {
-				display: block;
-			}
+	@media all {	
+
+		.homepage #content {
+			float: right;
+			width: 77%;
+			padding-left: 3%;
+
+		}
+
+		.homepage .entry .news_container .info_block p {
+			display: block;
+		}
+
+		.hero-container--gallery-3 .hero-image--primary {
+				width: 100%;
+				max-height: 493px; 
+		}
+
+		.hero-image img {
+			top: 10;
 		}
 
 
@@ -97,17 +113,17 @@ includeFile('header.php');
 
 
 		.homepage .new_quicklinks a{
-		padding-top: 0.3em;
-		padding-left: 5%;
-		padding-bottom: 0.35em;
-		padding-right: 5%;
-		line-height: 1.3;
-		font-size: 1.46154em;
-		color: #115737;
-		-webkit-font-smoothing: antialiased;
-		display: block;
-		font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
-		font-weight: 500;
+			padding-top: 0.3em;
+			padding-left: 5%;
+			padding-bottom: 0.35em;
+			padding-right: 5%;
+			line-height: 1.3;
+			font-size: 1.46154em;
+			color: #115737;
+			-webkit-font-smoothing: antialiased;
+			display: block;
+			font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
+			font-weight: 500;
 		}
 
 		.info_block {
@@ -148,8 +164,9 @@ includeFile('header.php');
 
 		.left_text{
 			right: 0;
-			bottom: 50%;
 			width: 40%;
+			min-height: 20%;
+			padding: 2%;
 		}
 
 		a.hero-image.sub {
@@ -245,7 +262,7 @@ includeFile('header.php');
 			display: none;
 		}
 
-
+	}
 		@media (max-width: 989px) and (min-width: 760px) {
 
 			.big_search_form {
@@ -578,61 +595,23 @@ includeFile('header.php');
                     <span class='image__text-big'></span>
                 </span>
             </a>
-            <div>
-<!--               <a class='hero-image minor' href='research-article.php'>
-                <div class='hero-image__container' >
-                  <img src='images/kym_bike.jpg' alt='research dummy'>
-                </div>
-                  <span class='hero-image__text -large'>
-                    <h2>Accommodation questions?</h2>
-                    <p>Disposable Search and Rescue Robots Could Save Lives</p>
-                    <span class='image__text-big'></span>
-                  </span>
-              </a>
-              <a class='hero-image minor sub alt_colour' href='research-article.php'>
-                <div class='hero-image__container' >
-                  <img src='images/thinking_phd_study.jpg' alt='research dummy'>
-                </div>
-                  <span class='hero-image__text -large'>
-                    <h2>What to study?</h2>
-                    <p>World class science stuff</p>
-                    <span class='image__text-big'></span>
-                  </span>
-              </a> -->
-            </div>
         </div><!-- /hero -->
 
-        <!-- <div id='hero' class='grid style4'>
-            <a href='#'>
-                <div class='imagery'>
-					<img src="assets/images/maori_language_2.jpg" />
-                </div>
-
-
-            </a>
-        </div> --><!-- /hero -->
     </div><!-- /homepage_feature -->
 
 
-
-    <div id='big_search_wrapper' class="big_search">
-        <form class='big_search_form'>
-            <div id='big_search_fields' class='big_search_fields'>
-                <fieldset class="search_drop_down">
-                    <select id="gender">
-                        <option>Everything</option>
-                        <option>Courses</option>
-                        <option>People</option>
-                    </select>
-                </fieldset>
-                <label for='big_search_query' class="js_hide">Search Victoria for...</label>
-
-                <input class='field_placeholder live_search' id='big_search_query'  autocomplete="off" type='text' name='big_search_query' />
-                <input type='submit' value='Go' />
-            </div>
-        </form>
-    </div>
-
+<aside id='section_menu'>
+			            	<nav class="nav_quicklinks new_quicklinks">
+							  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
+							  <ul id="q_links" class="toggle_block">
+							    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
+							    <li><a href="http://www.victoria.ac.nz/maori-at-victoria/home">Māori at Victoria</a></li>
+							    <li><a href="http://www.victoria.ac.nz/vicpasifika/home">Pasifika at Victoria</a></li>
+							    <li><a href="http://www.victoria.ac.nz/international/">International students</a></li>
+							    <li><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></li>
+							  </ul>
+							</nav><!-- /nav_quicklinks -->
+						</aside>	
 
     <div id='content'>
 
@@ -640,59 +619,120 @@ includeFile('header.php');
 		    <!-- <div class="welcome">
 		        <h3>Know Your Mind. Apply it now. Mā Te Mōhio. Whakamātauhia!</h3>
 		    </div> -->
-
-
-			<section class='news_container'>
-
-
-				<a class='info_block right_block'>
-					<div class='info_block_secondary'>
-						<img src='http://baconmockup.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-
-						<h2>Top Literary Prize for Gemma</h2>
-						<p>Science graduate and creative writing student Gemma Bowker-Wright has won the top prize in New Zealand’s most distinguished literary awards</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://fillmurray.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Applications open for 2013 on the 18th of october</h2>
-						<p>Google has donated 50 Android Nexus One phones to Victoria’s School of Engineering and Computer Science for student research.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://placebear.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Engineering students go Android!</h2>
-						<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://placesheen.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Success for emerging researchers</h2>
-						<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->	         
 						
-		            	<nav class="nav_quicklinks new_quicklinks">
-						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
-						  <ul id="q_links" class="toggle_block">
-						    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
-						    <li><a href="http://www.victoria.ac.nz/maori-at-victoria/home">Māori at Victoria</a></li>
-						    <li><a href="http://www.victoria.ac.nz/vicpasifika/home">Pasifika at Victoria</a></li>
-						    <li><a href="http://www.victoria.ac.nz/international/">International students</a></li>
-						    <li><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></li>
-						  </ul>
-						</nav><!-- /nav_quicklinks -->				   
+
+
+
+			<section  role='main' class='primary'>
+			<header>
+				<h1 class='page_title'>Study at Victoria</h1>
+                <div class='intro'>
+                    <p>It&rsquo;s not just what you learn, it&rsquo;s how you learn and who you learn from, on campus and out amongst it in Wellington. At Victoria University you&rsquo;ll learn from some of the best and brightest in almost every field imaginable.</p>
+                </div><!-- /intro -->   
+			</header>		
+			
+
+                	<a class='promo highlight highlight_primary'>
+                            <h2 class='promo_headline' href=''>Apply and Enrol</h2>
+                            <p>Applications for Semester Two close on June 30th!</p>
+                	</a>
+
+                
+						
+
+			<div class="columns columns3">
+                <div class='col col1'>
+                    <div class='highlight_secondary'>
+                        <a class="video_popup bleed_me" href="">
+                            <img class="video_thumb" src="http://fillmurray.com/350/200">
+                        </a>
+                        <footer>
+                            <h2>Be cool like Bill</h2>
+                            <p>See why finding parallels between maths and music made doing a Bachelor of Science the logical choice for pianist Jasmine Hall.</p>
+                            <a href="#">More stories</a>
+                        </footer>
+                    </div>
+                    <div class='link_block rule'>
+                        <h3><a href=''>Courses</a>
+                        </h3>
+                        <p>With over 3,290 different courses there&rsquo;s bound to be something for you.</p>
+                    </div>
+                    <div class='link_block'>
+                        <h3><a href=''>Is Victoria Right for you?</a>
+                        </h3>
+                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
+                        <a class='bullet_link' href='#testdownload'>Link one</a>
+                    </div>
+                    <div class='link_block'>
+                        <h3><a href=''>Accomodation Student Services</a>
+                        </h3>
+                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
+                    </div>
+                    
+                </div>
+                <div class='col col2'>
+                    <div class='highlight_secondary'>
+                        <a class="video_popup bleed_me" href="">
+                            <img class="video_thumb" src="http://nicenicejpg.com/350/200">
+                        </a>
+                        <footer>
+                            <h2>You can Cook MC's like Ice</h2>
+                            <p>See why finding parallels between maths and music made doing a Bachelor of Science the logical choice for pianist Jasmine Hall.</p>
+                            <a href="#">More stories</a>
+                        </footer>
+                    </div>
+                    <div class='link_block rule'>
+                        <h3><a href=''>Courses</a>
+                        </h3>
+                        <p>With over 3,290 different courses there&rsquo;s bound to be something for you.</p>
+                    </div>
+                    <div class='link_block'>
+                        <h3><a href=''>Events, Openday Visits</a>
+                        </h3>
+                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
+                        <a class='bullet_link' href='#test2'>Link one</a>
+                        <a class='bullet_link' href='#test3'>Link one</a>
+                    </div>
+                    <div class='link_block'>
+                        <h3><a href=''>Teaching &amp; Learning</a>
+                        </h3>
+                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
+                    </div>
+                </div>
+                <div class='col col3'>
+                    <div class='highlight_secondary'>
+                        <a class="video_popup bleed_me" href="">
+                            <img class="video_thumb" src="http://placesheen.com/350/200">
+                        </a>
+                        <footer>
+                            <h2>Charlie is now a winner</h2>
+                            <p>See why finding parallels between maths and music made doing a Bachelor of Science the logical choice for pianist Jasmine Hall.</p>
+                            <a href="#">More stories</a>
+                        </footer>
+                    </div>
+                    <div class='link_block rule'>
+                        <h3><a href=''>Courses</a>
+                        </h3>
+                        <p>With over 3,290 different courses there&rsquo;s bound to be something for you.</p>
+                    </div>
+                    <div class='link_block'>
+                        <h3><a href=''>Events, Openday Visits</a>
+                        </h3>
+                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
+                        <a class='bullet_link' href='#test2'>Link one</a>
+                        <a class='bullet_link' href='#test3'>Link one</a>
+                    </div>
+                    <div class='link_block'>
+                        <h3><a href=''>Teaching &amp; Learning</a>
+                        </h3>
+                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
+                    </div>
+
+                   
+                </div>
+            </div>
+		         
+
 			</section>
 		</div> <!-- /entry -->
     </div><!-- /content_block -->

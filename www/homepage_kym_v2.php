@@ -21,10 +21,19 @@ includeFile('header.php');
 
 	<style type="text/css">
 
-		@media all {
-			.homepage .entry .news_container .info_block p {
-				display: block;
-			}
+	@media all {
+
+		.homepage .entry .news_container .info_block p {
+			display: block;
+		}
+
+		.hero-container--gallery-3 .hero-image--primary {
+				width: 100%;
+				max-height: 493px; 
+		}
+
+		.hero-image img {
+			top: 10;
 		}
 
 
@@ -97,17 +106,17 @@ includeFile('header.php');
 
 
 		.homepage .new_quicklinks a{
-		padding-top: 0.3em;
-		padding-left: 5%;
-		padding-bottom: 0.35em;
-		padding-right: 5%;
-		line-height: 1.3;
-		font-size: 1.46154em;
-		color: #115737;
-		-webkit-font-smoothing: antialiased;
-		display: block;
-		font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
-		font-weight: 500;
+			padding-top: 0.3em;
+			padding-left: 5%;
+			padding-bottom: 0.35em;
+			padding-right: 5%;
+			line-height: 1.3;
+			font-size: 1.46154em;
+			color: #115737;
+			-webkit-font-smoothing: antialiased;
+			display: block;
+			font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
+			font-weight: 500;
 		}
 
 		.info_block {
@@ -148,8 +157,9 @@ includeFile('header.php');
 
 		.left_text{
 			right: 0;
-			bottom: 50%;
 			width: 40%;
+			min-height: 20%;
+			padding: 2%;
 		}
 
 		a.hero-image.sub {
@@ -245,7 +255,7 @@ includeFile('header.php');
 			display: none;
 		}
 
-
+	}
 		@media (max-width: 989px) and (min-width: 760px) {
 
 			.big_search_form {

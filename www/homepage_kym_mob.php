@@ -4,7 +4,7 @@ require_once 'inc/bootstrap.php';
 
 $GLOBALS['_html_class'] = '';
 $GLOBALS['_html_title'] = 'Homepage | Victoria University of Wellington';
-$GLOBALS['_body_class'] = 'homepage';
+$GLOBALS['_body_class'] = 'homepage has_big_search';
 
 includeFile('header.php');
 
@@ -26,6 +26,7 @@ includeFile('header.php');
 				display: block;
 			}
 		}
+
 
 
 		.bigger_heading {
@@ -68,19 +69,18 @@ includeFile('header.php');
 			width: 23%;
 			clear: right;
 			background-color: #d1e0da;
-			padding: 0;
+			padding: 1em 0 0 0;
 			/*position: absolute;*/
 		}
 		.homepage .new_quicklinks ul {
 			padding: 0;
-			list-style:none;
-			margin: 0;
+			list-style:none
 		}
 
 
 		.homepage .new_quicklinks h2 {
 			padding-left: 5%;
-			margin-bottom: 2%m;
+			margin-bottom: 0.3em;
 			line-height: 1;
 			font-size: 1.57143em;
 			color:#115737;
@@ -112,7 +112,6 @@ includeFile('header.php');
 
 		.info_block {
 			float: right;
-
 		}
 
 		.right_block {
@@ -160,33 +159,33 @@ includeFile('header.php');
 			display: none;
 		}
 
-		.big_search {
+/*		.big_search {
 			position: inherit;
 			width: 100%;
 			background-color: #ddd;
 			margin-top: 1em;
 			height: 6em;
 		}
-
-		.big_search_form {
+*/
+/*		.big_search_form {
 			width: 76%;
 			margin: 0 auto;
 			padding: 1px;
 
-		}
+		}*/
 		
 		.entry {
 			padding-top: 1em;
 		}
 
-		.big_search .big_search_fields {
+/*		.big_search .big_search_fields {
 			width: 75%;
 			margin-left: auto;
 			margin-right: auto;
 			float: none;
 			margin-top: 21px;
 		}
-
+*/
 		.connect_wrapper {
 			background: #ddd;
 			border-top: 1px solid #ccc;	
@@ -196,7 +195,7 @@ includeFile('header.php');
 			padding: 0 !important;
 		}
 
-		.search_drop_down {
+		/*.search_drop_down {
 			width: 25%;
 			height: 40px;
 			padding: 0 45px 0 0;	
@@ -212,16 +211,10 @@ includeFile('header.php');
 		
 		.big_search_form input[type="submit"] {
 			height: 36px;
-			border-bottom: 2px solid #003F96;
+			border: 1px solid #3468b0;
 			top: 0;
 		}
 		
-		.big_search_form input[type="submit"]:active {
-			border-bottom: none;
-
-		}
-		
-
 		.big_search_form input[type="text"], .big_search_form input[type="search"] {
 			width: 68%;
 			height: 38px;
@@ -231,26 +224,10 @@ includeFile('header.php');
 			border: 2px solid #3468b0;
 			border-color: #3468b0 !important;
 		}
-
-		#menu_toggle {
-				display: block;
-				background-color: transparent;
-				color: #115737;
-				box-shadow: none;
-				font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
-				padding-left: 5%;
-			}
-
-		#big_search_wrapper.mob_search {
-			display: none;
-		}
+	*/
 
 
 		@media (max-width: 989px) and (min-width: 760px) {
-
-			.big_search_form {
-				width: 100%;
-			}
 
 			.homepage .entry .news_container .info_block p {
 				display: block;
@@ -283,8 +260,6 @@ includeFile('header.php');
 					float:left;
 					border-top: 0;
 					margin-bottom: 0;
-					white-space: nowrap;
-					
 
 			}
 
@@ -294,11 +269,6 @@ includeFile('header.php');
 				padding-left: 3%;
 			}
 
-			.homepage .new_quicklinks h2 :after {
-				content: 003e;
-			}
-
-
 			.homepage .nav_quicklinks a {
 				background-color: #eee;
 			}
@@ -307,64 +277,11 @@ includeFile('header.php');
 				max-height: 100%;
 			}
 
-			#menu_toggle {
-				 position: inherit; 
-				 left: auto; 
-				 font-size:  1.6em; 
-				 font-weight: bold; 
-				box-shadow: none; 
-				width: auto; 
-				 height: auto; 
-				 padding: 0 0 0 3%; 
-				 text-align: left; 
-				 -webkit-box-sizing: border-box; 
-				 -moz-box-sizing: border-box;
-				box-sizing: border-box; 
-			}
-
-			#menu_toggle:after {
-				content: none;
-			}
-
-			
-
-			.big_search.mob_search .big_search_fields {
-				margin-top: 0;
-			}
-
-
-			.mob_search .big_search_form input[type="text"] {
-				width: 100%;
-			}
 
 
 		}
 
 		@media (max-width: 759px){
-
-			#big_search_wrapper.mob_search {
-				display: block;
-				height: 60px;
-			}
-
-			#big_search_wrapper.mob_search {
-				display: block;
-				margin-top: 0;
-				height: 60px;
-			}
-
-			.big_search.mob_search .big_search_fields {
-				margin-top: 12px;
-			}
-
-			.mob_search .big_search_form input[type="text"] {
-				width: 100%;
-			}
-
-			.mob_search .big_search_form {
-				width: 100%;
-			}
-
 
 			.info_block .info_block_primary {
 				clear: left;
@@ -372,10 +289,6 @@ includeFile('header.php');
 
 			.info_block .info_block_secondary {
 				float: right;
-			}
-
-			.info_block {
-				padding-left: 3%;
 			}
 
 			.hero-image.minor {
@@ -390,10 +303,7 @@ includeFile('header.php');
 				height: 50%;
 
 			}
-			
-			.big_search {
-				display: none;
-			}
+
 
 
 
@@ -435,14 +345,12 @@ includeFile('header.php');
 			}
 
 			.homepage .nav_quicklinks a {
-				background-color: #d1e0da;
-				border-top: 1px solid #ccc;
+				background-color: #0d4b2f;
 			}
 			.homepage .new_quicklinks li {
 				width: auto;
-				float:none;
-				border-top: 0;
-			
+					float:none;
+					border-top: 0;
 
 
 			}
@@ -451,12 +359,18 @@ includeFile('header.php');
 				margin-right: 0;
 			}
 
+			#q_links{
+				height:0;
+			}
 
 			#left_box {
-					display: inline-block;
-					float: right;
-					padding-right: 3%;
-				}
+			display: inline-block;
+			float: right;
+			padding-right: 3%;
+		}
+
+
+
 
 			.homepage .new_quicklinks ul {
 				margin: 0 0 3% 0;
@@ -547,22 +461,20 @@ includeFile('header.php');
 					height:0;
 				}
 
+				.homepage .nav_quicklinks a {
+					background-color: #0d4b2f;
+
+				}
 		}
 
 
 	</style>
+<?php
+includeFile('search.php');
 
-	<div id='big_search_wrapper' class="big_search mob_search">
-        <form class='big_search_form'>
-            <div id='big_search_fields' class='big_search_fields'>
-                
-                <label for='big_search_query' class="js_hide"></label>
+?>
 
-                <input class='field_placeholder live_search' id='big_search_query'  autocomplete="off" type='text' name='big_search_query' />
-                <input type='submit' value='Go' />
-            </div>
-        </form>
-    </div>
+
 
     <div class='homepage_feature'>
 
@@ -579,7 +491,7 @@ includeFile('header.php');
                 </span>
             </a>
             <div>
-<!--               <a class='hero-image minor' href='research-article.php'>
+              <a class='hero-image minor' href='research-article.php'>
                 <div class='hero-image__container' >
                   <img src='images/kym_bike.jpg' alt='research dummy'>
                 </div>
@@ -598,7 +510,7 @@ includeFile('header.php');
                     <p>World class science stuff</p>
                     <span class='image__text-big'></span>
                   </span>
-              </a> -->
+              </a>
             </div>
         </div><!-- /hero -->
 
@@ -615,7 +527,7 @@ includeFile('header.php');
 
 
 
-    <div id='big_search_wrapper' class="big_search">
+<!--     <div id='big_search_wrapper' class="big_search">
         <form class='big_search_form'>
             <div id='big_search_fields' class='big_search_fields'>
                 <fieldset class="search_drop_down">
@@ -631,7 +543,7 @@ includeFile('header.php');
                 <input type='submit' value='Go' />
             </div>
         </form>
-    </div>
+    </div> -->
 
 
     <div id='content'>
@@ -644,6 +556,16 @@ includeFile('header.php');
 
 			<section class='news_container'>
 
+				   <nav class="nav_quicklinks new_quicklinks toggle">
+					  <h2>Quicklinks</h2>
+					  <ul id="q_links">
+					    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
+					    <li><a href="http://www.victoria.ac.nz/maori-at-victoria/home">Māori at Victoria</a></li>
+					    <li><a href="http://www.victoria.ac.nz/vicpasifika/home">Pasifika at Victoria</a></li>
+					    <li><a href="http://www.victoria.ac.nz/international/">International students</a></li>
+					    <li><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></li>
+					  </ul>
+					</nav><!-- /nav_quicklinks -->
 
 				<a class='info_block right_block'>
 					<div class='info_block_secondary'>
@@ -660,6 +582,7 @@ includeFile('header.php');
 						<img src='http://fillmurray.com/209/135' alt='homepage holder'>
 					</div><!-- /info_block_secondary -->
 					<div class='info_block_primary'>
+
 						<h2>Applications open for 2013 on the 18th of october</h2>
 						<p>Google has donated 50 Android Nexus One phones to Victoria’s School of Engineering and Computer Science for student research.</p>
 					</div><!-- /info_block_primary -->
@@ -669,6 +592,7 @@ includeFile('header.php');
 						<img src='http://placebear.com/209/135' alt='homepage holder'>
 					</div><!-- /info_block_secondary -->
 					<div class='info_block_primary'>
+
 						<h2>Engineering students go Android!</h2>
 						<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
 					</div><!-- /info_block_primary -->
@@ -678,21 +602,11 @@ includeFile('header.php');
 						<img src='http://placesheen.com/209/135' alt='homepage holder'>
 					</div><!-- /info_block_secondary -->
 					<div class='info_block_primary'>
+
 						<h2>Success for emerging researchers</h2>
 						<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
 					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->	         
-						
-		            	<nav class="nav_quicklinks new_quicklinks">
-						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
-						  <ul id="q_links" class="toggle_block">
-						    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
-						    <li><a href="http://www.victoria.ac.nz/maori-at-victoria/home">Māori at Victoria</a></li>
-						    <li><a href="http://www.victoria.ac.nz/vicpasifika/home">Pasifika at Victoria</a></li>
-						    <li><a href="http://www.victoria.ac.nz/international/">International students</a></li>
-						    <li><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></li>
-						  </ul>
-						</nav><!-- /nav_quicklinks -->				   
+				</a><!-- /info_block -->
 			</section>
 		</div> <!-- /entry -->
     </div><!-- /content_block -->
