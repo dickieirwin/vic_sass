@@ -4,7 +4,7 @@ require_once 'inc/bootstrap.php';
 
 $GLOBALS['_html_class'] = '';
 $GLOBALS['_html_title'] = 'Homepage | Victoria University of Wellington';
-$GLOBALS['_body_class'] = 'homepage theme-study';
+$GLOBALS['_body_class'] = 'theme-study a template-drilldown no_sidebar';
 
 includeFile('header.php');
 
@@ -22,12 +22,19 @@ includeFile('header.php');
 	<style type="text/css">
 
 	@media all {	
+		
+		.feeds_wrap {
+			display: none;
+		}
 
-		.homepage #content {
+		#content {
 			float: right;
 			width: 77%;
 			padding-left: 3%;
+		}
 
+		#section_menu {
+			margin-top: 2em;
 		}
 
 		.homepage .entry .news_container .info_block p {
@@ -43,39 +50,39 @@ includeFile('header.php');
 			top: 10;
 		}
 
-
 		.bigger_heading {
 			text-transform: uppercase;
 			font-weight: 600;
 			font-size: smaller;
 			margin-top: -5px;
+		}
 
+		.columns3 .col2 {
+			padding-left: 0;
 		}
 
 		#hero.grid .info {
 			background-color: rgba(68, 159, 55, 0.7);
 			height: 45%;
 			padding: 0.5em 0 0.5em 0.5em;
-
-
 		}
 
 		.hero-image__text {
 			background-color: rgba(68, 159, 55, 0.7);
-
 		}
 
 		#hero.grid .info h2 {
 			color: #fff;
 			font-size: 2em;
 		}
+
 		 #hero.grid .info h4 {
 			color: #fff;
 		}
+
 		.homepage .widget_wrapper {
 			width: 24%;
 			float: ;
-
 		}
 
 		.homepage .new_quicklinks {
@@ -87,12 +94,12 @@ includeFile('header.php');
 			padding: 0;
 			/*position: absolute;*/
 		}
+
 		.homepage .new_quicklinks ul {
 			padding: 0;
 			list-style:none;
 			margin: 0;
 		}
-
 
 		.homepage .new_quicklinks h2 {
 			padding-left: 5%;
@@ -100,6 +107,10 @@ includeFile('header.php');
 			line-height: 1;
 			font-size: 1.57143em;
 			color:#115737;
+		}
+
+		.theme-study #menu_toggle {
+			background-color: transparent;
 		}
 
 		.homepage .new_quicklinks li {
@@ -128,7 +139,6 @@ includeFile('header.php');
 
 		.info_block {
 			float: right;
-
 		}
 
 		.right_block {
@@ -157,7 +167,8 @@ includeFile('header.php');
 			margin-bottom: 0;
 			line-height: 1;
 		}
-			.hero-image__text h1 {
+
+		.hero-image__text h1 {
 			color: white;
 			margin-bottom: 0;
 		}
@@ -204,13 +215,22 @@ includeFile('header.php');
 			margin-top: 21px;
 		}
 
-		.connect_wrapper {
+		.theme-study .connect_wrapper {
 			background: #ddd;
 			border-top: 1px solid #ccc;	
 		}
 
+		.site_footer {
+			margin-top: 0;
+			padding: 0;
+		}
+
 		.connect-feeds {
 			padding: 0 !important;
+		}
+		
+		.feeds_wrap {
+			width: 70%;
 		}
 
 		.search_drop_down {
@@ -256,6 +276,7 @@ includeFile('header.php');
 				box-shadow: none;
 				font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
 				padding-left: 5%;
+				padding-top: 5%;
 			}
 
 		#big_search_wrapper.mob_search {
@@ -590,8 +611,8 @@ includeFile('header.php');
                 </div>
 
                 <span class='hero-image__text -large left_text'>
-                    <h1>Know Your Mind.</h1>
-                    <h2>Apply it now.</h2>
+                    <h1>Study at Victoria 2015</h1>
+                    <h2>Find out about courses</h2>
                     <span class='image__text-big'></span>
                 </span>
             </a>
@@ -603,7 +624,7 @@ includeFile('header.php');
 <aside id='section_menu'>
 			            	<nav class="nav_quicklinks new_quicklinks">
 							  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
-							  <ul id="q_links" class="toggle_block">
+							  <ul id="q_links" class="toggle_block section_tree">
 							    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
 							    <li><a href="http://www.victoria.ac.nz/maori-at-victoria/home">Māori at Victoria</a></li>
 							    <li><a href="http://www.victoria.ac.nz/vicpasifika/home">Pasifika at Victoria</a></li>
@@ -644,18 +665,14 @@ includeFile('header.php');
                 <div class='col col1'>
                     <div class='highlight_secondary'>
                         <a class="video_popup bleed_me" href="">
-                            <img class="video_thumb" src="http://fillmurray.com/350/200">
+                            <img class="video_thumb" src="/images/hine.jpg">
                         </a>
                         <footer>
-                            <h2>Be cool like Bill</h2>
-                            <p>See why finding parallels between maths and music made doing a Bachelor of Science the logical choice for pianist Jasmine Hall.</p>
-                            <a href="#">More stories</a>
+                        	<a href="#">
+                            <h2>University is more than studying.</h2>
+                            <p>“There are so many things you can get involved in, it’s like being enveloped in a community.” </p>
+                            </a>
                         </footer>
-                    </div>
-                    <div class='link_block rule'>
-                        <h3><a href=''>Courses</a>
-                        </h3>
-                        <p>With over 3,290 different courses there&rsquo;s bound to be something for you.</p>
                     </div>
                     <div class='link_block'>
                         <h3><a href=''>Is Victoria Right for you?</a>
@@ -663,46 +680,30 @@ includeFile('header.php');
                         <p>With over 3,290 different courses there’s bound to be something for you.</p>
                         <a class='bullet_link' href='#testdownload'>Link one</a>
                     </div>
-                    <div class='link_block'>
-                        <h3><a href=''>Accomodation Student Services</a>
-                        </h3>
-                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
-                    </div>
-                    
+                    <div class='link_block rule' ></div>
                 </div>
                 <div class='col col2'>
                     <div class='highlight_secondary'>
                         <a class="video_popup bleed_me" href="">
-                            <img class="video_thumb" src="http://nicenicejpg.com/350/200">
+                            <img class="video_thumb" src="/images/theo.jpg">
                         </a>
                         <footer>
-                            <h2>You can Cook MC's like Ice</h2>
+                            <h2>You can cook like Ice</h2>
                             <p>See why finding parallels between maths and music made doing a Bachelor of Science the logical choice for pianist Jasmine Hall.</p>
                             <a href="#">More stories</a>
                         </footer>
-                    </div>
-                    <div class='link_block rule'>
-                        <h3><a href=''>Courses</a>
-                        </h3>
-                        <p>With over 3,290 different courses there&rsquo;s bound to be something for you.</p>
-                    </div>
-                    <div class='link_block'>
-                        <h3><a href=''>Events, Openday Visits</a>
-                        </h3>
-                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
-                        <a class='bullet_link' href='#test2'>Link one</a>
-                        <a class='bullet_link' href='#test3'>Link one</a>
                     </div>
                     <div class='link_block'>
                         <h3><a href=''>Teaching &amp; Learning</a>
                         </h3>
                         <p>With over 3,290 different courses there’s bound to be something for you.</p>
                     </div>
+                    <div class='link_block rule' ></div>
                 </div>
                 <div class='col col3'>
                     <div class='highlight_secondary'>
                         <a class="video_popup bleed_me" href="">
-                            <img class="video_thumb" src="http://placesheen.com/350/200">
+                            <img class="video_thumb" src="/images/akane.jpg">
                         </a>
                         <footer>
                             <h2>Charlie is now a winner</h2>
@@ -715,20 +716,7 @@ includeFile('header.php');
                         </h3>
                         <p>With over 3,290 different courses there&rsquo;s bound to be something for you.</p>
                     </div>
-                    <div class='link_block'>
-                        <h3><a href=''>Events, Openday Visits</a>
-                        </h3>
-                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
-                        <a class='bullet_link' href='#test2'>Link one</a>
-                        <a class='bullet_link' href='#test3'>Link one</a>
-                    </div>
-                    <div class='link_block'>
-                        <h3><a href=''>Teaching &amp; Learning</a>
-                        </h3>
-                        <p>With over 3,290 different courses there’s bound to be something for you.</p>
-                    </div>
-
-                   
+                    <div class='link_block rule' ></div>              
                 </div>
             </div>
 		         

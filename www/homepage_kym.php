@@ -336,6 +336,54 @@ includeFile('header.php');
 			.mob_search .big_search_form input[type="text"] {
 				width: 100%;
 			}
+				a.hero-image.sub {
+				border-top: 0;
+			}
+
+			.minor .hero-image__text  {
+				padding: 1px 0;
+
+			}
+
+			.minor .hero-image__text h2{
+				padding: 3%;
+				display: block; /* Fallback for non-webkit */
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-size: 1.4em;
+			}
+
+			.hero-image__text p {
+				padding: 3% 3% 0 3%;
+			  display: block; /* Fallback for non-webkit */
+			  display: -webkit-box;
+			  margin: 0 auto;
+			  line-height: 1.4;
+			  -webkit-line-clamp: 1;
+			  -webkit-box-orient: vertical;
+			  overflow: hidden;
+			  text-overflow: ellipsis;
+			}
+
+			.hero-image.minor {
+					width: 50%;
+			}
+
+			.minor span.hero-image__text {
+				background: rgba(68, 159, 55, 0.7);
+		    text-overflow: ellipsis;
+		    display: block;
+		    overflow: hidden;
+				height: 50%;
+
+			}
+
+			.hero-container--gallery-3 .hero-image--primary {
+				width: 100%;
+			}
 
 
 		}
@@ -378,18 +426,7 @@ includeFile('header.php');
 				padding-left: 3%;
 			}
 
-			.hero-image.minor {
-					width: 50%;
-			}
-
-			.minor span.hero-image__text {
-				background: rgba(68, 159, 55, 0.7);
-		    text-overflow: ellipsis;
-		    display: block;
-		    overflow: hidden;
-				height: 50%;
-
-			}
+			
 			
 			.big_search {
 				display: none;
@@ -397,37 +434,7 @@ includeFile('header.php');
 
 
 
-			a.hero-image.sub {
-				border-top: 0;
-			}
-
-			.minor .hero-image__text  {
-				padding: 1px 0;
-
-			}
-
-			.minor .hero-image__text h2{
-				padding: 3%;
-				display: block; /* Fallback for non-webkit */
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				-webkit-box-orient: vertical;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				font-size: 1.4em;
-			}
-
-			.hero-image__text p {
-				padding: 3% 3% 0 3%;
-			  display: block; /* Fallback for non-webkit */
-			  display: -webkit-box;
-			  margin: 0 auto;
-			  line-height: 1.4;
-			  -webkit-line-clamp: 1;
-			  -webkit-box-orient: vertical;
-			  overflow: hidden;
-			  text-overflow: ellipsis;
-			}
+		
 			.homepage .new_quicklinks {
 				width: 100%;
 				position: relative;
@@ -442,9 +449,10 @@ includeFile('header.php');
 				width: auto;
 				float:none;
 				border-top: 0;
-			
+			}
 
-
+			a.hero-image.minor {
+				width: 50%;
 			}
 
 			.right_block {
@@ -474,29 +482,42 @@ includeFile('header.php');
 				display: none;
 			}
 
+			.hero-container--gallery-3 .hero-image {
+				padding-bottom: 10%
+			}
+
+			.hero-image__text.-large.left_text {
+				background-color: rgba(68, 159, 55, 1);
+			}
+
+			.minor span.hero-image__text {
+				padding: 3% 3%;
+			}
+
+			a.hero-image.minor {
+				width: 100%;
+				padding: 0;
+				height: 90px;
+			}
+
+			.hero-image__text {
+				padding: 0 0 0 2%;
+			}
 
 
 			.minor span.hero-image__text {
 				width: 100%;
 				height: 100%;
+				top: 0;
+				left: 0;
 			}
 
 			.minor .hero-image__container {
 				display: none;
 			}
 
-
-
 				.hero-image__text p {
 					-webkit-line-clamp: 1;
-
-				}
-				.hero-image__text h2{
-
-				}
-				.minor span.hero-image__text {
-					min-height: 75%;
-					top: 0;
 
 				}
 
@@ -504,10 +525,11 @@ includeFile('header.php');
 					background: rgba(84, 147, 73, 1);
 				}
 				.left_text{
-					width: 44%;
-					top: 0;
-					bottom: auto;
+					width: 100%;
+					bottom: 0;
 					padding: 3%;
+					clear: both;
+					background: 1;
 				}
 				.homepage .new_quicklinks {
 					width: auto;
@@ -546,7 +568,7 @@ includeFile('header.php');
 				#q_links{
 					height:0;
 				}
-
+	
 		}
 
 
@@ -572,14 +594,14 @@ includeFile('header.php');
                   <img src='/images/kym_h.jpg' alt='research dummy'>
                 </div>
 
-                <span class='hero-image__text -large left_text'>
+                <div class='hero-image__text -large left_text'>
                     <h1>Know Your Mind.</h1>
                     <h2>Apply it now.</h2>
                     <span class='image__text-big'></span>
-                </span>
+                </div>
             </a>
             <div>
-<!--               <a class='hero-image minor' href='research-article.php'>
+              <a class='hero-image minor' href='research-article.php'>
                 <div class='hero-image__container' >
                   <img src='images/kym_bike.jpg' alt='research dummy'>
                 </div>
@@ -598,7 +620,7 @@ includeFile('header.php');
                     <p>World class science stuff</p>
                     <span class='image__text-big'></span>
                   </span>
-              </a> -->
+              </a>
             </div>
         </div><!-- /hero -->
 

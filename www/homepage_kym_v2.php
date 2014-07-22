@@ -583,7 +583,7 @@ includeFile('header.php');
                 </div>
 
                 <span class='hero-image__text -large left_text'>
-                    <h1>Know Your Mind.</h1>
+                    <h1>KNOW YOUR MIND</h1>
                     <h2>Apply it now.</h2>
                     <span class='image__text-big'></span>
                 </span>

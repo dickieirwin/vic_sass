@@ -119,7 +119,7 @@ includeFile('header.php');
                 <div class='col col1'>
                     <div class='highlight_secondary'>
                         <a class="video_popup bleed_me" href="">
-                            <img class="video_thumb" src="http://fillmurray.com/350/200">
+                            <img class="video_thumb" src="/images/josh.jpg">
                         </a>
                         <footer>
                             <h2>Be cool like Bill</h2>
