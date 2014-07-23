@@ -160,31 +160,8 @@ includeFile('header.php');
 			display: none;
 		}
 
-		.big_search {
-			position: inherit;
-			width: 100%;
-			background-color: #ddd;
-			margin-top: 1em;
-			height: 6em;
-		}
-
-		.big_search_form {
-			width: 76%;
-			margin: 0 auto;
-			padding: 1px;
-
-		}
-		
 		.entry {
 			padding-top: 1em;
-		}
-
-		.big_search .big_search_fields {
-			width: 75%;
-			margin-left: auto;
-			margin-right: auto;
-			float: none;
-			margin-top: 21px;
 		}
 
 		.connect_wrapper {
@@ -195,43 +172,7 @@ includeFile('header.php');
 		.connect-feeds {
 			padding: 0 !important;
 		}
-
-		.search_drop_down {
-			width: 25%;
-			height: 40px;
-			padding: 0 45px 0 0;	
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
-
-		.search_drop_down select{
-			height: 38px;
-			background-position: 80% 50%;
-		}
 		
-		.big_search_form input[type="submit"] {
-			height: 36px;
-			border-bottom: 2px solid #003F96;
-			top: 0;
-		}
-		
-		.big_search_form input[type="submit"]:active {
-			border-bottom: none;
-
-		}
-		
-
-		.big_search_form input[type="text"], .big_search_form input[type="search"] {
-			width: 68%;
-			height: 38px;
-		}
-
-		.big_search_form input[type="text"]:focus, .big_search_form input[type="search"]:focus {
-			border: 2px solid #3468b0;
-			border-color: #3468b0 !important;
-		}
-
 		#menu_toggle {
 				display: block;
 				background-color: transparent;
@@ -637,24 +578,7 @@ includeFile('header.php');
 
 
 
-    <div id='big_search_wrapper' class="big_search">
-        <form class='big_search_form'>
-            <div id='big_search_fields' class='big_search_fields'>
-                <fieldset class="search_drop_down">
-                    <select id="gender">
-                        <option>Everything</option>
-                        <option>Courses</option>
-                        <option>People</option>
-                    </select>
-                </fieldset>
-                <label for='big_search_query' class="js_hide">Search Victoria for...</label>
-
-                <input class='field_placeholder live_search' id='big_search_query'  autocomplete="off" type='text' name='big_search_query' />
-                <input type='submit' value='Go' />
-            </div>
-        </form>
-    </div>
-
+    <?php $homepage = true; include('inc/feature-search.php'); ?>
 
     <div id='content'>
 
