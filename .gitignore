@@ -3,5 +3,5 @@
 Thumbs.db
 
 # don't track the compiled CSS
-www/assets/css/*
-www/assets/.sass-cache/*
+www/assets/css/
+www/assets/.sass-cache/
