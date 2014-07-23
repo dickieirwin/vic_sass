@@ -601,23 +601,23 @@ includeFile('header.php');
                 </div>
             </a>
             <div>
-              <a class='hero-image minor' href='research-article.php'>
+              <a class='hero-image minor' href='#'>
                 <div class='hero-image__container' >
-                  <img src='images/kym_bike.jpg' alt='research dummy'>
+                  <img src='images/robby.jpg' alt='research dummy'>
                 </div>
                   <span class='hero-image__text -large'>
-                    <h2>Accommodation questions?</h2>
-                    <p>Disposable Search and Rescue Robots Could Save Lives</p>
+                     <h2>Forge your path</h2>
+                     <p>“Victoria has opened my mind to what I can do.”</p>
                     <span class='image__text-big'></span>
                   </span>
               </a>
-              <a class='hero-image minor sub alt_colour' href='research-article.php'>
+              <a class='hero-image minor sub alt_colour' href='#'>
                 <div class='hero-image__container' >
-                  <img src='images/thinking_phd_study.jpg' alt='research dummy'>
+                  <img src='images/theo.jpg' alt='research dummy'>
                 </div>
                   <span class='hero-image__text -large'>
-                    <h2>What to study?</h2>
-                    <p>World class science stuff</p>
+                         <h2>Being a student in Wellington</h2>
+                            <p>“From that first moment—this beautiful sunny day—we walked through the city and I just fell in love with it.”</p>
                     <span class='image__text-big'></span>
                   </span>
               </a>
