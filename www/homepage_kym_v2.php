@@ -45,26 +45,11 @@ includeFile('header.php');
 
 		}
 
-		#hero.grid .info {
-			background-color: rgba(68, 159, 55, 0.7);
-			height: 45%;
-			padding: 0.5em 0 0.5em 0.5em;
-
-
-		}
-
 		.hero-image__text {
 			background-color: rgba(68, 159, 55, 0.7);
 
 		}
 
-		#hero.grid .info h2 {
-			color: #fff;
-			font-size: 2em;
-		}
-		 #hero.grid .info h4 {
-			color: #fff;
-		}
 		.homepage .widget_wrapper {
 			width: 24%;
 			float: ;
@@ -160,10 +145,6 @@ includeFile('header.php');
 			width: 40%;
 			min-height: 20%;
 			padding: 2%;
-		}
-
-		a.hero-image.sub {
-
 		}
 
 		.left_box {
@@ -625,24 +606,7 @@ includeFile('header.php');
 
 
 
-    <div id='big_search_wrapper' class="big_search">
-        <form class='big_search_form'>
-            <div id='big_search_fields' class='big_search_fields'>
-                <fieldset class="search_drop_down">
-                    <select id="gender">
-                        <option>Everything</option>
-                        <option>Courses</option>
-                        <option>People</option>
-                    </select>
-                </fieldset>
-                <label for='big_search_query' class="js_hide">Search Victoria for...</label>
-
-                <input class='field_placeholder live_search' id='big_search_query'  autocomplete="off" type='text' name='big_search_query' />
-                <input type='submit' value='Go' />
-            </div>
-        </form>
-    </div>
-
+    <?php $homepage = true; include('inc/feature-search.php'); ?>
 
     <div id='content'>
 
@@ -693,17 +657,18 @@ includeFile('header.php');
 					</div><!-- /info_block_primary -->
 				</a><!-- /info_block -->	         
 						
-		            	<nav class="nav_quicklinks new_quicklinks">
-						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
-						  <ul id="q_links" class="toggle_block">
-						    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
-						    <li><a href="http://www.victoria.ac.nz/maori-at-victoria/home">Māori at Victoria</a></li>
-						    <li><a href="http://www.victoria.ac.nz/vicpasifika/home">Pasifika at Victoria</a></li>
-						    <li><a href="http://www.victoria.ac.nz/international/">International students</a></li>
-						    <li><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></li>
-						  </ul>
-						</nav><!-- /nav_quicklinks -->				   
 			</section>
+
+      <nav class="nav_quicklinks new_quicklinks">
+        <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
+        <ul id="q_links" class="toggle_block">
+          <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
+          <li><a href="http://www.victoria.ac.nz/maori-at-victoria/home">Māori at Victoria</a></li>
+          <li><a href="http://www.victoria.ac.nz/vicpasifika/home">Pasifika at Victoria</a></li>
+          <li><a href="http://www.victoria.ac.nz/international/">International students</a></li>
+          <li><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></li>
+        </ul>
+      </nav><!-- /nav_quicklinks -->				   
 		</div> <!-- /entry -->
     </div><!-- /content_block -->
 
