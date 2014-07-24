@@ -36,26 +36,11 @@ includeFile('header.php');
 
 		}
 
-		#hero.grid .info {
-			background-color: rgba(68, 159, 55, 0.7);
-			height: 45%;
-			padding: 0.5em 0 0.5em 0.5em;
-
-
-		}
-
 		.hero-image__text {
 			background-color: rgba(68, 159, 55, 0.7);
 
 		}
 
-		#hero.grid .info h2 {
-			color: #fff;
-			font-size: 2em;
-		}
-		 #hero.grid .info h4 {
-			color: #fff;
-		}
 		.homepage .widget_wrapper {
 			width: 24%;
 			float: none;
@@ -69,7 +54,6 @@ includeFile('header.php');
 			clear: right;
 			background-color: #d1e0da;
 			padding: 0;
-			/*position: absolute;*/
 		}
 		.homepage .new_quicklinks ul {
 			padding: 0;
@@ -152,10 +136,6 @@ includeFile('header.php');
 			width: 40%;
 		}
 
-		a.hero-image.sub {
-
-		}
-
 		.left_box {
 			display: none;
 		}
@@ -184,10 +164,6 @@ includeFile('header.php');
 
 		@media (max-width: 989px) and (min-width: 760px) {
 
-			.big_search_form {
-				width: 100%;
-			}
-
 			.homepage .entry .news_container .info_block p {
 				display: block;
 			}
@@ -197,8 +173,6 @@ includeFile('header.php');
 		    }
 
 			.homepage .new_quicklinks {
-
-				/*position: relative;*/
 				width:100%;
 				background-color: none;
 				margin-bottom: 2%;
@@ -456,11 +430,6 @@ includeFile('header.php');
 					float: right;
 					padding-right: 3%;
 				}
-
-				#q_links{
-					height:0;
-				}
-	
 		}
 
 
