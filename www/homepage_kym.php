@@ -110,14 +110,46 @@ includeFile('header.php');
 		font-weight: 500;
 		}
 
-		.info_block {
+		/*news wrapper new addition*/
+
+		.news_wrapper {
 			float: right;
+			right: 0;
+			position: relative;
+			width: 77%;
+			padding-left: 3%;
+		}
+
+		.news_wrapper .info_block {
+			width: 25%;
+		}
+
+		.info_block.right_block {
+			float: right;
+			padding-right: 0;
+			padding-left: 2%;
+		}
+
+		.info_block.left_block {
+			padding-left: 0;
+			padding-right: 2%;
+		}
+
+		.info_block.left_mid {
+			padding-left: 1%;
+			padding-right: 1.5%;
+
+
+		}
+		.info_block.right_mid {
+			padding-left: 1.5%;
+			padding-right: 1%;
+
 
 		}
 
-		.right_block {
-			margin-right: -2%;
-		}
+		/*news wrapper new addition*/
+	
 
 		 #content .entry {
 			padding-left: 0%;
@@ -184,6 +216,24 @@ includeFile('header.php');
 
 		@media (max-width: 989px) and (min-width: 760px) {
 
+		/*news wrapper*/
+
+			.news_wrapper {
+				width: 100%;
+				padding: 0 3%;
+			}
+
+			.news_wrapper .info_block {
+				width: 30%;
+			}
+			
+			.homepage .entry .news_wrapper .info_block {
+				padding: 0 0.5%;
+			}
+
+			/*news wrapper*/
+
+
 			.big_search_form {
 				width: 100%;
 			}
@@ -205,11 +255,6 @@ includeFile('header.php');
 			}
 
 
-
-			.homepage .entry .news_container .info_block {
-				width: 25%;
-			}
-
 			.homepage .new_quicklinks ul {
 				margin: 0;
 			}
@@ -220,8 +265,6 @@ includeFile('header.php');
 					border-top: 0;
 					margin-bottom: 0;
 					white-space: nowrap;
-					
-
 			}
 
 			.homepage .new_quicklinks h2{
@@ -261,10 +304,8 @@ includeFile('header.php');
 			#menu_toggle:after {
 				content: none;
 			}
-
-			
-
-				a.hero-image.sub {
+		
+			a.hero-image.sub {
 				border-top: 0;
 			}
 
@@ -302,42 +343,44 @@ includeFile('header.php');
 
 			.minor .hero-image__text {
 				background: rgba(68, 159, 55, 0.7);
-		    text-overflow: ellipsis;
-		    display: block;
-		    overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: block;
+			    overflow: hidden;
 				height: 50%;
-
 			}
 
 			.hero-container--gallery-3 .hero-image--primary {
 				width: 100%;
 			}
-
-
 		}
 
 		@media (max-width: 759px){
 
-			.info_block .info_block_primary {
-				clear: left;
+			/*news wrapper*/
+
+			.news_wrapper .info_block {
+				width: 100%;
 			}
 
-			.info_block .info_block_secondary {
-				float: right;
-			}
-
-			.info_block {
-				padding-left: 3%;
-			}
-
+			.news_wrapper {
 			
+				width: 100%;
+				padding: 0 3%;
+			}
+
+			.homepage .entry .news_wrapper .info_block {
+				padding: 0 0.5%;
+			}
+
+			.info_block .info_block_secondary img {
+				max-height: 80px;
+			}
+
+			/*news wrapper*/
 			
 			.big_search {
 				display: none;
 			}
-
-
-
 		
 			.homepage .new_quicklinks {
 				width: 100%;
@@ -358,12 +401,7 @@ includeFile('header.php');
 			a.hero-image.minor {
 				width: 50%;
 			}
-
-			.right_block {
-				margin-right: 0;
-			}
-
-
+			
 			#left_box {
 					display: inline-block;
 					float: right;
@@ -375,9 +413,6 @@ includeFile('header.php');
 				padding: 0;
 				overflow: hidden;
 			}
-
-
-
 		}
 
 		@media (max-width: 480px) and (min-width: 320px){
@@ -507,45 +542,44 @@ includeFile('header.php');
 
 		<div class='entry'>
 			<section class='news_container'>
-
-
-				<a class='info_block right_block'>
-					<div class='info_block_secondary'>
-						<img src='http://baconmockup.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-
-						<h2>Top Literary Prize for Gemma</h2>
-						<p>Science graduate and creative writing student Gemma Bowker-Wright has won the top prize in New Zealand’s most distinguished literary awards</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://fillmurray.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Applications open for 2013 on the 18th of october</h2>
-						<p>Google has donated 50 Android Nexus One phones to Victoria’s School of Engineering and Computer Science for student research.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://placebear.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Engineering students go Android!</h2>
-						<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://placesheen.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Success for emerging researchers</h2>
-						<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->	         
+				<div class="news_wrapper">
+					<a class='info_block left_block'>
+						<div class='info_block_secondary'>
+							<img src='http://baconmockup.com/209/135' alt='homepage holder'>
+						</div><!-- /info_block_secondary -->
+						<div class='info_block_primary'>
+							<h2>Top Literary Prize for Gemma</h2>
+							<p>Science graduate and creative writing student Gemma Bowker-Wright has won the top prize in New Zealand’s most distinguished literary awards</p>
+						</div><!-- /info_block_primary -->
+					</a><!-- /info_block -->
+					<a class='info_block left_mid'>
+						<div class='info_block_secondary'>
+							<img src='http://fillmurray.com/209/135' alt='homepage holder'>
+						</div><!-- /info_block_secondary -->
+						<div class='info_block_primary'>
+							<h2>Applications open for 2013 on the 18th of october</h2>
+							<p>Google has donated 50 Android Nexus One phones to Victoria’s School of Engineering and Computer Science for student research.</p>
+						</div><!-- /info_block_primary -->
+					</a><!-- /info_block -->
+					<a class='info_block right_mid'>
+						<div class='info_block_secondary'>
+							<img src='http://placebear.com/209/135' alt='homepage holder'>
+						</div><!-- /info_block_secondary -->
+						<div class='info_block_primary'>
+							<h2>Engineering students go Android!</h2>
+							<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
+						</div><!-- /info_block_primary -->
+					</a><!-- /info_block -->
+					<a class='info_block right_block'>
+						<div class='info_block_secondary'>
+							<img src='http://placesheen.com/209/135' alt='homepage holder'>
+						</div><!-- /info_block_secondary -->
+						<div class='info_block_primary'>
+							<h2>Success for emerging researchers</h2>
+							<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
+						</div><!-- /info_block_primary -->
+					</a><!-- /info_block -->	
+				</div>         
 						
 		            	<nav class="nav_quicklinks new_quicklinks">
 						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
