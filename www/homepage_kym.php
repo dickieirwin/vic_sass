@@ -10,14 +10,7 @@ includeFile('header.php');
 
 ?>
 
-<script type="text/javascript">
-		$('#left_box').click(function() {
-				$('#q_links').css("height", "auto");
-		});
-
-
-
-</script>
+  <style>@import url('dev/quicklinks_protype.css');</style>
 
 	<style type="text/css">
 
@@ -28,38 +21,9 @@ includeFile('header.php');
 		}
 
 
-		.bigger_heading {
-			text-transform: uppercase;
-			font-weight: 600;
-			font-size: smaller;
-			margin-top: -5px;
-
-		}
-
-		#hero.grid .info {
-			background-color: rgba(68, 159, 55, 0.7);
-			height: 45%;
-			padding: 0.5em 0 0.5em 0.5em;
-
-
-		}
-
-		.hero-image__text {
-			background-color: rgba(68, 159, 55, 0.7);
-
-		}
-
-		#hero.grid .info h2 {
-			color: #fff;
-			font-size: 2em;
-		}
-		 #hero.grid .info h4 {
-			color: #fff;
-		}
 		.homepage .widget_wrapper {
 			width: 24%;
 			float: none;
-
 		}
 
 		.homepage .new_quicklinks {
@@ -69,8 +33,8 @@ includeFile('header.php');
 			clear: right;
 			background-color: #d1e0da;
 			padding: 0;
-			/*position: absolute;*/
 		}
+		
 		.homepage .new_quicklinks ul {
 			padding: 0;
 			list-style:none;
@@ -110,6 +74,7 @@ includeFile('header.php');
 		font-weight: 500;
 		}
 
+
 		.info_block {
 			float: right;
 
@@ -124,41 +89,6 @@ includeFile('header.php');
 			padding-right: 0%;
 		}
 
-
-
-		.homepage .homepage_feature {
-			width: 100%;
-			float: none;
-		}
-
-		.hero-image__text {
-			width: 50%;
-			padding-top: 0.5em;
-		}
-
-		.hero-image__text h2 {
-			color: white;
-			margin-bottom: 0;
-			line-height: 1;
-		}
-			.hero-image__text h1 {
-			color: white;
-			margin-bottom: 0;
-		}
-
-		.left_text{
-			right: 0;
-			bottom: 50%;
-			width: 40%;
-		}
-
-		a.hero-image.sub {
-
-		}
-
-		.left_box {
-			display: none;
-		}
 
 		.entry {
 			padding-top: 1em;
@@ -184,10 +114,6 @@ includeFile('header.php');
 
 		@media (max-width: 989px) and (min-width: 760px) {
 
-			.big_search_form {
-				width: 100%;
-			}
-
 			.homepage .entry .news_container .info_block p {
 				display: block;
 			}
@@ -197,8 +123,6 @@ includeFile('header.php');
 		    }
 
 			.homepage .new_quicklinks {
-
-				/*position: relative;*/
 				width:100%;
 				background-color: none;
 				margin-bottom: 2%;
@@ -264,54 +188,6 @@ includeFile('header.php');
 
 			
 
-				a.hero-image.sub {
-				border-top: 0;
-			}
-
-			.minor .hero-image__text  {
-				padding: 1px 0;
-
-			}
-
-			.minor .hero-image__text h2{
-				padding: 3%;
-				display: block; /* Fallback for non-webkit */
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				-webkit-box-orient: vertical;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				font-size: 1.4em;
-			}
-
-			.hero-image__text p {
-				padding: 3% 3% 0 3%;
-			  display: block; /* Fallback for non-webkit */
-			  display: -webkit-box;
-			  margin: 0 auto;
-			  line-height: 1.4;
-			  -webkit-line-clamp: 1;
-			  -webkit-box-orient: vertical;
-			  overflow: hidden;
-			  text-overflow: ellipsis;
-			}
-
-			.hero-image.minor {
-					width: 50%;
-			}
-
-			.minor .hero-image__text {
-				background: rgba(68, 159, 55, 0.7);
-		    text-overflow: ellipsis;
-		    display: block;
-		    overflow: hidden;
-				height: 50%;
-
-			}
-
-			.hero-container--gallery-3 .hero-image--primary {
-				width: 100%;
-			}
 
 
 		}
@@ -332,13 +208,6 @@ includeFile('header.php');
 
 			
 			
-			.big_search {
-				display: none;
-			}
-
-
-
-		
 			.homepage .new_quicklinks {
 				width: 100%;
 				position: relative;
@@ -355,20 +224,10 @@ includeFile('header.php');
 				border-top: 0;
 			}
 
-			a.hero-image.minor {
-				width: 50%;
-			}
-
 			.right_block {
 				margin-right: 0;
 			}
 
-
-			#left_box {
-					display: inline-block;
-					float: right;
-					padding-right: 3%;
-				}
 
 			.homepage .new_quicklinks ul {
 				margin: 0 0 3% 0;
@@ -386,43 +245,6 @@ includeFile('header.php');
 				display: none;
 			}
 
-			a.hero-image.minor {
-				width: 100%;
-				padding: 0;
-			}
-
-			.hero-image__text {
-				padding: 0 0 0 2%;
-			}
-
-
-			.minor .hero-image__text {
-				padding: 3%;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-			}
-
-			.minor .hero-image__container {
-				display: none;
-			}
-
-				.hero-image__text p {
-					-webkit-line-clamp: 1;
-
-				}
-
-				.minor.alt_colour span.hero-image__text {
-					background: rgba(84, 147, 73, 1);
-				}
-				.left_text{
-					width: 100%;
-					bottom: 0;
-					padding: 3%;
-					clear: both;
-					background: 1;
-				}
 				.homepage .new_quicklinks {
 					width: auto;
 					position: relative;
@@ -451,16 +273,6 @@ includeFile('header.php');
 
 
 
-				 #left_box {
-					display: inline-block;
-					float: right;
-					padding-right: 3%;
-				}
-
-				#q_links{
-					height:0;
-				}
-	
 		}
 
 
