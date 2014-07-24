@@ -33,6 +33,7 @@ includeFile('header.php');
 			clear: right;
 			background-color: #d1e0da;
 			padding: 0;
+			position: absolute;
 		}
 		
 		.homepage .new_quicklinks ul {
@@ -73,6 +74,16 @@ includeFile('header.php');
 		font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
 		font-weight: 500;
 		}
+
+
+			#menu_toggle {
+				display: block;
+				background-color: transparent;
+				color: #115737;
+				box-shadow: none;
+				font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
+				padding-left: 5%;
+			}
 
 		/*news wrapper new addition*/
 
@@ -115,11 +126,6 @@ includeFile('header.php');
 		/*news wrapper new addition*/
 	
 
-		 #content .entry {
-			padding-left: 0%;
-			padding-right: 0%;
-		}
-
 
 		.entry {
 			padding-top: 1em;
@@ -127,21 +133,15 @@ includeFile('header.php');
 
 		.connect_wrapper {
 			background: #ddd;
-			border-top: 1px solid #ccc;	
+			border-top: 1px solid #ccc;
+			margin-top: 1em;
 		}
 
 		.connect-feeds {
 			padding: 0 !important;
 		}
 		
-		#menu_toggle {
-				display: block;
-				background-color: transparent;
-				color: #115737;
-				box-shadow: none;
-				font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
-				padding-left: 5%;
-			}
+	
 
 		@media (max-width: 989px) and (min-width: 760px) {
 
@@ -171,10 +171,19 @@ includeFile('header.php');
 		        width: 100%;
 		    }
 
+
+		    .homepage .new_quicklinks ul:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
 			.homepage .new_quicklinks {
 				width:100%;
 				background-color: none;
 				margin-bottom: 2%;
+				padding: 0 1% 1% 1%;
+				position: relative;	
 			}
 
 
@@ -201,8 +210,10 @@ includeFile('header.php');
 			}
 
 
-			.homepage .nav_quicklinks a {
+			.homepage .new_quicklinks a {
 				background-color: #eee;
+				padding: 0.25em 0.6em;
+				margin: 0 0.3em 0.3em 0;
 			}
 
 			.homepage .entry .news_container .info_block .info_block_secondary img {
@@ -259,7 +270,7 @@ includeFile('header.php');
 				margin-bottom: 2%;
 			}
 
-			.homepage .nav_quicklinks a {
+			.homepage .new_quicklinks a {
 				background-color: #d1e0da;
 				border-top: 1px solid #ccc;
 			}
@@ -395,7 +406,7 @@ includeFile('header.php');
 					</a><!-- /info_block -->	
 				</div>         
 						
-		            	<nav class="nav_quicklinks new_quicklinks">
+		            	<nav class="nav_quicklin new_quicklinks">
 						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
 						  <ul id="q_links" class="toggle_block">
 						    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>

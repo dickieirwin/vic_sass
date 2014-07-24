@@ -124,6 +124,8 @@
     footer {
 
         @include box_padding;
+        @include right_bleed;
+        @include left_bleed;
         //stupid bleed goes here - removed KYM 24/7/17 - irwinna
 
 
@@ -189,6 +191,8 @@
     &.set_height {
       footer {
         height: 190px;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
 }

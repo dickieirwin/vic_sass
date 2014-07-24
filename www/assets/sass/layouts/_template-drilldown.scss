@@ -52,11 +52,27 @@
       header {
         width: 100%;
         float: none;
+        margin-bottom: 0;
+        margin-left: 0;
       }
 
       .promo_body {
-        padding: 3%;
+        padding: 5% 3%;
+        
+        & h3 {
+            display: inline;
+        }
+
+        a button {
+            margin-top: 6%;
+        }
       }
     }
 
+    .intro_wrapper {
+        float: left;
+    }
+
 }
+
+
