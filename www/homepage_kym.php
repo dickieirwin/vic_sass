@@ -4,20 +4,13 @@ require_once 'inc/bootstrap.php';
 
 $GLOBALS['_html_class'] = '';
 $GLOBALS['_html_title'] = 'Homepage | Victoria University of Wellington';
-$GLOBALS['_body_class'] = 'homepage';
+$GLOBALS['_body_class'] = 'homepage has_feature_search';
 
 includeFile('header.php');
 
 ?>
 
-<script type="text/javascript">
-		$('#left_box').click(function() {
-				$('#q_links').css("height", "auto");
-		});
-
-
-
-</script>
+  <style>@import url('dev/quicklinks_protype.css');</style>
 
 	<style type="text/css">
 
@@ -28,38 +21,9 @@ includeFile('header.php');
 		}
 
 
-		.bigger_heading {
-			text-transform: uppercase;
-			font-weight: 600;
-			font-size: smaller;
-			margin-top: -5px;
-
-		}
-
-		#hero.grid .info {
-			background-color: rgba(68, 159, 55, 0.7);
-			height: 45%;
-			padding: 0.5em 0 0.5em 0.5em;
-
-
-		}
-
-		.hero-image__text {
-			background-color: rgba(68, 159, 55, 0.7);
-
-		}
-
-		#hero.grid .info h2 {
-			color: #fff;
-			font-size: 2em;
-		}
-		 #hero.grid .info h4 {
-			color: #fff;
-		}
 		.homepage .widget_wrapper {
 			width: 24%;
-			float: ;
-
+			float: none;
 		}
 
 		.homepage .new_quicklinks {
@@ -69,8 +33,8 @@ includeFile('header.php');
 			clear: right;
 			background-color: #d1e0da;
 			padding: 0;
-			/*position: absolute;*/
 		}
+		
 		.homepage .new_quicklinks ul {
 			padding: 0;
 			list-style:none;
@@ -110,55 +74,52 @@ includeFile('header.php');
 		font-weight: 500;
 		}
 
-		.info_block {
+		/*news wrapper new addition*/
+
+		.news_wrapper {
 			float: right;
+			right: 0;
+			position: relative;
+			width: 77%;
+			padding-left: 3%;
+		}
+
+		.news_wrapper .info_block {
+			width: 25%;
+		}
+
+		.info_block.right_block {
+			float: right;
+			padding-right: 0;
+			padding-left: 2%;
+		}
+
+		.info_block.left_block {
+			padding-left: 0;
+			padding-right: 2%;
+		}
+
+		.info_block.left_mid {
+			padding-left: 1%;
+			padding-right: 1.5%;
+
+
+		}
+		.info_block.right_mid {
+			padding-left: 1.5%;
+			padding-right: 1%;
+
 
 		}
 
-		.right_block {
-			margin-right: -2%;
-		}
+		/*news wrapper new addition*/
+	
 
 		 #content .entry {
 			padding-left: 0%;
 			padding-right: 0%;
 		}
 
-
-
-		.homepage .homepage_feature {
-			width: 100%;
-			float: none;
-		}
-
-		.hero-image__text {
-			width: 50%;
-			padding-top: 0.5em;
-		}
-
-		.hero-image__text h2 {
-			color: white;
-			margin-bottom: 0;
-			line-height: 1;
-		}
-			.hero-image__text h1 {
-			color: white;
-			margin-bottom: 0;
-		}
-
-		.left_text{
-			right: 0;
-			bottom: 50%;
-			width: 40%;
-		}
-
-		a.hero-image.sub {
-
-		}
-
-		.left_box {
-			display: none;
-		}
 
 		.entry {
 			padding-top: 1em;
@@ -182,16 +143,25 @@ includeFile('header.php');
 				padding-left: 5%;
 			}
 
-		#big_search_wrapper.mob_search {
-			display: none;
-		}
-
-
 		@media (max-width: 989px) and (min-width: 760px) {
 
-			.big_search_form {
+		/*news wrapper*/
+
+			.news_wrapper {
 				width: 100%;
+				padding: 0 3%;
 			}
+
+			.news_wrapper .info_block {
+				width: 30%;
+			}
+			
+			.homepage .entry .news_wrapper .info_block {
+				padding: 0 0.5%;
+			}
+
+			/*news wrapper*/
+
 
 			.homepage .entry .news_container .info_block p {
 				display: block;
@@ -202,18 +172,11 @@ includeFile('header.php');
 		    }
 
 			.homepage .new_quicklinks {
-
-				/*position: relative;*/
 				width:100%;
 				background-color: none;
 				margin-bottom: 2%;
 			}
 
-
-
-			.homepage .entry .news_container .info_block {
-				width: 25%;
-			}
 
 			.homepage .new_quicklinks ul {
 				margin: 0;
@@ -225,8 +188,6 @@ includeFile('header.php');
 					border-top: 0;
 					margin-bottom: 0;
 					white-space: nowrap;
-					
-
 			}
 
 			.homepage .new_quicklinks h2{
@@ -266,116 +227,32 @@ includeFile('header.php');
 			#menu_toggle:after {
 				content: none;
 			}
-
-			
-
-			.big_search.mob_search .big_search_fields {
-				margin-top: 0;
-			}
-
-
-			.mob_search .big_search_form input[type="text"] {
-				width: 100%;
-			}
-				a.hero-image.sub {
-				border-top: 0;
-			}
-
-			.minor .hero-image__text  {
-				padding: 1px 0;
-
-			}
-
-			.minor .hero-image__text h2{
-				padding: 3%;
-				display: block; /* Fallback for non-webkit */
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				-webkit-box-orient: vertical;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				font-size: 1.4em;
-			}
-
-			.hero-image__text p {
-				padding: 3% 3% 0 3%;
-			  display: block; /* Fallback for non-webkit */
-			  display: -webkit-box;
-			  margin: 0 auto;
-			  line-height: 1.4;
-			  -webkit-line-clamp: 1;
-			  -webkit-box-orient: vertical;
-			  overflow: hidden;
-			  text-overflow: ellipsis;
-			}
-
-			.hero-image.minor {
-					width: 50%;
-			}
-
-			.minor span.hero-image__text {
-				background: rgba(68, 159, 55, 0.7);
-		    text-overflow: ellipsis;
-		    display: block;
-		    overflow: hidden;
-				height: 50%;
-
-			}
-
-			.hero-container--gallery-3 .hero-image--primary {
-				width: 100%;
-			}
-
-
 		}
 
 		@media (max-width: 759px){
 
-			#big_search_wrapper.mob_search {
-				display: block;
-				height: 60px;
-			}
+			/*news wrapper*/
 
-			#big_search_wrapper.mob_search {
-				display: block;
-				margin-top: 0;
-				height: 60px;
-			}
-
-			.big_search.mob_search .big_search_fields {
-				margin-top: 12px;
-			}
-
-			.mob_search .big_search_form input[type="text"] {
+			.news_wrapper .info_block {
 				width: 100%;
 			}
 
-			.mob_search .big_search_form {
+			.news_wrapper {
+			
 				width: 100%;
+				padding: 0 3%;
 			}
 
-
-			.info_block .info_block_primary {
-				clear: left;
+			.homepage .entry .news_wrapper .info_block {
+				padding: 0 0.5%;
 			}
 
-			.info_block .info_block_secondary {
-				float: right;
+			.info_block .info_block_secondary img {
+				max-height: 80px;
 			}
 
-			.info_block {
-				padding-left: 3%;
-			}
-
+			/*news wrapper*/
 			
-			
-			.big_search {
-				display: none;
-			}
-
-
-
-		
 			.homepage .new_quicklinks {
 				width: 100%;
 				position: relative;
@@ -392,29 +269,11 @@ includeFile('header.php');
 				border-top: 0;
 			}
 
-			a.hero-image.minor {
-				width: 50%;
-			}
-
 			.right_block {
-				margin-right: 0;
-			}
-
-
-			#left_box {
-					display: inline-block;
-					float: right;
-					padding-right: 3%;
-				}
-
-			.homepage .new_quicklinks ul {
-				margin: 0 0 3% 0;
+        margin: 0 0 3% 0;
 				padding: 0;
 				overflow: hidden;
 			}
-
-
-
 		}
 
 		@media (max-width: 480px) and (min-width: 320px){
@@ -423,55 +282,6 @@ includeFile('header.php');
 				display: none;
 			}
 
-			.hero-container--gallery-3 .hero-image {
-				padding-bottom: 10%
-			}
-
-			.hero-image__text.-large.left_text {
-				background-color: rgba(68, 159, 55, 1);
-			}
-
-			.minor span.hero-image__text {
-				padding: 3% 3%;
-			}
-
-			a.hero-image.minor {
-				width: 100%;
-				padding: 0;
-				height: 90px;
-			}
-
-			.hero-image__text {
-				padding: 0 0 0 2%;
-			}
-
-
-			.minor span.hero-image__text {
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-			}
-
-			.minor .hero-image__container {
-				display: none;
-			}
-
-				.hero-image__text p {
-					-webkit-line-clamp: 1;
-
-				}
-
-				.minor.alt_colour span.hero-image__text {
-					background: rgba(84, 147, 73, 1);
-				}
-				.left_text{
-					width: 100%;
-					bottom: 0;
-					padding: 3%;
-					clear: both;
-					background: 1;
-				}
 				.homepage .new_quicklinks {
 					width: auto;
 					position: relative;
@@ -500,36 +310,12 @@ includeFile('header.php');
 
 
 
-				 #left_box {
-					display: inline-block;
-					float: right;
-					padding-right: 3%;
-				}
-
-				#q_links{
-					height:0;
-				}
-	
 		}
 
 
 	</style>
 
-	<div id='big_search_wrapper' class="big_search mob_search">
-        <form class='big_search_form'>
-            <div id='big_search_fields' class='big_search_fields'>
-                
-                <label for='big_search_query' class="js_hide"></label>
-
-                <input class='field_placeholder live_search' id='big_search_query'  autocomplete="off" type='text' name='big_search_query' />
-                <input type='submit' value='Go' />
-            </div>
-        </form>
-    </div>
-
-    <div class='homepage_feature'>
-
-		<div class='hero-container hero-container--gallery-3'>
+		<div class='hero-container hero-container--gallery-3 theme-study'>
             <a class='hero-image hero-image--primary' href='#'>
                 <div class='hero-image__container' >
                   <img src='/images/kym_h.jpg' alt='research dummy'>
@@ -538,7 +324,6 @@ includeFile('header.php');
                 <div class='hero-image__text -large left_text'>
                     <h1>Know Your Mind.</h1>
                     <h2>Apply it now.</h2>
-                    <span class='image__text-big'></span>
                 </div>
             </a>
             <div>
@@ -546,35 +331,22 @@ includeFile('header.php');
                 <div class='hero-image__container' >
                   <img src='images/robby.jpg' alt='research dummy'>
                 </div>
-                  <span class='hero-image__text -large'>
+                  <div class='hero-image__text -large'>
                      <h2>Forge your path</h2>
                      <p>“Victoria has opened my mind to what I can do.”</p>
-                    <span class='image__text-big'></span>
-                  </span>
+                  </div>
               </a>
               <a class='hero-image minor sub alt_colour' href='#'>
                 <div class='hero-image__container' >
                   <img src='images/theo.jpg' alt='research dummy'>
                 </div>
-                  <span class='hero-image__text -large'>
+                  <div class='hero-image__text -large'>
                          <h2>Being a student in Wellington</h2>
                             <p>“From that first moment—this beautiful sunny day—we walked through the city and I just fell in love with it.”</p>
-                    <span class='image__text-big'></span>
-                  </span>
+                  </div>
               </a>
             </div>
         </div><!-- /hero -->
-
-        <!-- <div id='hero' class='grid style4'>
-            <a href='#'>
-                <div class='imagery'>
-					<img src="assets/images/maori_language_2.jpg" />
-                </div>
-
-
-            </a>
-        </div> --><!-- /hero -->
-    </div><!-- /homepage_feature -->
 
 
 
@@ -583,51 +355,45 @@ includeFile('header.php');
     <div id='content'>
 
 		<div class='entry'>
-		    <!-- <div class="welcome">
-		        <h3>Know Your Mind. Apply it now. Mā Te Mōhio. Whakamātauhia!</h3>
-		    </div> -->
-
-
 			<section class='news_container'>
-
-
-				<a class='info_block right_block'>
-					<div class='info_block_secondary'>
-						<img src='http://baconmockup.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-
-						<h2>Top Literary Prize for Gemma</h2>
-						<p>Science graduate and creative writing student Gemma Bowker-Wright has won the top prize in New Zealand’s most distinguished literary awards</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://fillmurray.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Applications open for 2013 on the 18th of october</h2>
-						<p>Google has donated 50 Android Nexus One phones to Victoria’s School of Engineering and Computer Science for student research.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://placebear.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Engineering students go Android!</h2>
-						<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->
-				<a class='info_block'>
-					<div class='info_block_secondary'>
-						<img src='http://placesheen.com/209/135' alt='homepage holder'>
-					</div><!-- /info_block_secondary -->
-					<div class='info_block_primary'>
-						<h2>Success for emerging researchers</h2>
-						<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
-					</div><!-- /info_block_primary -->
-				</a><!-- /info_block -->	         
+				<div class="news_wrapper">
+					<a class='info_block left_block'>
+						<div class='info_block_secondary'>
+							<img src='http://baconmockup.com/209/135' alt='homepage holder'>
+						</div><!-- /info_block_secondary -->
+						<div class='info_block_primary'>
+							<h2>Top Literary Prize for Gemma</h2>
+							<p>Science graduate and creative writing student Gemma Bowker-Wright has won the top prize in New Zealand’s most distinguished literary awards</p>
+						</div><!-- /info_block_primary -->
+					</a><!-- /info_block -->
+					<a class='info_block left_mid'>
+						<div class='info_block_secondary'>
+							<img src='http://fillmurray.com/209/135' alt='homepage holder'>
+						</div><!-- /info_block_secondary -->
+						<div class='info_block_primary'>
+							<h2>Applications open for 2013 on the 18th of october</h2>
+							<p>Google has donated 50 Android Nexus One phones to Victoria’s School of Engineering and Computer Science for student research.</p>
+						</div><!-- /info_block_primary -->
+					</a><!-- /info_block -->
+					<a class='info_block right_mid'>
+						<div class='info_block_secondary'>
+							<img src='http://placebear.com/209/135' alt='homepage holder'>
+						</div><!-- /info_block_secondary -->
+						<div class='info_block_primary'>
+							<h2>Engineering students go Android!</h2>
+							<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
+						</div><!-- /info_block_primary -->
+					</a><!-- /info_block -->
+					<a class='info_block right_block'>
+						<div class='info_block_secondary'>
+							<img src='http://placesheen.com/209/135' alt='homepage holder'>
+						</div><!-- /info_block_secondary -->
+						<div class='info_block_primary'>
+							<h2>Success for emerging researchers</h2>
+							<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
+						</div><!-- /info_block_primary -->
+					</a><!-- /info_block -->	
+				</div>         
 						
 		            	<nav class="nav_quicklinks new_quicklinks">
 						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>

@@ -10,12 +10,13 @@
     padding: 0.5em 0;
 }
 
-.mobile-only { 	 // production only 			
-	
+.mobile-only { 	 // production only
+
 	@include skinny {
 	   display: none !important;
 	}
 }
+
 
 
 .index_listing {
@@ -47,7 +48,7 @@
         // background: $page_background;
     }
 
-    .no_section_menu & { 
+    .no_section_menu & {
         max-width: 70em;
     }
 
@@ -91,8 +92,8 @@
 // .highlight_primary,
 // .highlight_secondary,
 // .highlight_tertiary {
-//      padding: 1.3em 1em 1.5em; 
-    
+//      padding: 1.3em 1em 1.5em;
+
 
 //     &:first-child {
 //         margin-top: 0; // nuke it for the first-child pattern
@@ -110,34 +111,36 @@
 .highlight_primary,
 .highlight_secondary,
 .highlight_tertiary,
-.highlight_boom { 				
-    
+.highlight_boom {
+
     display: block;
-    
-    @include box_padding;        
+
+    @include box_padding;
 
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 
     header,
-    footer { 				
-                
+    footer {
+
         @include box_padding;
+        @include right_bleed;
         @include left_bleed;
-        @include right_bleed;        
-        
+        //stupid bleed goes here - removed KYM 24/7/17 - irwinna
+
+
     }
-    
-    header { 				
+
+    header {
     	@include top_bleed;
     	margin-bottom: 0.5em; // bit of a magic number
 
-    } 
-    
-    footer { 				
+    }
+
+    footer {
     	@include bottom_bleed;
     }
-    
+
     &:first-child {
         margin-top: 0; // nuke it for the first-child pattern
     }
@@ -145,11 +148,11 @@
     & p:last-child {
                 margin-bottom: 0;
     }
-    
-    & + & { 				
-        @include skinny { 				
+
+    & + & {
+        @include skinny {
     	    margin-top: 1em;
-        } 	
+        }
     }
 
     // Removed this for the moment, it's not being used yet and needed to use this pattern for quote w/ image for KYM campaign
@@ -159,33 +162,43 @@
     //     & + h2 {
     //         margin-top: 6%;
     //         @include mobile {
-    //             margin-top: 3%; 
+    //             margin-top: 3%;
     //         }
-    //     } 
+    //     }
     // }
 
     .old_ie & {
-        
+
 
         //border: 1px solid red;
         //@include has-layout();
         //margin-top:0!important; // Internets exploder you crazy bastard.
-        
+
         //padding-top:0!important;
-        
+
         header {
             //margin-top:-3%!important;
         }
 
         //margin-top:-3%!important;
-    
+
 
     }
 
 }
 
+.highlight_secondary {
+    &.set_height {
+      footer {
+        height: 190px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+}
 
-.highlight_primary { 				
+
+.highlight_primary {
     background: $black;
 }
 
@@ -201,9 +214,9 @@
 
 .highlight_primary,
 .highlight_boom {
-    
+
     color: $white;
-    
+
     & > p,
     & > #{headings()},
     & > a,
@@ -214,49 +227,74 @@
 
 }
 
-
-
 .highlight_secondary {
-    
+
     header,
-    footer { 				
-        
+    footer {
+
         @include theme-color(
             $use: key,
             $property: background
         );
         color: $white;
-        
+
+        margin-left: 0;
+        margin-right: 0;
+
+
         & > p,
         & > #{headings()},
         & > a,
         & > li {
             color: $white;
         }
-        
-    }    
+
+    }
 }
+
+.highlight_secondary {
+  footer {
+    @include theme-color(
+        $use: key-light,
+        $property: background
+    );
+
+
+    & > #{headings()} {
+        @include theme-color(
+            $use: key-minus,
+            $property: color
+        );
+      }
+
+      & > p {
+        color: $color-text;
+      }
+  }
+
+}
+
 
 .highlight_tertiary {
     background-color: $color_highlight_tertiary;
 
     header,
-    footer { 				
+    footer {
         background-color: $color_border;
-    }    
-    
+    }
+
 }
 
 // Specific decoration for Maori at Vic
 
- .theme-maori .highlight_boom, 
- .theme-maori .highlight_secondary header, 
- .theme-maori .highlight_secondary footer { 				
+ .theme-maori .highlight_boom,
+ .theme-maori .highlight_secondary header,
+ .theme-maori .highlight_secondary footer {
  	background-image: url('/assets/images/maori-highlight-pattern.png');
  	background-repeat: repeat;
  }
- 
- .theme-maori.landing-page #wrapper { 				
+
+ .theme-maori.landing-page #wrapper {
  	background-image: url('/assets/images/maori-bg-pattern.png');
  	background-repeat: repeat-x;
  }
@@ -267,8 +305,8 @@
  .theme-staff h3[itemprop="datePublished"] {
 color: #115737;
 }
- 
- 
+
+
 
 
 
@@ -282,11 +320,11 @@ color: #115737;
     b {
         font-weight: bold;
     }
-	
+
 	.entry p &:visited {
 		color: $color_links;
 	}
-	
+
 	&.promo:hover {
 		opacity: inherit;
 		background: #cde6f4;
@@ -347,7 +385,7 @@ section[role="main"] .content a.external:after {
         margin-top: -0.5em;
         margin-bottom: 0.5em;
     }
-	
+
 	.secondary & {
 		padding: 0em 0.4em 0em 0.4em;
 		top: 0;
@@ -358,8 +396,8 @@ section[role="main"] .content a.external:after {
     .result_title & {
         font-size: px-to-em(8);
     }
-	
-	
+
+
 
 	&.flag_recommended {
 	  background: $alert_background;
@@ -392,14 +430,14 @@ section[role="main"] .content a.external:after {
         /* background-color: #E8CCCC;*/
         font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
         font-weight: normal;
-        font-size: 0.85em; 
+        font-size: 0.85em;
         text-transform: none;
         font-weight: normal;
         border: 1px solid darkred;
         padding: 3px 4px;
         margin-left: 0.3333em;
         margin-top: -2px;
-        vertical-align: middle; 
+        vertical-align: middle;
     }
 
 // Other areas of interest
@@ -438,36 +476,36 @@ section[role="main"] .content a.external:after {
 }
 
 .toggle_all_sizes {
-	
+
 	@include ui-clearfix;
-	
-	
-	
+
+
+
 	h2:first-child {
 		float: left;
 	}
-	
+
 	&.toggle {
         // position: relative; // is this needed?
-		
+
 		@include mobile {
 			padding-left: 3%;
 			padding-right: 3%;
 		}
-		
+
 		span.ui_toggle_arrow {
 			width: 35px;
 			height: 25px;
 			float: left;
 			background: url(/assets/images/menu-toggle-low.png) no-repeat 50% 50%;
 		}
-		
+
 		@include skinny {
 			&.active span.ui_toggle_arrow {
 				@include rotate(180deg);
 			}
 		}
-		
+
     }
 
 	.toggle_block {
@@ -477,11 +515,11 @@ section[role="main"] .content a.external:after {
 			display: block;
 		}
 	}
-	
+
 	//@include visible_ui_toggle;
-	
-	
-	
+
+
+
 }
 
 
@@ -533,7 +571,7 @@ section[role="main"] .content a.external:after {
         right: 50px;
         top: 1px;
     }
-    .toggle, 
+    .toggle,
     .block.toggle { // class double up for specificity clash with .block padding rules.
         position: relative;
         border-top: 1px solid #D6D6D6;
@@ -580,9 +618,9 @@ aside[role='complementary'] {
 					$property: color
 			);
 
-        text-transform: inherit; 
+        text-transform: inherit;
         margin-bottom: 0.5em;
-       
+
     }
 
     .toggle_block {
@@ -596,7 +634,7 @@ aside[role='complementary'] {
     aside[role="complementary"]>div:last-child {
         margin-bottom: 1.5em;
     }
-    
+
 }
 
 
@@ -691,19 +729,19 @@ aside[role='complementary'] {
 
 
 .columns { // generic column wrapper
-	
+
 	// if columns is using an ol / ul kill default list styling
 	list-style-type: none !important;
 	padding-left: 0 !important; // has to be nuked due to specificity on .entry ul/ol
-	
+
     @include ui-clearfix();
     margin-top: 1em;
 
     &:first-child {
         margin-top: 0;
     }
-	
-	
+
+
 
 }
 
@@ -714,10 +752,10 @@ aside[role='complementary'] {
     display: block;
 
     @include box-sizing(border-box);
-    
+
     padding-right: 3%;
     padding-left: 3%;
-    
+
     &:first-child,
     &.col1{
         padding-left: 0;
@@ -727,7 +765,7 @@ aside[role='complementary'] {
     &:last-child {
         padding-right: 0;
     }
-    
+
     @include mobile {
         float: none;
         width: 100% !important;
@@ -740,8 +778,18 @@ aside[role='complementary'] {
     &.col--full_width {
         width: 100% !important;
     }
-    
+
 }
+
+.study_hub {
+  .col {
+    &.col2{
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+    }
+  }
+}
+
 
 .columns2 { // two column layouts (skinny up)
 
@@ -764,7 +812,7 @@ aside[role='complementary'] {
 
     .col {
 
-        width: 33%; // everything is border-box, so instead of 47%
+        width: 33.33%; // everything is border-box, so instead of 47%
 
 
         .no_border_box & {
@@ -787,7 +835,7 @@ aside[role='complementary'] {
     .col {
 
         width: 25%; // everything is border-box, so instead of 47%
-        
+
         .no_border_box & {
             width: 22.90%; // This is to make IE6/7 behave
         }
@@ -799,17 +847,17 @@ aside[role='complementary'] {
 // as at 1.11.13 this is the .gallery hero for Maori at Vic
 // Should be refactored when possible
 
-#hero .columns4 .col:first-child { 				
+#hero .columns4 .col:first-child {
 	padding-left: 3%;
 	padding-right: 0;
 }
 
 
 // if we add .highlight to .columns keep the padding around all sides
- 
-.highlight.columns { 				
+
+.highlight.columns {
 	padding-left: $page_padding !important; // ugly !important refactor
-	
+
 	.col1 {
 	    padding-right: 0;
 	}
@@ -818,7 +866,7 @@ aside[role='complementary'] {
 
 
 .columns--first45 {
-    
+
     .col {
         width: 27.5%;
 
@@ -831,12 +879,12 @@ aside[role='complementary'] {
         }
 
 
-    } 
+    }
 
 }
 
 .columns2--first65 {
-    
+
     .col {
         width: 35%;
 
@@ -849,33 +897,33 @@ aside[role='complementary'] {
         }
 
 
-    } 
+    }
 
 }
 
 .row {
 	@include ui-clearfix();
-	
-	.entry .columns--divider & { 
+
+	.entry .columns--divider & {
 	    // basic column grid rows divided by 1px border with padding
         // Initially used on course detail pages for timetabling
 		border-top: 1px solid $color_border;
 		padding: 0.6em 0.4em;
 		margin-bottom: 0;
-	
+
 		&:hover {
 			@include theme-color(
 				$use: key-light,
 				$property: background-color
 			);
 		}
-		
+
 		@include mobile {
 			padding-left:0;
 		}
-		
+
 	}
-	
+
 }
 
 // Setting widths for elements
@@ -964,11 +1012,11 @@ aside[role='complementary'] {
 
 // Geolocation dependencies
 //----------------------------------
-.show_location { 
+.show_location {
     display: none;
 }
 
-.geolocation .show_location {   
+.geolocation .show_location {
     display: inline-block;
     margin-top: 1em;
 }
@@ -1025,7 +1073,7 @@ aside[role='complementary'] {
             .ie7 &, .ie8 &, .ie9 & {
                 padding: 0.15em 0;
             }        }
-        
+
         display: inline-block;
         width: 100%;
 
@@ -1042,7 +1090,7 @@ aside[role='complementary'] {
 // Person contact detail lists and blocks
 
 #wrapper { // scoped to #wrapper due to specificity of .entry ol stuff at line 383, ../sass/core/_typography.scss
-    
+
     .contacts_list {
         @include ui-clearfix();
 
@@ -1050,14 +1098,14 @@ aside[role='complementary'] {
             margin-top:0.8em;
             // clear:both; // TODO: remove? This causes weird layout when used next to large image eg /about/governance/structure/senior-management
         }
-        
+
         @include inline-block-list; // this kills margin remember
         // also adds overflow:hidden
         overflow: visible;
         font-style: normal;
         font-size: px-to-em(12,14);
         margin-top:1.2em;
-        
+
         li {
             //background: $color_highlight_tertiary;
             margin: 0 0 0.25em 0;
@@ -1065,7 +1113,7 @@ aside[role='complementary'] {
             // overriding due to inlineblocklist include
             white-space: normal;
             float: left;
-                            
+
             a {
                 background: #e7f0d4;
                 color: #115737;
@@ -1073,11 +1121,11 @@ aside[role='complementary'] {
                 margin: -0.3em -0.7em -0.3em 0;
                 display: block;
             }
-            
+
             &:first-child {
                     padding-left:0;
                 }
-            
+
             &.no_link {
                 padding-left:0;
                 clear:both;
@@ -1094,13 +1142,13 @@ aside[role='complementary'] {
                 list-style-type: none;
                 margin-right: 1em;
             }
-            
+
             h4 {
                 margin-top: 1.4em;
                 margin-bottom: 0.4em;
                 margin-right: 1em;
             }
-            
+
             & a[href^="tel:"], & a[href^="mailto:"] {
                 background: #e7f0d4;
                 color: #115737;
@@ -1127,19 +1175,19 @@ p + div.block {
 
 
 
-// Translation faux-tables. 
+// Translation faux-tables.
 
 // Should be a. put into a stub file and b. built with sitewide grid classes instead.
 
 // To achieve the latter use .columns2 on the dl and .col .co1 on the dt and .col .col2 on the dd
 // A rule to make .columns2 > .col1 clear: left would be required
 
-// Additionally the std. .columns2 goes to a single stacked column for mobile. 
+// Additionally the std. .columns2 goes to a single stacked column for mobile.
 // I think 2 columns still holds up on a small screen so we'd need to opt out of that behaviour
 
 
 .translation dd,
-.translation dt { 				
+.translation dt {
     border-top: 1px solid $color_border;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -1147,25 +1195,23 @@ p + div.block {
     margin-bottom: 0;
 }
 
-.translation dt { 				
+.translation dt {
     @extend .col1;
-    @include mobile { 				
+    @include mobile {
         padding-bottom: 0;
     }
 }
 
-.translation dd { 				
-    @include mobile { 				
+.translation dd {
+    @include mobile {
         border-top: 0;
         padding-top: 0;
     }
 }
 
 
-dl.translation { 
-    @extend .columns2;				
+dl.translation {
+    @extend .columns2;
     border-bottom: 1px solid $color_border;
     @include ui-clearfix();
 }
-
-

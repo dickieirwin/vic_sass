@@ -35,7 +35,7 @@ body {
 
 /*
 .menu_open {
-    
+
     #wrapper {
         @include skinny-only {
            overflow: hidden;
@@ -52,10 +52,10 @@ body {
 
 
 .entry {
-    
+
     padding-top: 1em;
     position: relative;
-    
+
     @include skinny {
         padding-top: 2em;
     }
@@ -74,82 +74,82 @@ body {
 //--------------------------
 
 
-#content { 				
-	
+#content {
+
         @include desktop {
             float: left; // floats up next to the section menu column
             width: 77%;
-            
-            .no_section_menu & { 	// If there's no section menu column make it full width			
+
+            .no_section_menu & { 	// If there's no section menu column make it full width
             	float: none;
             	width: 100%;
             }
-            
+
         }
-        
+
         @include skinny-only {
-            
-            .no_section_menu & { 			
+
+            .no_section_menu & {
             	padding-left: 0; //remove the padding for the non-existent menu toggle
             }
-            
-        }    
-        	
+
+        }
+
     	&> .primary {
-    	
+
     	   padding-bottom: 2em;
-    
+
             @include skinny {
-                
+
                 float: left;
                 width: 68%;
-                
-            
+
+
             }
-            
-            .no_sidebar & {				
-            	
+
+            .no_sidebar & {
+
             	width: 100% !important;
             	float: none;
-            	
+
             	@include full {
-                	& .entry { 				
+                	& .entry {
                 		padding-right: 3%;
                 	}
             	}
             }
-                        
+
             @include desktop {
                 width: 72%;
             }
-                
+
         } // end .main
 
     	&> .secondary {
-            
+
             font-size: $base_font_size_sidebar_px;
             padding: 0 $page_padding;
-            
+
             @include mobile {
                 clear: both; // added to clear floated content in main paragraph
             }
-            
+
             @include skinny {
                 width: 32%;
                 float: right;
                 padding: 1em 2%;
             }
-            
+
             @include desktop {
                 width: 28%;
             }
-            
+
             @include full {
                 padding-right: 0; // screen is wider than site so lose the padding in from the edge
             }
-            
+
             .ie7 & {
-				
+
             }
 
             .old_ie & {
@@ -160,41 +160,50 @@ body {
 } // end #content
 
 
-.side_padding { 				
+.side_padding {
 
 	padding-left: $page_padding;
 	padding-right: $page_padding;
-    
-    .secondary & { 				
-    	    
+
+    .secondary & {
+
     	padding-left: $sidebar_padding;
     	padding-right: $sidebar_padding;
-    
+
         @include mobile {
         	padding-left: $page_padding;
         	padding-right: $page_padding;
         }
-    	    
+
     }
-	
+
 }
 
 
-#content { 
+#content {
 
     @include skinny-only {
     	padding-left: 5%; // leave room for section menu toggle
-    
-    	.no_navigation & { 				
+
+    	.no_navigation & {
     		padding-left: 0; // there's no toggle in these situations
     	}
-    
-    }
-				
 
-    .entry { 				
+    }
+
+
+    .entry {
     	@extend .side_padding;
     }
+}
+
+.study_hub {
+  #content {
+    .entry {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 
@@ -203,7 +212,7 @@ body {
 //--------------------------
 
 .no_sidebar {
-    
+
     @include desktop {
         #content {
             max-width: px-to-em(770); // This appears to be restricting the content column unnecessarily especially on section page (GP 30.01.14)
@@ -214,23 +223,23 @@ body {
         }
     }
 
-    #content > .secondary { 				
+    #content > .secondary {
     	display: none !important; // Force this to disappear - production only, don't include the markup in these templates
     }
-    
+
 }
 
 
 
 .no_section_menu {
-    
-    #content { 				
+
+    #content {
     	width: 100% !important;
     	padding-left: 0;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
 }
 
 
@@ -255,25 +264,25 @@ body {
         @include desktop {
             float: left;
             width: 77%;
-            
+
             .entry {
                 padding-left: 5%;
                 padding-right: 0;
                 padding-top: 3%;
                 width: 90%;
             }
-        
-        #hero_large + & .entry { 	// not following a hero or something else	
+
+        #hero_large + & .entry { 	// not following a hero or something else
         	padding-top: 1em;
          }
-            
+
        }
     }
-    
-    aside[role="complementary"] { 				
+
+    aside[role="complementary"] {
     	display: none; // Force this to disappear - production only, don't include the markup in these templates
     }
-    
+
 }
 */
 
@@ -346,9 +355,9 @@ body {
     &.no_complementary {
 
         section[role='main'] {
-            
+
             width: 100%;
-            
+
             .entry {
                 padding-left: 2%; // Should be calculated exactly
                 padding-right: 2%; // Should be calculated exactly
@@ -405,7 +414,7 @@ section[role='main'] {
         }
 
     }
-	
+
 	.ie7 & {
 		width: 70%!important;
 	}
@@ -417,7 +426,7 @@ aside[role='complementary'] {
         width: 100% !important; // this is inherited in old IE!?
         padding: 0 $page_padding !important;
     }
-	
+
 	.ie7 & {
 		width: 25%!important;
 	}
@@ -426,7 +435,7 @@ aside[role='complementary'] {
 
 // No javascript fallbacks (check this no-js deprecated in new builds???????????)
 
-.no-js {  
+.no-js {
 
     @include mobile {
         div[role='navigation'] {
@@ -440,7 +449,7 @@ aside[role='complementary'] {
 // No javascript fallbacks (check this no-js deprecated in new builds???????????)
 
 #wrapper {
-    
+
     @include mobile {
         max-width: 100%;
         // overflow: hidden;
@@ -448,8 +457,8 @@ aside[role='complementary'] {
         position: relative;
         display: block;
         @include box-shadow(rgba(0,0,0, 0.4) 3px 0 4px);
-        
-        .mask { // inserted with javascript and shown whilst nav is open to stop interactions on partially offscreen part of site 				
+
+        .mask { // inserted with javascript and shown whilst nav is open to stop interactions on partially offscreen part of site
         	display: none;
         	position: absolute;
         	width: 100%;
@@ -459,40 +468,40 @@ aside[role='complementary'] {
         	background-color: rgba(255,255,255,0);
         }
 
-        
+
         &.animated{
             -moz-transition: -moz-transform $nav-anim-duration ease-in-out;
             -webkit-transition: -webkit-transform $nav-anim-duration ease-in-out;
             -ms-transition: -ms-transform $nav-anim-duration ease-in-out;
             -o-transition: -o-transform $nav-anim-duration ease-in-out;
             transition: transform $nav-anim-duration ease-in-out;
-            
+
         }
 
-        
+
         @media screen and (-webkit-min-device-pixel-ratio: 2) {
             -webkit-backface-visibility: hidden;
             -webkit-backface-visibility: hidden; // This rule breaks the join form on android
             -webkit-perspective: 1000; // This rule breaks the join form on android
         }
-        
+
         // site off screen
         &.active {
             margin-left: -210px; // set in variables file
             overflow: hidden;
             position: fixed;
             background-color: white;
-            
+
             @media screen and (-webkit-min-device-pixel-ratio: 2) {
                 margin-left: 0;
                 @include transform( translate3d(-210px, 0, 0) );
             }
-            
-            .mask {				
+
+            .mask {
             	display: block;
             	background-color: rgba(255,255,255,0.7);
             }
         }
-        
+
     }
 }

@@ -22,6 +22,13 @@
     @include border-radius(0);
     vertical-align: top;
     text-transform: uppercase;
+    
+    @include mobile {
+      position: absolute;
+      right: 1em;
+      left: auto;
+      top: px-to-em(12);
+    }
   }
 }
 
@@ -32,14 +39,24 @@
   padding: (($search_strip_height - $big_input_height)/2) 0;
   position: relative;
   
+  @include mobile {
+    width: 100%;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+  }
+  
   @include skinny-only {
     width: 100%;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
   }
 }
 
-#feature_search_query {
+input[type="text"].feature_search_query { // extra specificity to override default input styling
   @include box-sizing(border-box);
 
   height: $big_input_height;
@@ -53,6 +70,11 @@
   font-family: $font_alt;
   font-weight: normal;
   color: #333;
+  
+  @include mobile {
+    width: 100%;
+    padding-right: 15%;
+  }
 
   &:focus {
     border-color: #ccc !important; // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
@@ -78,7 +100,7 @@
 .feature_search_filters {
   @include box-sizing(border-box);
   width: 15%;
-  height: $big_input_height;
+  height: $big_input_height !important;
   background-position: 80% 50%;
   vertical-align: top;
   min-width: ($search_strip_height * 2);
@@ -91,4 +113,10 @@
 .feature_search_form {
   @extend %unselectable;
   
+}
+
+.homepage.has_feature_search #page {
+  @include mobile {
+    padding-top: $search_strip_height;
+  }
 }

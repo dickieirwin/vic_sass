@@ -3,121 +3,12 @@
 require_once 'inc/bootstrap.php';
 
 $GLOBALS['_html_class'] = '';
-$GLOBALS['_body_class'] = 'has_big_search template-drilldown theme-study';
+$GLOBALS['_body_class'] = 'theme-study a has_big_search template-drilldown study_hub';
 $GLOBALS['_html_title'] = 'Study at Victoria';
 
 includeFile('header.php');
 
 ?>
-
-<style type="text/css">
-    
-    #hero.grid .hero-image__text {
-            background-color: rgba(68, 159, 55, 0.7);
-            width: 45%;
-            left: 0
-        }
-
-        .columns3 .col {
-            width: 33.33%;
-        }
-
-        .col.col2 {
-            padding-left: 1.5%;
-            padding-right: 1.5%;
-        }
-
-        .left_text h1 {
-            color: WHITE;
-        }
-
-        .left_text h3  {
-            color: WHITE;
-            margin-bottom: 2%;
-        }
-
-        #content .entry {
-            padding-right: 0;
-            padding-left: 0;
-        }
-
-        .template-drilldown .entry .promo {
-            width: 30.33%;
-            padding: 0;
-            margin: 0;
-            background-color: #eee; 
-        }
-
-        .template-drilldown .entry .promo header {
-            padding: 3%;
-            margin: 0;
-            width: 100%;
-        }
-        .template-drilldown .entry .promo div {
-            float: left;
-            padding: 3%;
-            color: #333;
-        }
-
-        .theme-study .highlight_secondary header, .theme-study .highlight_secondary footer {
-            min-height: 190px;
-            background-color: #f4f4e9;
-        }
-
-        .highlight_secondary footer>a {
-            color: #333;
-        }
-
-        .highlight_secondary footer h2 {
-            color: #549349;
-        }
-
-        .promo_body {
-            padding: 3%;
-        }
-        
-        .promo_body h4 {
-            margin-top: 0;
-
-        }
-
-        .promo_body a h4 {
-            color: #146999;
-            border-bottom: 1px solid #b8d2e0;
-            margin-bottom: 3%;
-        }
-
-
-
-
-        @media (max-width: 760px) {
-
-            #content .entry {
-                padding: 3%;
-            }
-
-            #hero.grid .hero-image__text {
-                width: 100%;
-                position: inherit;
-                background-color: rgba(68, 159, 55, 1);
-            }
-
-            .left_text h3  {
-                margin-top: 0;
-
-            }
-
-            #hero.grid .imagery {
-                padding-bottom: 50%;
-            }
-
-        }
-
-
-
-</style>
-
-
 
 
 <!--- Specific stylesheet for page or page item: would be included in the head only where used -->
@@ -168,6 +59,7 @@ includeFile('header.php');
     </div>
     <div class='entry'>
         <section role='main' class='primary'>
+            <div class="intro_wrapper">
             <header class="entry-header">
                 <h1 class='page_title'>Study at Victoria</h1>
                 <div class='intro'>
@@ -175,88 +67,82 @@ includeFile('header.php');
                 </div>
                 <!-- /intro -->
             </header>
-            <div class='promo highlight_tertiary'>
+             <div class='promo highlight_tertiary'>
                 
                 <header><h2 class='promo_headline' href=''>Important dates</h2></header>
-                <div class='promo_body'>
+                <div class='promo_body date_block'>
                     
-                    <h5>29 August 2014</h5>
+                    <h6>29 August 2014</h6>
                     <a href="http://www.victoria.ac.nz/study/events-visits/study-at-victoria-day">
-                    <h4>Study at Victoria Day</h4>
-                </a>
-                <a href="#"><button>See all the deadlines</button></a>
+                        <h3>Study at Victoria Day</h3>
+                    </a>
+                    <a href="#"><button>See all the deadlines</button></a>
                 </div>
                 
             </div>
+        </div>
+
             <div class="columns columns3">
+
                 <div class='col col1'>
-                    <div class='highlight_secondary'>
+                    <div class='highlight_secondary set_height'>
                         <a class="video_popup bleed_me" href="">
                             <img class="video_thumb" src="/images/hine.jpg">
                         <footer>
                                 <h2>University is more than studying.</h2>
                                 <p>“There are so many things you can get involved in, it’s like being enveloped in a community.”</p>
-                            </a>
                         </footer>
+                            </a>
                     </div>
-                       <div class='highlight_secondary'>
+                       <div class='highlight_secondary set_height'>
                         <a class="video_popup bleed_me" href="">
                             <img class="video_thumb" src="/images/sam.jpg">
-                        </a>
                         <footer>
-                            <a href="#">
+                            
                                 <h2>Explore accommodation options</h2>
                                 <p>In 2015, Victoria will have even more spaces available for first-year students. Hall of residence applications open 1 August.</p>
-                            </a>
                         </footer>
+                            </a>
                     </div>
                 </div>
                 <div class='col col2'>
-                    <div class='highlight_secondary'>
+                    <div class='highlight_secondary set_height'>
                         <a class="video_popup bleed_me" href="">
                             <img class="video_thumb" src="/images/theo.jpg">
-                        </a>
                         <footer>
-                            <a href="#">
                             <h2>Being a student in Wellington</h2>
                             <p>“From that first moment—this beautiful sunny day—we walked through the city and I just fell in love with it.”</p>
-                            </a>
                         </footer>
+                            </a>
                     </div>
-                    <div class='highlight_secondary'>
+                    <div class='highlight_secondary set_height'>
                         <a class="video_popup bleed_me" href="">
                             <img class="video_thumb" src="/images/sarah.jpg">
-                        </a>
                         <footer>
-                            <a href="#">
                             <h2>Study with the best</h2>
                             <p>“So, I thought:  if I want to be the best, I have to study with the best.” </p>
-                            </a>
                         </footer>
+                            </a>
                     </div>
                 </div>
                 <div class='col col3'>
-                    <div class='highlight_secondary'>
+                    <div class='highlight_secondary set_height'>
                         <a class="video_popup bleed_me" href="">
                             <img class="video_thumb" src="/images/robby.jpg">
-                        </a>
                         <footer>
-                            <a href="#">
                             <h2>Forge your path</h2>
                             <p>“Victoria has opened my mind to what I can do.” </p>
-                            </a>
                         </footer>
+                            </a>
                     </div>
-                    <div class='highlight_secondary'>
+                    <div class='highlight_secondary set_height'>
                         <a class="video_popup bleed_me" href="">
                             <img class="video_thumb" src="/images/josh.jpg">
-                        </a>
                         <footer>
-                            <a href="#">
                             <h2>Scholarship applications due</h2>
                             <p>Victoria has 400 Excellence scholarships and 70 Achiever scholarships to award for 2015. Apply now. </p>
-                            </a>
                         </footer>
+                            </a>
                     </div>
                 </div>
             </div>
