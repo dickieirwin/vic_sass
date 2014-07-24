@@ -16,14 +16,11 @@ includeFile('header.php');
             background-color: rgba(68, 159, 55, 0.7);
             width: 45%;
             left: 0
-
         }
 
         .columns3 .col {
             width: 33.33%;
-
         }
-
 
         .col.col2 {
             padding-left: 1.5%;
@@ -32,13 +29,11 @@ includeFile('header.php');
 
         .left_text h1 {
             color: WHITE;
-
         }
 
         .left_text h3  {
             color: WHITE;
             margin-bottom: 2%;
-
         }
 
         #content .entry {
@@ -50,8 +45,7 @@ includeFile('header.php');
             width: 30.33%;
             padding: 0;
             margin: 0;
-            background-color: #eee;
-            
+            background-color: #eee; 
         }
 
         .template-drilldown .entry .promo header {
@@ -77,6 +71,24 @@ includeFile('header.php');
         .highlight_secondary footer h2 {
             color: #549349;
         }
+
+        .promo_body {
+            padding: 3%;
+        }
+        
+        .promo_body h4 {
+            margin-top: 0;
+
+        }
+
+        .promo_body a h4 {
+            color: #146999;
+            border-bottom: 1px solid #b8d2e0;
+            margin-bottom: 3%;
+        }
+
+
+
 
         @media (max-width: 760px) {
 
@@ -151,15 +163,7 @@ includeFile('header.php');
                     <h1>KNOW YOUR MIND. APPLY IT NOW.</h1>
                     <h3>Plan your study with Victoria. Apply now.</h3>
                     <span class='image__text-big'></span>
-                </div>
-
-
-            <!-- <div class='hero-image__text info w40 big'>
-                <h3>Start studying in 2015</h3>
-                <p>Enrolments now open.
-                    <span class="action">Apply now</span>
-                </p>
-            </div> -->
+            </div>
         </a>
     </div>
     <div class='entry'>
@@ -171,23 +175,25 @@ includeFile('header.php');
                 </div>
                 <!-- /intro -->
             </header>
-            <a class='promo highlight_tertiary'>
-                <header>
-                <h2 class='promo_headline' href=''>Apply and Enrol</h2>
-                </header>
-                <div>
-                    <p>Applications close on June 30th!</p>
+            <div class='promo highlight_tertiary'>
+                
+                <header><h2 class='promo_headline' href=''>Important dates</h2></header>
+                <div class='promo_body'>
+                    
+                    <h5>29 August 2014</h5>
+                    <a href="http://www.victoria.ac.nz/study/events-visits/study-at-victoria-day">
+                    <h4>Study at Victoria Day</h4>
+                </a>
+                <a href="#"><button>See all the deadlines</button></a>
                 </div>
                 
-            </a>
+            </div>
             <div class="columns columns3">
                 <div class='col col1'>
                     <div class='highlight_secondary'>
                         <a class="video_popup bleed_me" href="">
                             <img class="video_thumb" src="/images/hine.jpg">
-                     
                         <footer>
-                           
                                 <h2>University is more than studying.</h2>
                                 <p>“There are so many things you can get involved in, it’s like being enveloped in a community.”</p>
                             </a>
@@ -252,7 +258,6 @@ includeFile('header.php');
                             </a>
                         </footer>
                     </div>
-                    
                 </div>
             </div>
         </section>
