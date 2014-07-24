@@ -428,7 +428,7 @@ includeFile('header.php');
 			}
 
 			.hero-image__text.-large.left_text {
-				background-color: rgba(68, 159, 55, 1);
+/*				background-color: rgba(68, 159, 55, 1); */
 			}
 
 			.minor span.hero-image__text {
@@ -527,9 +527,7 @@ includeFile('header.php');
         </form>
     </div>
 
-    <div class='homepage_feature'>
-
-		<div class='hero-container hero-container--gallery-3'>
+		<div class='hero-container hero-container--gallery-3 theme-study'>
             <a class='hero-image hero-image--primary' href='#'>
                 <div class='hero-image__container' >
                   <img src='/images/kym_h.jpg' alt='research dummy'>
@@ -564,17 +562,6 @@ includeFile('header.php');
               </a>
             </div>
         </div><!-- /hero -->
-
-        <!-- <div id='hero' class='grid style4'>
-            <a href='#'>
-                <div class='imagery'>
-					<img src="assets/images/maori_language_2.jpg" />
-                </div>
-
-
-            </a>
-        </div> --><!-- /hero -->
-    </div><!-- /homepage_feature -->
 
 
 
