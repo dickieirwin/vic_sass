@@ -28,7 +28,24 @@
             right: 100%;
        }
 
+        .homepage {
 
+            .section_mask {
+                   background: transparent;
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+                   width: 0;
+                   height: 0;
+                   z-index: 0;
+            }
+
+            #menu_toggle {
+                box-shadow: none;
+                left: auto;
+                right: 0;
+            }
+        }
 
        .section_mask {
            background: rgba(255,255,255,0.8);
@@ -56,6 +73,7 @@
         }
     }
 }
+
 
 
 #menu_toggle {
