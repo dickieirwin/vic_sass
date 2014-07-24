@@ -78,7 +78,7 @@
 .feature_search_filters {
   @include box-sizing(border-box);
   width: 15%;
-  height: $big_input_height;
+  height: $big_input_height !important;
   background-position: 80% 50%;
   vertical-align: top;
   min-width: ($search_strip_height * 2);
