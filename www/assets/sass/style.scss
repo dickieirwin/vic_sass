@@ -49,7 +49,12 @@
 // Include UI elements
 // ==================================
 @import 'ui-elements/tables';
+
 @import 'ui-elements/hero';
+
+// file to be refactored into main hero file
+@import '../../dev/hero--refactor';
+
 @import 'ui-elements/slider';
 @import 'ui-elements/right-rail';
 @import 'ui-elements/tabs';
