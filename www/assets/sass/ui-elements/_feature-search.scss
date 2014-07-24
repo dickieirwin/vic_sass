@@ -39,7 +39,7 @@
   }
 }
 
-#feature_search_query {
+input[type="text"].feature_search_query { // extra specificity to override default input styling
   @include box-sizing(border-box);
 
   height: $big_input_height;
