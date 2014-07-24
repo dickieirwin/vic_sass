@@ -74,14 +74,9 @@ includeFile('header.php');
 		font-weight: 500;
 		}
 
-<<<<<<< HEAD
 		/*news wrapper new addition*/
 
 		.news_wrapper {
-=======
-
-		.info_block {
->>>>>>> b296fb893b5f870f66bcb9bda27796ecd0b1c118
 			float: right;
 			right: 0;
 			position: relative;
@@ -150,7 +145,6 @@ includeFile('header.php');
 
 		@media (max-width: 989px) and (min-width: 760px) {
 
-<<<<<<< HEAD
 		/*news wrapper*/
 
 			.news_wrapper {
@@ -169,12 +163,6 @@ includeFile('header.php');
 			/*news wrapper*/
 
 
-			.big_search_form {
-				width: 100%;
-			}
-
-=======
->>>>>>> b296fb893b5f870f66bcb9bda27796ecd0b1c118
 			.homepage .entry .news_container .info_block p {
 				display: block;
 			}
@@ -239,62 +227,6 @@ includeFile('header.php');
 			#menu_toggle:after {
 				content: none;
 			}
-<<<<<<< HEAD
-		
-			a.hero-image.sub {
-				border-top: 0;
-			}
-
-			.minor .hero-image__text  {
-				padding: 1px 0;
-
-			}
-
-			.minor .hero-image__text h2{
-				padding: 3%;
-				display: block; /* Fallback for non-webkit */
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				-webkit-box-orient: vertical;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				font-size: 1.4em;
-			}
-
-			.hero-image__text p {
-				padding: 3% 3% 0 3%;
-			  display: block; /* Fallback for non-webkit */
-			  display: -webkit-box;
-			  margin: 0 auto;
-			  line-height: 1.4;
-			  -webkit-line-clamp: 1;
-			  -webkit-box-orient: vertical;
-			  overflow: hidden;
-			  text-overflow: ellipsis;
-			}
-
-			.hero-image.minor {
-					width: 50%;
-			}
-
-			.minor .hero-image__text {
-				background: rgba(68, 159, 55, 0.7);
-			    text-overflow: ellipsis;
-			    display: block;
-			    overflow: hidden;
-				height: 50%;
-			}
-
-			.hero-container--gallery-3 .hero-image--primary {
-				width: 100%;
-			}
-=======
-
-			
-
-
-
->>>>>>> b296fb893b5f870f66bcb9bda27796ecd0b1c118
 		}
 
 		@media (max-width: 759px){
@@ -321,13 +253,6 @@ includeFile('header.php');
 
 			/*news wrapper*/
 			
-<<<<<<< HEAD
-			.big_search {
-				display: none;
-			}
-		
-=======
->>>>>>> b296fb893b5f870f66bcb9bda27796ecd0b1c118
 			.homepage .new_quicklinks {
 				width: 100%;
 				position: relative;
@@ -344,22 +269,8 @@ includeFile('header.php');
 				border-top: 0;
 			}
 
-<<<<<<< HEAD
-			a.hero-image.minor {
-				width: 50%;
-			}
-			
-			#left_box {
-					display: inline-block;
-					float: right;
-					padding-right: 3%;
-				}
-=======
 			.right_block {
-				margin-right: 0;
-			}
-
->>>>>>> b296fb893b5f8mermargin: 0 0 3% 0;
+        margin: 0 0 3% 0;
 				padding: 0;
 				overflow: hidden;
 			}
