@@ -131,6 +131,13 @@
     max-height: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    
+    .old_ie & {
+      @include theme-color(
+        $use: key-plus,
+        $property: background-color
+      );
+    }
 
     h5, p {
         position: relative;
