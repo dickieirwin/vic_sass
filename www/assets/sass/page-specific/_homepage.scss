@@ -266,12 +266,142 @@
     #content {
         width: 100%;
         padding-left: 0;
+
+        .entry {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 1em;
+        }
     }
     
 	.site_footer {
 		padding: 0 1%;
 		margin-top: 0;
 	}
+
+    .widget_wrapper {
+        width: 24%;
+        float: none;
+    }
+
+    .news_wrapper {
+            float: right;
+            right: 0;
+            position: relative;
+            width: 77%;
+            padding-left: 3%;
+        
+        .info_block {
+            width: 25%;
+        
+            
+            &.left_block {
+                padding-left: 0;
+                padding-right: 2%;
+            }
+
+            &.left_mid {
+                padding-left: 1%;
+                padding-right: 1.5%;
+            }
+
+            &.right_mid {
+                padding-left: 1.5%;
+                padding-right: 1%;
+            }
+            &.right_block {
+                float: right;
+                padding-right: 0;
+                padding-left: 2%;
+            }
+
+        }
+    }
+
+    .new_quicklinks {
+        left: auto;
+        top: auto;
+        width: 23%;
+        clear: right;
+        padding: 0;
+        position: absolute;
+
+        @include theme-color (
+                $use: key-light,
+                $property: background-color
+            );
+
+
+        ul {
+            padding: 0;
+            list-style:none;
+            margin: 0;
+        }
+
+        h2 {
+            padding-left: 5%;
+            margin-bottom: 2%m;
+            line-height: 1;
+            font-size: 1.57143em;
+            @include theme-color(
+                $use: key,
+                $property: color
+            );
+        }
+
+         li {
+            border-top-width: 1px;
+            border-top-style: solid;          
+            width: auto;
+
+
+            @include theme-color (
+                $use: key-border,
+                $property: border-color
+            );
+            @include theme-color (
+                $use: key,
+                $property: color
+            );
+            @include theme-color (
+                $use: key-light,
+                $property: background-color
+            );
+        }
+
+
+        a{
+            padding-top: 0.3em;
+            padding-left: 5%;
+            padding-bottom: 0.35em;
+            padding-right: 5%;
+            line-height: 1.3;
+            font-size: 1.46154em;
+            -webkit-font-smoothing: antialiased;
+            display: block;
+            font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
+            font-weight: 500;
+
+             @include theme-color (
+                $use: key,
+                $property: color
+            );
+        }
+
+        #menu_toggle {
+            display: block;
+            background-color: transparent;
+            box-shadow: none;
+            font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
+            padding-left: 5%;
+
+             @include theme-color (
+                $use: key,
+                $property: color
+            );
+        }
+
+    }
 
 		
     @include desktop {

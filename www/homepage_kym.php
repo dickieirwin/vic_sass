@@ -21,116 +21,7 @@ includeFile('header.php');
 		}
 
 
-		.homepage .widget_wrapper {
-			width: 24%;
-			float: none;
-		}
-
-		.homepage .new_quicklinks {
-			left: auto;
-			top: auto;
-			width: 23%;
-			clear: right;
-			background-color: #d1e0da;
-			padding: 0;
-			position: absolute;
-		}
 		
-		.homepage .new_quicklinks ul {
-			padding: 0;
-			list-style:none;
-			margin: 0;
-		}
-
-
-		.homepage .new_quicklinks h2 {
-			padding-left: 5%;
-			margin-bottom: 2%m;
-			line-height: 1;
-			font-size: 1.57143em;
-			color:#115737;
-		}
-
-		.homepage .new_quicklinks li {
-			border-top-width: 1px;
-			border-top-style: solid;
-			border-color: #b9d2d6;
-			width: auto;
-			color:#0b3e27;
-			background-color: #d1e0da;
-		}
-
-
-		.homepage .new_quicklinks a{
-		padding-top: 0.3em;
-		padding-left: 5%;
-		padding-bottom: 0.35em;
-		padding-right: 5%;
-		line-height: 1.3;
-		font-size: 1.46154em;
-		color: #115737;
-		-webkit-font-smoothing: antialiased;
-		display: block;
-		font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
-		font-weight: 500;
-		}
-
-
-			#menu_toggle {
-				display: block;
-				background-color: transparent;
-				color: #115737;
-				box-shadow: none;
-				font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
-				padding-left: 5%;
-			}
-
-		/*news wrapper new addition*/
-
-		.news_wrapper {
-			float: right;
-			right: 0;
-			position: relative;
-			width: 77%;
-			padding-left: 3%;
-		}
-
-		.news_wrapper .info_block {
-			width: 25%;
-		}
-
-		.info_block.right_block {
-			float: right;
-			padding-right: 0;
-			padding-left: 2%;
-		}
-
-		.info_block.left_block {
-			padding-left: 0;
-			padding-right: 2%;
-		}
-
-		.info_block.left_mid {
-			padding-left: 1%;
-			padding-right: 1.5%;
-
-
-		}
-		.info_block.right_mid {
-			padding-left: 1.5%;
-			padding-right: 1%;
-
-
-		}
-
-		/*news wrapper new addition*/
-	
-
-
-		.entry {
-			padding-top: 1em;
-		}
-
 		.connect_wrapper {
 			background: #ddd;
 			border-top: 1px solid #ccc;
@@ -406,7 +297,7 @@ includeFile('header.php');
 					</a><!-- /info_block -->	
 				</div>         
 						
-		            	<nav class="nav_quicklin new_quicklinks">
+		            	<nav class="new_quicklinks">
 						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
 						  <ul id="q_links" class="toggle_block">
 						    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
