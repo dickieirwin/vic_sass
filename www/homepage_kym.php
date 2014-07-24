@@ -4,7 +4,7 @@ require_once 'inc/bootstrap.php';
 
 $GLOBALS['_html_class'] = '';
 $GLOBALS['_html_title'] = 'Homepage | Victoria University of Wellington';
-$GLOBALS['_body_class'] = 'homepage';
+$GLOBALS['_body_class'] = 'homepage has_feature_search';
 
 includeFile('header.php');
 
@@ -58,7 +58,7 @@ includeFile('header.php');
 		}
 		.homepage .widget_wrapper {
 			width: 24%;
-			float: ;
+			float: none;
 
 		}
 
@@ -182,11 +182,6 @@ includeFile('header.php');
 				padding-left: 5%;
 			}
 
-		#big_search_wrapper.mob_search {
-			display: none;
-		}
-
-
 		@media (max-width: 989px) and (min-width: 760px) {
 
 			.big_search_form {
@@ -269,14 +264,6 @@ includeFile('header.php');
 
 			
 
-			.big_search.mob_search .big_search_fields {
-				margin-top: 0;
-			}
-
-
-			.mob_search .big_search_form input[type="text"] {
-				width: 100%;
-			}
 				a.hero-image.sub {
 				border-top: 0;
 			}
@@ -313,7 +300,7 @@ includeFile('header.php');
 					width: 50%;
 			}
 
-			.minor span.hero-image__text {
+			.minor .hero-image__text {
 				background: rgba(68, 159, 55, 0.7);
 		    text-overflow: ellipsis;
 		    display: block;
@@ -330,30 +317,6 @@ includeFile('header.php');
 		}
 
 		@media (max-width: 759px){
-
-			#big_search_wrapper.mob_search {
-				display: block;
-				height: 60px;
-			}
-
-			#big_search_wrapper.mob_search {
-				display: block;
-				margin-top: 0;
-				height: 60px;
-			}
-
-			.big_search.mob_search .big_search_fields {
-				margin-top: 12px;
-			}
-
-			.mob_search .big_search_form input[type="text"] {
-				width: 100%;
-			}
-
-			.mob_search .big_search_form {
-				width: 100%;
-			}
-
 
 			.info_block .info_block_primary {
 				clear: left;
@@ -423,22 +386,9 @@ includeFile('header.php');
 				display: none;
 			}
 
-			.hero-container--gallery-3 .hero-image {
-				padding-bottom: 10%
-			}
-
-			.hero-image__text.-large.left_text {
-/*				background-color: rgba(68, 159, 55, 1); */
-			}
-
-			.minor span.hero-image__text {
-				padding: 3% 3%;
-			}
-
 			a.hero-image.minor {
 				width: 100%;
 				padding: 0;
-				height: 90px;
 			}
 
 			.hero-image__text {
@@ -446,7 +396,8 @@ includeFile('header.php');
 			}
 
 
-			.minor span.hero-image__text {
+			.minor .hero-image__text {
+				padding: 3%;
 				width: 100%;
 				height: 100%;
 				top: 0;
@@ -515,18 +466,6 @@ includeFile('header.php');
 
 	</style>
 
-	<div id='big_search_wrapper' class="big_search mob_search">
-        <form class='big_search_form'>
-            <div id='big_search_fields' class='big_search_fields'>
-                
-                <label for='big_search_query' class="js_hide"></label>
-
-                <input class='field_placeholder live_search' id='big_search_query'  autocomplete="off" type='text' name='big_search_query' />
-                <input type='submit' value='Go' />
-            </div>
-        </form>
-    </div>
-
 		<div class='hero-container hero-container--gallery-3 theme-study'>
             <a class='hero-image hero-image--primary' href='#'>
                 <div class='hero-image__container' >
@@ -536,7 +475,6 @@ includeFile('header.php');
                 <div class='hero-image__text -large left_text'>
                     <h1>Know Your Mind.</h1>
                     <h2>Apply it now.</h2>
-                    <span class='image__text-big'></span>
                 </div>
             </a>
             <div>
@@ -544,21 +482,19 @@ includeFile('header.php');
                 <div class='hero-image__container' >
                   <img src='images/robby.jpg' alt='research dummy'>
                 </div>
-                  <span class='hero-image__text -large'>
+                  <div class='hero-image__text -large'>
                      <h2>Forge your path</h2>
                      <p>“Victoria has opened my mind to what I can do.”</p>
-                    <span class='image__text-big'></span>
-                  </span>
+                  </div>
               </a>
               <a class='hero-image minor sub alt_colour' href='#'>
                 <div class='hero-image__container' >
                   <img src='images/theo.jpg' alt='research dummy'>
                 </div>
-                  <span class='hero-image__text -large'>
+                  <div class='hero-image__text -large'>
                          <h2>Being a student in Wellington</h2>
                             <p>“From that first moment—this beautiful sunny day—we walked through the city and I just fell in love with it.”</p>
-                    <span class='image__text-big'></span>
-                  </span>
+                  </div>
               </a>
             </div>
         </div><!-- /hero -->
@@ -570,11 +506,6 @@ includeFile('header.php');
     <div id='content'>
 
 		<div class='entry'>
-		    <!-- <div class="welcome">
-		        <h3>Know Your Mind. Apply it now. Mā Te Mōhio. Whakamātauhia!</h3>
-		    </div> -->
-
-
 			<section class='news_container'>
 
 

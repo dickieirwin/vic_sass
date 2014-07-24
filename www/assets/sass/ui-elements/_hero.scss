@@ -96,6 +96,10 @@
     padding-top: 56.25%; /*16:9 ratio*/
     display: block;
     content: '';
+    @include mobile {
+      display: none;
+      padding-top: 0;
+    }
 }
 
 .hero-image__container {
@@ -104,6 +108,10 @@
     bottom: 0;
     right: 0;
     left: 0; /*fill parent*/
+
+    @include phone_mobile {
+      position: static;
+    }
 }
 
 .hero-image--text-only {
@@ -131,6 +139,42 @@
     max-height: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    
+    @include mobile {
+      position: static;
+      @include theme-color(
+        $use: key-plus,
+        $property: background-color,
+        $rgba: false
+      );
+      
+      .old_ie & {
+        border-bottom: 1px solid white;
+      }
+
+      .minor:nth-child(odd) & {
+        @include theme-color(
+          $use: key,
+          $property: background-color
+        );
+      }
+      
+      .minor:nth-child(even) & {
+        @include theme-color(
+          $use: key-minus,
+          $property: background-color
+        );
+      }
+
+    }
+   
+    
+    .old_ie & {
+      @include theme-color(
+        $use: key-plus,
+        $property: background-color
+      );
+    }
 
     h5, p {
         position: relative;
