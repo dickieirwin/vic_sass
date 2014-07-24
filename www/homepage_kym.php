@@ -58,7 +58,7 @@ includeFile('header.php');
 		}
 		.homepage .widget_wrapper {
 			width: 24%;
-			float: ;
+			float: none;
 
 		}
 
@@ -182,11 +182,6 @@ includeFile('header.php');
 				padding-left: 5%;
 			}
 
-		#big_search_wrapper.mob_search {
-			display: none;
-		}
-
-
 		@media (max-width: 989px) and (min-width: 760px) {
 
 			.big_search_form {
@@ -269,14 +264,6 @@ includeFile('header.php');
 
 			
 
-			.big_search.mob_search .big_search_fields {
-				margin-top: 0;
-			}
-
-
-			.mob_search .big_search_form input[type="text"] {
-				width: 100%;
-			}
 				a.hero-image.sub {
 				border-top: 0;
 			}
