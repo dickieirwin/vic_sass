@@ -10,7 +10,6 @@ includeFile('header.php');
 
 ?>
 
-  <style>@import url('dev/hero_prototype.css');</style>
   <style>@import url('dev/quicklinks_protype.css');</style>
 
 	<style type="text/css">
@@ -22,18 +21,9 @@ includeFile('header.php');
 		}
 
 
-		.bigger_heading {
-			text-transform: uppercase;
-			font-weight: 600;
-			font-size: smaller;
-			margin-top: -5px;
-
-		}
-
 		.homepage .widget_wrapper {
 			width: 24%;
 			float: none;
-
 		}
 
 		.homepage .new_quicklinks {
@@ -44,6 +34,7 @@ includeFile('header.php');
 			background-color: #d1e0da;
 			padding: 0;
 		}
+		
 		.homepage .new_quicklinks ul {
 			padding: 0;
 			list-style:none;
@@ -98,11 +89,6 @@ includeFile('header.php');
 			padding-right: 0%;
 		}
 
-
-
-		.left_box {
-			display: none;
-		}
 
 		.entry {
 			padding-top: 1em;
@@ -222,13 +208,6 @@ includeFile('header.php');
 
 			
 			
-			.big_search {
-				display: none;
-			}
-
-
-
-		
 			.homepage .new_quicklinks {
 				width: 100%;
 				position: relative;
