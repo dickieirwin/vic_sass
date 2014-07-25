@@ -99,7 +99,7 @@ includeFile('header.php');
 							<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
 						</div><!-- /info_block_primary -->
 					</a><!-- /info_block -->
-					<a class='info_block right_block'>
+					<a class='info_block '>
 						<div class='info_block_secondary'>
 							<img src='http://placesheen.com/209/135' alt='homepage holder'>
 						</div><!-- /info_block_secondary -->

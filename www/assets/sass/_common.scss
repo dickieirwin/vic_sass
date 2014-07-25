@@ -190,7 +190,7 @@
 .highlight_secondary {
     &.set_height {
       footer {
-        height: 190px;
+        min-height: 190px;
         margin-left: 0;
         margin-right: 0;
       }
@@ -1133,6 +1133,17 @@ aside[role='complementary'] {
         }
     }
 
+}
+
+.highlight.highlight_tertiary.study_contact {
+    margin-top: 0;
+
+    .contacts_block a[href^="tel:"],
+    .contacts_block a[href^="mailto:"] {
+        background: #ddd;
+        color: #333;
+
+    }
 }
 
 
