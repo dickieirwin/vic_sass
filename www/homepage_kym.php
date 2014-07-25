@@ -15,314 +15,18 @@ includeFile('header.php');
 	<style type="text/css">
 
 		@media all {
-			.homepage .entry .news_container .info_block p {
-				display: block;
-			}
-		}
 
-
-		.homepage .widget_wrapper {
-			width: 24%;
-			float: none;
-		}
-
-		.homepage .new_quicklinks {
-			left: auto;
-			top: auto;
-			width: 23%;
-			clear: right;
-			background-color: #d1e0da;
-			padding: 0;
-			position: absolute;
-		}
-		
-		.homepage .new_quicklinks ul {
-			padding: 0;
-			list-style:none;
-			margin: 0;
-		}
-
-
-		.homepage .new_quicklinks h2 {
-			padding-left: 5%;
-			margin-bottom: 2%m;
-			line-height: 1;
-			font-size: 1.57143em;
-			color:#115737;
-		}
-
-		.homepage .new_quicklinks li {
-			border-top-width: 1px;
-			border-top-style: solid;
-			border-color: #b9d2d6;
-			width: auto;
-			color:#0b3e27;
-			background-color: #d1e0da;
-		}
-
-
-		.homepage .new_quicklinks a{
-		padding-top: 0.3em;
-		padding-left: 5%;
-		padding-bottom: 0.35em;
-		padding-right: 5%;
-		line-height: 1.3;
-		font-size: 1.46154em;
-		color: #115737;
-		-webkit-font-smoothing: antialiased;
-		display: block;
-		font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
-		font-weight: 500;
-		}
-
-
-			#menu_toggle {
-				display: block;
-				background-color: transparent;
-				color: #115737;
-				box-shadow: none;
-				font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
-				padding-left: 5%;
-			}
-
-		/*news wrapper new addition*/
-
-		.news_wrapper {
-			float: right;
-			right: 0;
-			position: relative;
-			width: 77%;
-			padding-left: 3%;
-		}
-
-		.news_wrapper .info_block {
-			width: 25%;
-		}
-
-		.info_block.right_block {
-			float: right;
-			padding-right: 0;
-			padding-left: 2%;
-		}
-
-		.info_block.left_block {
-			padding-left: 0;
-			padding-right: 2%;
-		}
-
-		.info_block.left_mid {
-			padding-left: 1%;
-			padding-right: 1.5%;
-
-
-		}
-		.info_block.right_mid {
-			padding-left: 1.5%;
-			padding-right: 1%;
-
-
-		}
-
-		/*news wrapper new addition*/
-	
-
-
-		.entry {
-			padding-top: 1em;
-		}
-
-		.connect_wrapper {
-			background: #ddd;
-			border-top: 1px solid #ccc;
-			margin-top: 1em;
-		}
-
-		.connect-feeds {
-			padding: 0 !important;
-		}
-		
-	
-
-		@media (max-width: 989px) and (min-width: 760px) {
-
-		/*news wrapper*/
-
-			.news_wrapper {
-				width: 100%;
-				padding: 0 3%;
-			}
-
-			.news_wrapper .info_block {
-				width: 30%;
-			}
-			
-			.homepage .entry .news_wrapper .info_block {
-				padding: 0 0.5%;
-			}
-
-			/*news wrapper*/
-
-
-			.homepage .entry .news_container .info_block p {
-				display: block;
-			}
-
-			.homepage .entry .news_container {
-		        width: 100%;
-		    }
-
-
-		    .homepage .new_quicklinks ul:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-
-			.homepage .new_quicklinks {
-				width:100%;
-				background-color: none;
-				margin-bottom: 2%;
-				padding: 0 1% 1% 1%;
-				position: relative;	
-			}
-
-
-			.homepage .new_quicklinks ul {
-				margin: 0;
-			}
-
-			.homepage .new_quicklinks li {
-				width: auto;
-					float:left;
-					border-top: 0;
-					margin-bottom: 0;
-					white-space: nowrap;
-			}
-
-			.homepage .new_quicklinks h2{
-				margin-bottom: 0;
-				padding-bottom: 1%;
-				padding-left: 3%;
-			}
-
-			.homepage .new_quicklinks h2 :after {
-				content: 003e;
-			}
-
-
-			.homepage .new_quicklinks a {
-				background-color: #eee;
-				padding: 0.25em 0.6em;
-				margin: 0 0.3em 0.3em 0;
-			}
-
-			.homepage .entry .news_container .info_block .info_block_secondary img {
-				max-height: 100%;
-			}
-
-			#menu_toggle {
-				 position: inherit; 
-				 left: auto; 
-				 font-size:  1.6em; 
-				 font-weight: bold; 
-				box-shadow: none; 
-				width: auto; 
-				 height: auto; 
-				 padding: 0 0 0 3%; 
-				 text-align: left; 
-				 -webkit-box-sizing: border-box; 
-				 -moz-box-sizing: border-box;
-				box-sizing: border-box; 
-			}
-
-			#menu_toggle:after {
-				content: none;
-			}
-		}
-
-		@media (max-width: 759px){
-
-			/*news wrapper*/
-
-			.news_wrapper .info_block {
-				width: 100%;
-			}
-
-			.news_wrapper {
-			
-				width: 100%;
-				padding: 0 3%;
-			}
-
-			.homepage .entry .news_wrapper .info_block {
-				padding: 0 0.5%;
-			}
-
-			.info_block .info_block_secondary img {
-				max-height: 80px;
-			}
-
-			/*news wrapper*/
-			
-			.homepage .new_quicklinks {
-				width: 100%;
-				position: relative;
-				margin-bottom: 2%;
-			}
-
-			.homepage .new_quicklinks a {
-				background-color: #d1e0da;
+			.connect_wrapper {
+				background: #ddd;
 				border-top: 1px solid #ccc;
-			}
-			.homepage .new_quicklinks li {
-				width: auto;
-				float:none;
-				border-top: 0;
+				margin-top: 1em;
 			}
 
-			.right_block {
-        margin: 0 0 3% 0;
-				padding: 0;
-				overflow: hidden;
+			.connect-feeds {
+				padding: 0 !important;
 			}
+		
 		}
-
-		@media (max-width: 480px) and (min-width: 320px){
-
-			.info_block .info_block_secondary {
-				display: none;
-			}
-
-				.homepage .new_quicklinks {
-					width: auto;
-					position: relative;
-				}
-
-				.homepage .new_quicklinks ul {
-					margin: 0 0 3% 0;
-					padding: 0;
-					overflow: hidden;
-				}
-				.homepage .new_quicklinks ul:active {
-					height: auto;
-
-				}
-
-
-
-				.homepage .new_quicklinks li {
-					margin: 0;
-					padding: 0;
-					float: none;
-				}
-				.homepage .new_quicklinks a {
-					padding-top: 0;
-				}
-
-
-
-		}
-
 
 	</style>
 
@@ -395,7 +99,7 @@ includeFile('header.php');
 							<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
 						</div><!-- /info_block_primary -->
 					</a><!-- /info_block -->
-					<a class='info_block right_block'>
+					<a class='info_block '>
 						<div class='info_block_secondary'>
 							<img src='http://placesheen.com/209/135' alt='homepage holder'>
 						</div><!-- /info_block_secondary -->
@@ -406,7 +110,7 @@ includeFile('header.php');
 					</a><!-- /info_block -->	
 				</div>         
 						
-		            	<nav class="nav_quicklin new_quicklinks">
+		            	<nav class="new_quicklinks">
 						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
 						  <ul id="q_links" class="toggle_block">
 						    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>

@@ -18,7 +18,6 @@
 }
 
 
-
 .index_listing {
     padding:   2%;
 }
@@ -34,6 +33,10 @@
      .ie8 &, {
        min-width: 955px;
      }
+}
+
+.connect_wrapper {
+    margin-top: 1em;
 }
 
  #page {
@@ -190,7 +193,7 @@
 .highlight_secondary {
     &.set_height {
       footer {
-        height: 190px;
+        min-height: 190px;
         margin-left: 0;
         margin-right: 0;
       }
@@ -1135,12 +1138,24 @@ aside[role='complementary'] {
 
 }
 
+.study_contact {
+    margin-top: 0;
+
+    .contacts_block a[href^="tel:"],
+    .contacts_block a[href^="mailto:"] {
+        background: #ddd;
+        color: #333;
+
+    }
+}
+
 
 .contacts_block {
 
             li {
                 list-style-type: none;
                 margin-right: 1em;
+                margin-bottom: 0.5em;
             }
 
             h4 {
