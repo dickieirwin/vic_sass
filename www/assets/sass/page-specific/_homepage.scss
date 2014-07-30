@@ -342,7 +342,6 @@
     }
     
 	.site_footer {
-		padding: 0 1%;
 		margin-top: 0;
         height: auto;
 	}
@@ -356,6 +355,7 @@
 
     #page{
         padding-bottom: 246px;
+        background-color: #ffffff; 
     }
 
     .news_wrapper {
@@ -461,6 +461,10 @@
     
 
      @include skinny-only {
+
+        .connect_wrapper {
+             height: auto;
+        }
             
         .new_quicklinks {
             width:100%;
@@ -528,6 +532,10 @@
 
 
     @include mobile {
+
+        .connect_wrapper {
+             height: auto;
+        }
         
         .new_quicklinks {
 

@@ -27,6 +27,10 @@ body {
     @include desktop {
         @include box-sizing(border-box);
     }
+
+     @include mobile {
+        height: auto;
+     }
 }
 
 

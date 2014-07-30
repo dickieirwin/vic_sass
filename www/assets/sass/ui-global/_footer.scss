@@ -67,6 +67,7 @@
 
     @include mobile {
 
+        height: auto;
         margin: 0;
         background-color: #d9d9d9;
 
@@ -150,6 +151,9 @@
 .site_footer {
 
     @include skinny {
+
+        height: auto;
+
 
         .link_list {
             //margin-bottom: 2.2em;
