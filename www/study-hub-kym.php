@@ -151,4 +151,4 @@ includeFile('header.php');
 </div>
 
 <?php
-includeFile('footer.php');
+includeFile('footer_new.php');
