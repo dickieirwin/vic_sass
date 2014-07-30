@@ -92,6 +92,9 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('default', 'My "default" task description.', function() {
-      grunt.log.writeln('grunty: Here is what you can do! grunt dev - this task complies the sass with line numbers and split the style.css into two sheets. grunt prod -  this task complies the sass, splits the style.css into two sheets then minifys the new sheets. grunt watch - this will watch the folders for changes run grunt dev if sass has changed and it auto reloads your browser. Boom! grunt on!');
+      grunt.log.writeln('grunty: Here is what you can do!' + "\n");
+      grunt.log.writeln('grunt dev - this task complies the sass with line numbers and split the style.css into two sheets.');
+      grunt.log.writeln('grunt prod -  this task complies the sass, splits the style.css into two sheets then minifies the new sheets.');
+      grunt.log.writeln('grunt watch - this will watch the folders for changes run grunt dev if sass has changed and it auto reloads your browser. Boom! grunt on!');
     });
 };
