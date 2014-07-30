@@ -452,6 +452,13 @@ aside[role='complementary'] {
 
 // No javascript fallbacks (check this no-js deprecated in new builds???????????)
 
+.has_big_search {
+    #wrapper {
+        margin-top: inherit;
+        padding-top: inherit;
+    }
+}
+
 #wrapper {
 
     height: 100%;
