@@ -63,20 +63,13 @@
 		?>
 			      
         <footer role='contentinfo' class='site_footer'>
-            <div class="site_links wrap">
-
-
-                
-                <!--<h2 class="mobile_only"><a href="./?a=119780">Contact Us</a></h2>-->
-                
+            <div class="site_links wrap">             
                 <div class="cols">
-                  
                     <h2><a href="./?a=119780">Contacts and directories</a></h2>
                       <ul class="link_list">
                         <li><a href="./?a=119780">Staff directory</a></li>
                         <li><a href="https://intranet.victoria.ac.nz/staff-directory/UpdateDetails.aspx">Update staff details</a></li>
                         <li><a href="http://www.victoria.ac.nz/mediaguide/">Media guide</a></li>
-                        <!--<li><a href="">Social media directory</a></li>-->
                         <li><a href="./?a=183845">Find a researcher</a></li>
                       </ul>
 
@@ -142,18 +135,6 @@
                     <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria">Support Victoria</a></li>
                     <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria/donate" class="button tertiary">Donate online</a></li>
                   </ul>
-
-                  
-                  <!--
-                  <li><a href="https://intranet.victoria.ac.nz/staff-directory/UpdateDetails.aspx">Update staff details</a></li>
-
-                  <h2><a href="./?a=113809">Research</a></h2>
-                  <ul class="link_list">
-                    <li><a href="./?a=149231">Research spotlight</a></li>
-                    <li><a href="http://www.viclink.co.nz/">Viclink</a></li>
-                    <li><a href=" http://www.victoria.ac.nz/home/research/researchaz">Centres and Institutes</a></li>
-                    <li><a href="./?a=114038">Directory of Research Expertise</a></li>
-                  </ul>-->
                 </div>
                 <div class="cols">
                   <h2><a href="./?a=119776">Work at Victoria</a></h2>
@@ -174,7 +155,6 @@
 
             <div class="connect_wrapper vic_footer">
                 <div class="fineprint wrap">
-                             
 
                             <div class="contact_info">
                               <img class="footer_logo" src="assets/images/vic-logo-mobile.png">

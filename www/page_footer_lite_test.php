@@ -62,16 +62,7 @@ includeFile("header.php");
 
     <style type="text/css">
 
-        html, body {
-            height: 100%;
-        }
-
-        #wrapper {
-            height: 100%;
-            margin-top: -111px;
-            padding-top: 111px;
-
-        }
+        
         #page.wrap {
             min-height: 100%;
         }

@@ -107,11 +107,7 @@
 //----------------------------------
 
 .connect_wrapper { 
-    @include theme-color(
-        $use: key-light,
-        $property: background,
-        $lighten: 8%
-    );
+    background-color: #EEEEEE;
 }
 
 .connect-feeds {

@@ -344,7 +344,19 @@
 	.site_footer {
 		padding: 0 1%;
 		margin-top: 0;
+        height: auto;
 	}
+
+    .connect_wrapper {
+        position: relative;
+        margin-top: -246px; /* negative value of footer height */
+        height: 246px;
+        clear:both;
+    }
+
+    #page{
+        padding-bottom: 246px;
+    }
 
     .news_wrapper {
             float: right;
@@ -436,6 +448,7 @@
             box-shadow: none;
             font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
             padding-left: 5%;
+            margin-bottom: 0;
 
              @include theme-color (
                 $use: key,
