@@ -31,7 +31,7 @@ includeFile("header.php");
 
     <div id='content'>
           <div class='homepage_feature'>
-        <div id='hero' class='grid style1'>
+       <!--  <div id='hero' class='grid style1'>
                 <a href='#'>
                     <div class='imagery'>
               <img src="assets/images/bear_banner.jpg" />
@@ -47,7 +47,7 @@ includeFile("header.php");
                     </div>
             
                 </a>
-            </div><!-- /hero -->
+            </div> --><!-- /hero -->
         </div><!-- /homepage_feature -->
 
       <section role='main' class='primary'>
@@ -60,33 +60,6 @@ includeFile("header.php");
   		</section><!-- /main -->
     </div><!-- /content -->
 
-    <style type="text/css">
-
-        html, body {
-            height: 100%;
-        }
-
-        #wrapper {
-            height: 100%;
-            margin-top: -111px;
-            padding-top: 111px;
-
-        }
-        #page.wrap {
-            min-height: 100%;
-        }
-        #page {
-            overflow:auto;
-            padding-bottom: 412px;
-        }
-        .site_footer {
-            position: relative;
-            margin-top: -412px; /* negative value of footer height */
-            height: 412px;
-            clear:both;
-        }
-
-    </style>
 
     <?php
 includeFile("footer.php");

@@ -42,20 +42,32 @@
  #page {
     width: 100%;
     margin: 0 auto;
+
     @include theme-color(base);
     @include box-sizing(border-box);
-    position: relative;
     @include ui-clearfix();
     @include mobile {
         margin-top: 0;
-        // background: $page_background;
+        padding-bottom: 1em;
     }
 
     .no_section_menu & {
         max-width: 70em;
     }
 
+    &.wrap {
+      min-height: 100%;  //for keeping the footer at bottom of page
+    }
+
+    @include mobile {
+        &.wrap {
+        min-height: inherit;  //for keeping the footer at bottom of page
+    }
+    }
+
  }
+
+
 
 
 
@@ -192,11 +204,16 @@
 
 .highlight_secondary {
     &.set_height {
-      footer {
-        min-height: 190px;
-        margin-left: 0;
-        margin-right: 0;
-      }
+        footer {
+            min-height: 190px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @include mobile {
+            footer {
+                min-height: inherit;
+            }
+        }
     }
 }
 
@@ -1140,6 +1157,7 @@ aside[role='complementary'] {
 
 .study_contact {
     margin-top: 0;
+    padding: 2em 5%;
 
     .contacts_block a[href^="tel:"],
     .contacts_block a[href^="mailto:"] {
