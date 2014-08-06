@@ -24,6 +24,10 @@ body {
     @include desktop {
         @include box-sizing(border-box);
     }
+
+     @include mobile {
+        height: auto;
+     }
 }
 
 
@@ -499,6 +503,9 @@ aside[role='complementary'] {
             overflow: hidden;
             position: fixed;
             background-color: white;
+            margin-top: 0;
+            padding-top: 0;
+
 
             @media screen and (-webkit-min-device-pixel-ratio: 2) {
                 margin-left: 0;

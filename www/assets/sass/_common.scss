@@ -48,6 +48,7 @@
     @include ui-clearfix();
     @include mobile {
         margin-top: 0;
+        padding-bottom: 1em;
     }
 
     .no_section_menu & {
@@ -58,7 +59,15 @@
       min-height: 100%;  //for keeping the footer at bottom of page
     }
 
+    @include mobile {
+        &.wrap {
+        min-height: inherit;  //for keeping the footer at bottom of page
+    }
+    }
+
  }
+
+
 
 
 

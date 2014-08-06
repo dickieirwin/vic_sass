@@ -60,17 +60,6 @@ includeFile("header.php");
   		</section><!-- /main -->
     </div><!-- /content -->
 
-    <style type="text/css">
-
-
-        .site_footer {
-            position: relative;
-            margin-top: -412px; /* negative value of footer height */
-            height: 412px;
-            clear:both;
-        }
-
-    </style>
 
     <?php
 includeFile("footer.php");

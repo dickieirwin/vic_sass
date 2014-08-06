@@ -38,7 +38,7 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             sass: {
-                files: "www/assets/sass/*.scss",
+                files: "www/assets/sass/**/*.scss",
                 tasks: ["sass:dev", "csssplit:dev"],
             },
             php: {

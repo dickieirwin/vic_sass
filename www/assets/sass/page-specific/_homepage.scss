@@ -342,7 +342,6 @@
     }
     
 	.site_footer {
-		padding: 0 1%;
 		margin-top: 0;
         height: auto;
 	}
@@ -356,6 +355,7 @@
 
     #page{
         padding-bottom: 246px;
+        background-color: #ffffff; 
     }
 
     .news_wrapper {
@@ -461,6 +461,10 @@
     
 
      @include skinny-only {
+
+        .connect_wrapper {
+             height: auto;
+        }
             
         .new_quicklinks {
             width:100%;
@@ -504,6 +508,10 @@
                 margin: 0 0.3em 0.3em 0;
             }
 
+            #menu_toggle {
+                 padding-left: 1%; 
+            }
+
         }
 
         #menu_toggle {
@@ -514,7 +522,7 @@
                 box-shadow: none; 
                 width: auto; 
                  height: auto; 
-                 padding: 0 0 0 3%; 
+                 padding: 0 0 0 3%;
                  text-align: left; 
                  -webkit-box-sizing: border-box; 
                  -moz-box-sizing: border-box;
@@ -528,6 +536,10 @@
 
 
     @include mobile {
+
+        .connect_wrapper {
+             height: auto;
+        }
         
         .new_quicklinks {
 
