@@ -320,7 +320,19 @@
  .theme-maori.landing-page #wrapper {
  	background-image: url('/assets/images/maori-bg-pattern.png');
  	background-repeat: repeat-x;
+    margin-top: 0;
+    padding-top: 0;
+
  }
+
+
+ .theme-maori .highlight_secondary footer h2 {
+    color: #ffffff;
+ }
+
+
+
+
 
 
 // Specific for Staff pages at Vic

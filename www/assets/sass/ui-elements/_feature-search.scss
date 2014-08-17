@@ -77,8 +77,9 @@ input[type="text"].feature_search_query { // extra specificity to override defau
   }
 
   &:focus {
-    border-color: #ccc !important; // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
-    border-color: rgba(0,0,0,0.1) !important;  // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
+    border-color: $button_primary_background; 
+    //border-color: #ccc !important; // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
+    //border-color: rgba(0,0,0,0.1) !important;  // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
 
     ::-webkit-input-placeholder,
     :-moz-placeholder {

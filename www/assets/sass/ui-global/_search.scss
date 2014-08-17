@@ -369,9 +369,10 @@ $big_input_height: 36px;
         //line-height: 2em; // This caused weird alignment issue on some browsers eg. iPhone
 
             &:focus {
+				border-color: $input_border_color_focus;
                 //background: #fff;
-                border-color: #ccc !important; // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
-                border-color: rgba(0,0,0,0.1) !important;  // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
+                //border-color: #ccc !important; // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
+                //border-color: rgba(0,0,0,0.1) !important;  // override base focus styles we need to try and avoid the !important arms race by refactoring forms.scss at some point
 
                 ::-webkit-input-placeholder {
                    color: #ccc;
