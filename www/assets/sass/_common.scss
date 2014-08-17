@@ -42,9 +42,6 @@
  #page {
     width: 100%;
     margin: 0 auto;
-    overflow:auto;
-    padding-bottom: 412px;
-    position: relative;
 
     @include theme-color(base);
     @include box-sizing(border-box);

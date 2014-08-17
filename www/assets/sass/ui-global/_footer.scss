@@ -4,13 +4,7 @@
 
 .site_footer {
 
-    //keeping footer at bottom of page
-    position: relative;
-    margin-top: -412px; /* negative value of footer height */
-    height: 412px;
-    clear:both;
-    //end
-
+    margin-top: 2em;
     clear: both;
     background: #ddd;
     border-top: 1px solid #ccc;
