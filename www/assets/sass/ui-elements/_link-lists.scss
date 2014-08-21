@@ -180,9 +180,15 @@
   }
 
 	& h3 {
+<<<<<<< HEAD
 		@extend .h6;
 		font-family: $font_body;
 		margin: 0 0 0.25em 0;
+=======
+		@extend .h4;
+		margin: 0 0 0.25em 0;
+		text-transform: inherit;
+>>>>>>> c59246fd379d87697a9b478a80a3bd4da8b31297
 	}
 	
 	& h4 {
