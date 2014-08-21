@@ -173,6 +173,7 @@
 	border-bottom: 1px solid $color_border;
   overflow: auto;
 
+<<<<<<< HEAD
   & h2[itemprop="name"] {
     @extend .h4;
     @extend %heading_link;
@@ -180,34 +181,16 @@
   }
 
 	& h3 {
-<<<<<<< HEAD
-		@extend .h6;
-		font-family: $font_body;
-		margin: 0 0 0.25em 0;
-=======
 		@extend .h4;
 		margin: 0 0 0.25em 0;
 		text-transform: inherit;
->>>>>>> c59246fd379d87697a9b478a80a3bd4da8b31297
 	}
 	
-	& h4 {
-    line-height: 1.3125em;
-    margin-top: 0.25em;
-    margin-bottom: 1em;
-
-    &:last-child {
-      margin-bottom: 0;    
-    }
-	}
-	
-	& h6 {
-    -webkit-font-smoothing: antialiased;
-    color: $color_text;
-    font-family: $font_body;
-    line-height: 1.3125em;
+	h4 {
+    font-size: 16px;
     margin-top: 0.25em;
     margin-bottom: 0.5em;
+    line-height: 1.3125em;
 	}
 
   &:last-child {
@@ -218,23 +201,68 @@
     margin-top: 0.75em;
   }
 
-  & a p {
-    color: $color_text;
+  & h2[itemprop="name"] {
+    @extend .h4;
+    @extend %heading_link;
+    display: inline;
   }
 
+//  & header h5, & header h6 {
+//    margin-top: 0.25em;
+//    font-family: $font_display;
+//    font-size: 1em;
+//    font-weight: 400;
+//  }
+
+  & a h4[itemprop="name"] {
+    color: #146999; 
+    border-bottom: 1px solid #b8d2e0;
+  }
+
+  a p {
+    color: #444;
+  }
+
+	// the extra specificity of this selector is needed for some rules; this is a bug and should be fixed -KB 2014-02-04
+	aside[role="complementary"] & {
+		a {
+			h3 {
+				display: inline;
+				text-transform: inherit;
+			}
+
+			p {
+				margin:0;
+				color: $color_text;
+			}
+
+			&:hover p {
+				color: $color_links_hover;
+			}
+		}
+	}
 }
 
 .date_block {
 	@extend %aside_block;
 	
+//	a h3 {
+//		@extend %heading_link;
+//	}
+	
 	.info_block:first-child & {
 			padding-top: 0;
 	}
-
-	& p:last-child {
+//	h4, h5 {
+//			margin: 0;
+//	}
+	p:last-child {
 			margin-bottom: 0;
 	}
-	
+	a {
+			// font-weight: bold;
+            font-weight: inherit;
+	}
 	@include mobile {
 		clear: both; 
 	}
@@ -244,7 +272,16 @@
 	
 .news_block {
   @extend %aside_block;
+
   overflow: auto;
+
+  &:last-child {
+    border-bottom: 0px none;
+  }
+
+  & header + p[itemprop="description"] {
+    margin-top: 0.75em;
+  }
 
   & h4[itemprop="name"] { 
     display: inline;
@@ -259,22 +296,24 @@
     border-bottom: 1px solid #b8d2e0;
   }
 
+  a p {
+    color: #444;
+  }
 }
 
 .news_img {
-  display: block;
-  float: right;
-  width: 30%;
-  margin-top: 2em;
-  margin-left: 1em;
+        display: block;
+        float: right;
+        width: 30%;
+        margin-top: 2em;
 
-  @include phone_mobile {
-    float: none;
-    max-width: 240px;
-    width: auto;
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
+        @include phone_mobile {
+            float: none;
+            max-width: 240px;
+            width: auto;
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
 }
 
 
