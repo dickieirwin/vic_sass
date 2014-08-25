@@ -173,7 +173,6 @@
 	border-bottom: 1px solid $color_border;
   overflow: auto;
 
-<<<<<<< HEAD
   & h2[itemprop="name"] {
     @extend .h4;
     @extend %heading_link;
@@ -186,7 +185,7 @@
 		text-transform: inherit;
 	}
 	
-	h4 {
+	& h4 {
     font-size: 16px;
     margin-top: 0.25em;
     margin-bottom: 0.5em;
@@ -200,19 +199,6 @@
   & header + p[itemprop="description"] {
     margin-top: 0.75em;
   }
-
-  & h2[itemprop="name"] {
-    @extend .h4;
-    @extend %heading_link;
-    display: inline;
-  }
-
-//  & header h5, & header h6 {
-//    margin-top: 0.25em;
-//    font-family: $font_display;
-//    font-size: 1em;
-//    font-weight: 400;
-//  }
 
   & a h4[itemprop="name"] {
     color: #146999; 
