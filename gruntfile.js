@@ -51,7 +51,7 @@ module.exports = function(grunt) {
               dest: 'www/assets/css/',
               options: {
                   maxRules: 2000,
-                  maxPages: 3,
+                  maxPages: 2,
                   suffix: ''
               },
             },
@@ -59,8 +59,8 @@ module.exports = function(grunt) {
               src: 'www/assets/css/style.css',
               dest: 'www/assets/css/grunt_css/',
               options: {
-                  maxRules: 1000,
-                  maxPages: 3,
+                  maxRules: 2000,
+                  maxPages: 2,
                   suffix: ''
               },
             }
