@@ -614,6 +614,7 @@ nav#mobile_masthead,
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 
         &:hover, &:focus {
+            background-color: #ccc;
             opacity: 1;
             -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
         }
