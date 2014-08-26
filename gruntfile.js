@@ -1,37 +1,58 @@
 module.exports = function(grunt) {
+
+    // contains the file specifications, which are the same for dev and prod
+    var sassFiles = [
+      {
+          expand: true,
+          cwd: 'www/assets/sass',
+          // apply this rule to all scss files EXCEPT style.scss
+          src: ['**/*.scss', '!style.scss'],
+          dest: 'www/assets/css',
+          ext: '.css'
+      },
+      {
+        expand: true,
+        cwd: 'www/assets/sass',
+        src: 'style.scss',
+        dest: 'www/assets/css/grunt_css',
+        ext: '.css'
+      }
+    ];
+    
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-livereload');
+    grunt.loadNpmTasks('grunt-bless');
+
     grunt.initConfig({
         sass: {
+          options: { // options shared by all tasks
+            trace:true,
+            compass:true,
+            unixNewlines: true
+          },
             dev: {//target
                 options: {
-                    trace:true,
-                    style:'expanded',//nested, compact, compressed, expanded
-                    compass:true,
+                    style:'nested',//nested, compact, compressed, expanded
                     //debugInfo:true,//FireSass firebug plugin
                     lineNumbers:true,
                 },
-                files: [{
-                    expand: true,
-                    cwd: 'www/assets/sass',
-                    dest: 'www/assets/css',
-                    src: '**/*.scss',
-                    ext: '.css'
-                }]
+                files: sassFiles
             },
             prod: {
                 options: {
-                    trace:true,
                     style:'compressed',//nested, compact, compressed, expanded
-                    compass:true,
-                    lineNumbers:false
+                    lineNumbers:false,
                 },
-                files: [{
-                    expand: true,
-                    cwd: 'www/assets/sass',
-                    dest: 'www/assets/css',
-                    src: '**/*.scss',
-                    ext: '.css'
-                }]
+                files: sassFiles
             }
+        },
+        bless: {
+          css: {
+            files: {
+              'www/assets/css/style.css': 'www/assets/css/grunt_css/style.css'
+            }
+          },
         },
         watch: {
             options: {
@@ -39,55 +60,20 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: "www/assets/sass/**/*.scss",
-                tasks: ["sass:dev", "csssplit:dev"],
+                tasks: ["sass:dev", "bless:css"],
             },
             php: {
                 files: ['www/**/*.php', 'www/**/*.html'],
             },
-        },
-        csssplit: {
-            dev: {
-              src: 'www/assets/css/style.css',
-              dest: 'www/assets/css/',
-              options: {
-                  maxRules: 1500,
-                  maxPages: 2,
-                  suffix: ''
-              },
-            },
-            prod: {
-              src: 'www/assets/css/style.css',
-              dest: 'www/assets/css/grunt_css/',
-              options: {
-                  maxRules: 1500,
-                  maxPages: 2,
-                  suffix: ''
-              },
-            }
-        },
-        cssmin: {
-          combine: {
-            files: {
-              'www/assets/css/style1.css': ['www/assets/css/grunt_css/style1.css'],
-              'www/assets/css/style2.css': ['www/assets/css/grunt_css/style2.css'],
-            }
-          }
-        },
+        }
     });
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-livereload');
-    grunt.loadNpmTasks('grunt-csssplit');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-
-
     grunt.registerTask('dev', 'the development state task', function() {
       // Enqueue "bar" and "baz" tasks, to run after "foo" finishes, in-order.
-      grunt.task.run('sass:dev', 'csssplit:dev');
+      grunt.task.run('sass:dev', 'bless:css');
     });
 
     grunt.registerTask('prod', 'the production ready task', function() {
-      grunt.task.run('sass:prod', 'csssplit:prod', 'cssmin');
+      grunt.task.run('sass:prod', 'bless:css');
     });
 
 
