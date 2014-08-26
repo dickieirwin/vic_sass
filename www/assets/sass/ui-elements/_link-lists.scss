@@ -167,14 +167,47 @@
 //	- at the moment .date_block is used on lots of things that aren't dates e.g. related stories widget
 //	- see also ui-elements/_info-block, ui-elements/_link-blocks, ui-elements/_block-lists - scope to combine/unify into a single inheritance tree?
 
+// (\/) (°,,,°) (\/) FIXME: some refactoring to do here
 %aside_block {
 	padding: 0.75em 0;
 	border-bottom: 1px solid $color_border;
-	
-	h3 {
-		margin: 0;
+  overflow: auto;
+
+  & h2[itemprop="name"] {
+    @extend .h4;
+    @extend %heading_link;
+    display: inline;
+  }
+
+	& h3 {
+		@extend .h4;
+		margin: 0 0 0.25em 0;
 		text-transform: inherit;
 	}
+	
+	& h4 {
+    font-size: 16px;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    line-height: 1.3125em;
+	}
+
+  &:last-child {
+    border-bottom: 0px none;
+  }
+
+  & header + p[itemprop="description"] {
+    margin-top: 0.75em;
+  }
+
+  & a h4[itemprop="name"] {
+    color: #146999; 
+    border-bottom: 1px solid #b8d2e0;
+  }
+
+  a p {
+    color: #444;
+  }
 
 	// the extra specificity of this selector is needed for some rules; this is a bug and should be fixed -KB 2014-02-04
 	aside[role="complementary"] & {
@@ -199,21 +232,16 @@
 .date_block {
 	@extend %aside_block;
 	
-	a h3 {
-		@extend %heading_link;
-	}
+//	a h3 {
+//		@extend %heading_link;
+//	}
 	
 	.info_block:first-child & {
 			padding-top: 0;
 	}
-	h4, h5 {
-			margin: 0;
-	}
-	h4 {
-			font-size: 16px;
-            margin-bottom: 0.5em;
-            line-height: 1.3125em;
-	}
+//	h4, h5 {
+//			margin: 0;
+//	}
 	p:last-child {
 			margin-bottom: 0;
 	}
@@ -229,34 +257,34 @@
 	
 	
 .news_block {
-	@extend %aside_block;
+  @extend %aside_block;
 
-    overflow: auto;
-	
-	&:last-child {
-		border-bottom: 0px none;
-	}
+  overflow: auto;
 
-    & header + p[itemprop="description"] {
-        margin-top: 0.75em;
-    }
+  &:last-child {
+    border-bottom: 0px none;
+  }
 
-    & h4[itemprop="name"] { 
-        display: inline;
-    }
-    
-    & header h5 {
-      margin-top: 0.5em;
-    }
+  & header + p[itemprop="description"] {
+    margin-top: 0.75em;
+  }
 
-    & a h4[itemprop="name"] {
-        color: #146999; 
-        border-bottom: 1px solid #b8d2e0;
-    }
+  & h4[itemprop="name"] { 
+    display: inline;
+  }
 
-    a p {
-        color: #444;
-    }
+  & header h5 {
+    margin-top: 0.5em;
+  }
+
+  & a h4[itemprop="name"] {
+    color: #146999; 
+    border-bottom: 1px solid #b8d2e0;
+  }
+
+  a p {
+    color: #444;
+  }
 }
 
 .news_img {
