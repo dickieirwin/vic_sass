@@ -239,7 +239,7 @@ body {
 .no_section_menu {
 
     #content {
-    	width: 100% !important;
+    	width: 100% !important;  //grrrrrr
     	padding-left: 0;
         margin-left: auto;
         margin-right: auto;
@@ -520,3 +520,65 @@ aside[role='complementary'] {
 
     }
 }
+
+//the new hubs since 2014 KYM campaign -test hub current students _NI 
+//refactor required
+
+.wide_hub {
+
+    .entry {
+
+        .entry-header {
+
+            width: 63%;
+            float: left;
+
+            @include mobile {
+                width: inherit;
+                float: none;
+            }
+        }
+
+    }
+
+    .col { //padding override to set equal coloumn width for 3 colum full width page serious refactoring needed for .col _NI
+
+        padding-left: 3%;
+        padding-right: 0;
+
+        &.col1 {
+            padding-left: 0;
+        }
+
+        @include mobile {
+
+            padding-left: 0;
+        }
+    }
+
+    @include desktop {
+        #content {
+            max-width: 77%; //set the contetn area to full width
+        }
+    }
+
+    @include skinny {
+        .promo {
+            width: 30.5%;
+            float: right;
+            margin-left: 1.5em;
+            margin-top: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            
+        }
+    } 
+
+}
+
+
+
+
+
+
