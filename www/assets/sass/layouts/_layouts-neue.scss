@@ -31,23 +31,23 @@ body {
 }
 
 
-/*
-#wrapper {
-    margin-top: -4px;
-}
-*/
-
-/*
-.menu_open {
-
-    #wrapper {
-        @include skinny-only {
-           overflow: hidden;
-           width: 100%;
-        }
-    }
-}
-*/
+// /*
+// #wrapper {
+//     margin-top: -4px;
+// }
+// */
+// 
+// /*
+// .menu_open {
+// 
+//     #wrapper {
+//         @include skinny-only {
+//            overflow: hidden;
+//            width: 100%;
+//         }
+//     }
+// }
+// */
 
 //----------------------------------
 // Skinny
@@ -248,129 +248,129 @@ body {
 }
 
 
-/*
-// Updated style to demonstrate a 2 column approach sitewide
-
-.no_complementary {
-
-    section[role='main'] {
-
-        border-right: none;
-
-        @include skinny {
-            width: 100%;
-
-            .entry {
-                padding-left: 3%; // Should be calculated exactly
-                padding-right: 3%; // Should be calculated exactly
-            }
-        }
-
-        @include desktop {
-            float: left;
-            width: 77%;
-
-            .entry {
-                padding-left: 5%;
-                padding-right: 0;
-                padding-top: 3%;
-                width: 90%;
-            }
-
-        #hero_large + & .entry { 	// not following a hero or something else
-        	padding-top: 1em;
-         }
-
-       }
-    }
-
-    aside[role="complementary"] {
-    	display: none; // Force this to disappear - production only, don't include the markup in these templates
-    }
-
-}
-*/
-
-
+// /*
+// // Updated style to demonstrate a 2 column approach sitewide
+// 
+// .no_complementary {
+// 
+//     section[role='main'] {
+// 
+//         border-right: none;
+// 
+//         @include skinny {
+//             width: 100%;
+// 
+//             .entry {
+//                 padding-left: 3%; // Should be calculated exactly
+//                 padding-right: 3%; // Should be calculated exactly
+//             }
+//         }
+// 
+//         @include desktop {
+//             float: left;
+//             width: 77%;
+// 
+//             .entry {
+//                 padding-left: 5%;
+//                 padding-right: 0;
+//                 padding-top: 3%;
+//                 width: 90%;
+//             }
+// 
+//         #hero_large + & .entry { 	// not following a hero or something else
+//         	padding-top: 1em;
+//          }
+// 
+//        }
+//     }
+// 
+//     aside[role="complementary"] {
+//     	display: none; // Force this to disappear - production only, don't include the markup in these templates
+//     }
+// 
+// }
+// */
 
 
 
-/*
-// No sidebar nav
-//--------------------------
-.no_navigation {
-
-    @include skinny-only {
-        .primary {
-            padding-top: 0; // Remove compensation for nav toggle
-        }
-
-    }
-
-    @include skinny {
 
 
-        // The next two rules give the top of the page a bit of space: it's quite nice and worth considering for all non-hub pages, easy enough if we set it sitewide and always use a 2col hero on the hubs
-
-        section[role='main'],
-        aside[role="complementary"] {
-            margin-top: 2em;
-        }
-
-        .entry {
-        	padding-top: 0;
-        }
-
-    }
-
-
-
-    @include desktop {
-
-        #page {
-        	width: 100%;
-        }
-
-        #page {
-        	padding-left: 7.5%;
-        	padding-right: 7.5%;
-        }
-
-        section[role='main'] {
-            width: 71%; // Override std. width for desktop 3cols & give the aside 1% breathing room
-        }
-
-        aside[role="complementary"] {
-            width: 28%; // Override std. width for desktop 3cols
-        }
-
-    }
-
-}
-
-*/
-
-
-// No sidebar or complementary
-//--------------------------
-
-/*
-.no_navigation {
-
-    &.no_complementary {
-
-        section[role='main'] {
-
-            width: 100%;
-
-            .entry {
-                padding-left: 2%; // Should be calculated exactly
-                padding-right: 2%; // Should be calculated exactly
-            }
-        }
-    }
-}
-*/
+// /*
+// // No sidebar nav
+// //--------------------------
+// .no_navigation {
+// 
+//     @include skinny-only {
+//         .primary {
+//             padding-top: 0; // Remove compensation for nav toggle
+//         }
+// 
+//     }
+// 
+//     @include skinny {
+// 
+// 
+//         // The next two rules give the top of the page a bit of space: it's quite nice and worth considering for all non-hub pages, easy enough if we set it sitewide and always use a 2col hero on the hubs
+// 
+//         section[role='main'],
+//         aside[role="complementary"] {
+//             margin-top: 2em;
+//         }
+// 
+//         .entry {
+//         	padding-top: 0;
+//         }
+// 
+//     }
+// 
+// 
+// 
+//     @include desktop {
+// 
+//         #page {
+//         	width: 100%;
+//         }
+// 
+//         #page {
+//         	padding-left: 7.5%;
+//         	padding-right: 7.5%;
+//         }
+// 
+//         section[role='main'] {
+//             width: 71%; // Override std. width for desktop 3cols & give the aside 1% breathing room
+//         }
+// 
+//         aside[role="complementary"] {
+//             width: 28%; // Override std. width for desktop 3cols
+//         }
+// 
+//     }
+// 
+// }
+// 
+// */
+// 
+// 
+// // No sidebar or complementary
+// //--------------------------
+// 
+// /*
+// .no_navigation {
+// 
+//     &.no_complementary {
+// 
+//         section[role='main'] {
+// 
+//             width: 100%;
+// 
+//             .entry {
+//                 padding-left: 2%; // Should be calculated exactly
+//                 padding-right: 2%; // Should be calculated exactly
+//             }
+//         }
+//     }
+// }
+// */
 
 
 

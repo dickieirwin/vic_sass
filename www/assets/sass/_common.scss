@@ -459,7 +459,7 @@ section[role="main"] .content a.external:after {
 .restriction_flag {
         color: darkred;
         display: inline-block;
-        /* background-color: #E8CCCC;*/
+//        background-color: #E8CCCC;
         font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
         font-weight: normal;
         font-size: 0.85em;
@@ -639,7 +639,7 @@ section[role="main"] .content a.external:after {
 aside[role='complementary'] {
 
 
-/*     @include box-sizing(border-box); */
+//     @include box-sizing(border-box);
 
 
 
@@ -673,18 +673,17 @@ aside[role='complementary'] {
 // hero area
 //----------------------------------
 //add borders to containers at tablet size
-/*
-.additional_complementary {
-    @include skinny {
-        border-right: 1px solid $color_border;
-    }
-}
-.primary {
-    @include skinny {
-        border-right: 1px solid $color_border;
-    }
-}
-*/
+
+// .additional_complementary {
+//     @include skinny {
+//         border-right: 1px solid $color_border;
+//     }
+// }
+// .primary {
+//     @include skinny {
+//         border-right: 1px solid $color_border;
+//     }
+// }
 
 
 

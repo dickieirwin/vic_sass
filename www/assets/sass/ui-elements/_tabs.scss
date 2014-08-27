@@ -2,17 +2,15 @@
     //clear: both;
     .tab_content {
        
-/*
-        padding-top: 1em;
-        
-        @include mobile {
-            display: none;
-        }
-        
-        .button {
-            margin-top: 15px;
-        }
-*/
+//         padding-top: 1em;
+//         
+//         @include mobile {
+//             display: none;
+//         }
+//         
+//         .button {
+//             margin-top: 15px;
+//         }
     }
 }
 
@@ -104,52 +102,52 @@
 
 
 
-/* DEPRECATED? NO LONGER USING TABS WITHIN WIDGETS (TOO COMPLEX)
-    .widget {
-        ul.tabs {
-            padding: 0;
-            height: 30px;
-            line-height: 30px;
-            border-bottom: none;
-            li {
-                padding: 0.25em 1em;
-                @include theme-color(
-                    $use: key-border,
-                    $property: background
-                );
-                &.active {
-                    @include theme-color(
-                        $use: key-light,
-                        $property: background
-                    );
-                    a {
-                        color: #323232;
-
-                    }
-                }
-            }
-            a {
-                font-size: 16px;
-                color: $color_links;
-            }
-        }
-        .tab_container {
-            //background: #cccccc;
-            .tab_content {
-                padding: 1.5em 1em;
-            }
-        }
-    }
-
-
-
-    .widget {
-        @include skinny-only {
-            &.widget_to_col {
-                fieldset {
-                    width: 100%;
-                }
-            }
-        }
-    }
-*/
+// /* DEPRECATED? NO LONGER USING TABS WITHIN WIDGETS (TOO COMPLEX)
+//     .widget {
+//         ul.tabs {
+//             padding: 0;
+//             height: 30px;
+//             line-height: 30px;
+//             border-bottom: none;
+//             li {
+//                 padding: 0.25em 1em;
+//                 @include theme-color(
+//                     $use: key-border,
+//                     $property: background
+//                 );
+//                 &.active {
+//                     @include theme-color(
+//                         $use: key-light,
+//                         $property: background
+//                     );
+//                     a {
+//                         color: #323232;
+// 
+//                     }
+//                 }
+//             }
+//             a {
+//                 font-size: 16px;
+//                 color: $color_links;
+//             }
+//         }
+//         .tab_container {
+//             //background: #cccccc;
+//             .tab_content {
+//                 padding: 1.5em 1em;
+//             }
+//         }
+//     }
+// 
+// 
+// 
+//     .widget {
+//         @include skinny-only {
+//             &.widget_to_col {
+//                 fieldset {
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// */
