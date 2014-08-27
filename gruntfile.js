@@ -11,6 +11,7 @@ module.exports = function(grunt) {
           ext: '.css'
       },
       {
+        // we drop the main style.css into a temp folder so it can be run through bless without overwriting
         expand: true,
         cwd: 'www/assets/sass',
         src: 'style.scss',
@@ -21,15 +22,16 @@ module.exports = function(grunt) {
     
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-livereload');
     grunt.loadNpmTasks('grunt-bless');
 
     grunt.initConfig({
         sass: {
           options: { // options shared by all tasks
-            trace:true,
+            bundleExec: true,
             compass:true,
-            unixNewlines: true
+            trace:true,
+            unixNewlines: true,
+            update: false // update: true causes the sass compilation task to fail for uncertain reasons
           },
             dev: {//target
                 options: {
