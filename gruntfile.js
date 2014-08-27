@@ -11,6 +11,7 @@ module.exports = function(grunt) {
           ext: '.css'
       },
       {
+        // we drop the main style.css into a temp folder so it can be run through bless without overwriting
         expand: true,
         cwd: 'www/assets/sass',
         src: 'style.scss',
@@ -30,7 +31,7 @@ module.exports = function(grunt) {
             compass:true,
             trace:true,
             unixNewlines: true,
-            update: true
+            update: false // update: true causes the sass compilation task to fail for uncertain reasons
           },
             dev: {//target
                 options: {
