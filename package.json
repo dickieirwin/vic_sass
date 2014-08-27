@@ -6,5 +6,8 @@
     "grunt-contrib-sass": "~0.7.3",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-bless": "~0.1.1"
+  },
+  "scripts": {
+    "preinstall": "bundle install"
   }
 }

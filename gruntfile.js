@@ -29,7 +29,8 @@ module.exports = function(grunt) {
             bundleExec: true,
             compass:true,
             trace:true,
-            unixNewlines: true
+            unixNewlines: true,
+            update: true
           },
             dev: {//target
                 options: {
