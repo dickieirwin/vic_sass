@@ -26,8 +26,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
         sass: {
           options: { // options shared by all tasks
-            trace:true,
+            bundleExec: true,
             compass:true,
+            trace:true,
             unixNewlines: true
           },
             dev: {//target
