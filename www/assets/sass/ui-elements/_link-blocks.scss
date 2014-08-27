@@ -86,13 +86,11 @@ a.link_block p,
 // add .blocks-2col and .blocks-3col modifiers to the containing .blocks element  
 // to shift between two and three column layout
 
-/*
-.blocks { 				
-	
-	@extend .bleed_box;
-    
-}
-*/
+// .blocks { 				
+// 	
+// 	@extend .bleed_box;
+//     
+// }
 
 
 .blocks-2col { 				
@@ -131,16 +129,16 @@ a.link_block p,
 
 
 
-/**
- * Images in blocks
- * ----------------------------------------------------------------------------
- * add an image to the block before .link_block_body with a class of .link_block_image 
- * 
- * these can either be full width with a modifier on the block of .link_block-has_image
- *
- * or floated next to the body with .link_block-has_thumb
- *
- */
+// /**
+//  * Images in blocks
+//  * ----------------------------------------------------------------------------
+//  * add an image to the block before .link_block_body with a class of .link_block_image 
+//  * 
+//  * these can either be full width with a modifier on the block of .link_block-has_image
+//  *
+//  * or floated next to the body with .link_block-has_thumb
+//  *
+//  */
 
 
 .link_block_image {

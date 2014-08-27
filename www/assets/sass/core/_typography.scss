@@ -527,13 +527,13 @@ dl {
 }
 
 
-/**
- * Horizontal Rules
- * ----------------------------------------------------------------------------
- * An unclasses HR will be 3px high and in the themes key colour
- * This can be made 1px with rule--thin 
- * And subtler in the themes border colour with rule--light
- */
+// /**
+//  * Horizontal Rules
+//  * ----------------------------------------------------------------------------
+//  * An unclasses HR will be 3px high and in the themes key colour
+//  * This can be made 1px with rule--thin 
+//  * And subtler in the themes border colour with rule--light
+//  */
  
 .rule { 				
 	border-top-style: solid;
@@ -602,9 +602,9 @@ form, input, button, textarea, select {
 }
 
 
-/* Additional rules
- * (Please remove if not needed)
- * --------------- */
+// /* Additional rules
+//  * (Please remove if not needed)
+//  * --------------- */
 
 abbr[title] { border-bottom: 1px dotted; }
 
@@ -620,10 +620,10 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 
-/* Redeclare monospace font family: h5bp.com/j */
+// /* Redeclare monospace font family: h5bp.com/j */
 pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
 
-/* Improve readability of pre-formatted text in all browsers */
+// /* Improve readability of pre-formatted text in all browsers */
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 
 q { quotes: none; }
@@ -631,7 +631,7 @@ q:before, q:after { content: ""; content: none; }
 
 small { font-size: 85%; }
 
-/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+// /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }

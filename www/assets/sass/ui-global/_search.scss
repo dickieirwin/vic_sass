@@ -74,12 +74,11 @@ $big_input_height: 36px;
 .has_big_search #wrapper {
     border-top-width: $search_strip_height;
     border-top-style: solid;
-/*
-    @include theme-color(
-        $use: key-light,
-        $property: border-color
-    );
-*/
+
+//     @include theme-color(
+//         $use: key-light,
+//         $property: border-color
+//     );
     border-top-color: #F1F1EB;
 
 	@include mobile {
@@ -353,12 +352,10 @@ $big_input_height: 36px;
         padding: 0 3em 0 0.4em;
         outline: none !important;
 
-/*
-        @include theme-color(
-            $use: key-border,
-            $property: border-color
-        );
-*/
+//         @include theme-color(
+//             $use: key-border,
+//             $property: border-color
+//         );
         border-color: #ccc;
         border-color: rgba(0,0,0,0.1);
         background-color: rgba(255,255,255,0.97);
@@ -551,17 +548,17 @@ form.loading{
 
 #content {
 
-	/*.search_page & .big_search_fields { 
-		background-color: transparent;
-		
-		@include skinny {
-			padding: 0 0 1.5em 0; // this needs to be tablet landscp up 
-		}
-		
-		p {
-			margin-bottom: -1.5em; 
-		}
-	}*/
+// 	/*.search_page & .big_search_fields { 
+// 		background-color: transparent;
+// 		
+// 		@include skinny {
+// 			padding: 0 0 1.5em 0; // this needs to be tablet landscp up 
+// 		}
+// 		
+// 		p {
+// 			margin-bottom: -1.5em; 
+// 		}
+// 	}*/
 
 	// margin-top: 4em;
 	

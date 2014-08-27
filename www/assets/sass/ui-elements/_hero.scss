@@ -448,12 +448,10 @@
         -webkit-font-smoothing: antialiased;
         width: 100%; // initial position below for mobile
 
-/*
-        @include theme-color(
-            $use: key-dark,
-            $property: background-color
-        );
-*/
+//         @include theme-color(
+//             $use: key-dark,
+//             $property: background-color
+//         );
 
 		
 		h3 {

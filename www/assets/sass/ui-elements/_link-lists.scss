@@ -116,31 +116,27 @@
 
 // used on hubs for main links
 //-----------------------------------
-/*
-.link_block {
-    border-top: 4px solid;
-    padding: 0.5em 0 2em 0;
-    @include theme-color(
-        $use: key,
-        $property: border-top-color
-    );
-*/
-    
-/*
-	h2:first-child {
-		text-transform: uppercase;
-		
-		a {
-			color: #323232;
-			font-family: $font_display;
-			font-weight: bold;
-			font-size: 24px;
-			line-height: 1;
-			margin-bottom: 15px;
-		}
-		
-    }
-*/
+// .link_block {
+//     border-top: 4px solid;
+//     padding: 0.5em 0 2em 0;
+//     @include theme-color(
+//         $use: key,
+//         $property: border-top-color
+//     );
+
+// 	h2:first-child {
+// 		text-transform: uppercase;
+// 		
+// 		a {
+// 			color: #323232;
+// 			font-family: $font_display;
+// 			font-weight: bold;
+// 			font-size: 24px;
+// 			line-height: 1;
+// 			margin-bottom: 15px;
+// 		}
+// 		
+//     }
 	
 	// a {
         // &:first-child {

@@ -285,13 +285,11 @@
 }
 
 
-/*
-#page { // make room for full width nav toggle
-    @include skinny-only {
-        padding-left: 5%;
-    }
-}
-*/
+// #page { // make room for full width nav toggle
+//     @include skinny-only {
+//         padding-left: 5%;
+//     }
+// }
 
 
 #section_menu {
@@ -555,19 +553,19 @@ div.additional_complementary {
 }
 
 
-/**
- * Modifying the section nav for drilldown pages
- * ----------------------------------------------------------------------------
- * Changes to the section menu to not show the child items when 
- * these are all linked to in the body of the page
- * 
- * It may be a bit weird to have a piecemeal approach to this 
- * - either we teach our users to use the page or not!
- *
- * Padding mods could be omitted if we simplify how it's put togther 
- * - can the CMS not write .parent for these pages???
- *
- */
+// /**
+//  * Modifying the section nav for drilldown pages
+//  * ----------------------------------------------------------------------------
+//  * Changes to the section menu to not show the child items when 
+//  * these are all linked to in the body of the page
+//  * 
+//  * It may be a bit weird to have a piecemeal approach to this 
+//  * - either we teach our users to use the page or not!
+//  *
+//  * Padding mods could be omitted if we simplify how it's put togther 
+//  * - can the CMS not write .parent for these pages???
+//  *
+//  */
  
  
 .template-drilldown #section_menu .section_tree {

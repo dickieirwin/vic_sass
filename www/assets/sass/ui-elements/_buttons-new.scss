@@ -1,46 +1,46 @@
-/* ------------------------------------------------------------------- *
- |  TYPE:           Button styles
- |  AUTHOR(S):      Frej
- |  DATE CREATED:   2012
- |  DATE UPDATED:   23/10/2012
- |  DESCRIPTION:    All button styles
- |
- |                  * COLOURS
- |                  * SIZES
- |                  * ICONS
- |                  * ICON ONLY BUTTONS
- |                  * TAB BUTTONS
- |
- * ------------------------------------------------------------------- *
-    EXAMPLE
-    -------
-
-
-
-    MIXIN REFERENCE (all options)
-    -----------------------------
-
-    @include button-ui(
-        $background-color: #background-color,
-        $background-color-hover: #hover-background-color,
-        $color: #text-color,
-        $padding: px px px px,
-        $border-color: #border-color,
-        $border-color-hover: #border-color-hover,
-        $font-size: px-to-em(16),
-        $line-height: px-to-em(16),
-        $icon: 'icon-name',
-        //$icon-hover: 'icon-name-hover',
-        $icon-position: 'left/right',
-        $icon-padding: num,
-        $icon-offset-x: px,
-        $icon-offset-y: px,
-        $icon-only: false/true,
-        $text-transform: true // default is set to uppercase true=lowercase
-    );
-
-
- * ------------------------------------------------------------------- */
+// /* ------------------------------------------------------------------- *
+//  |  TYPE:           Button styles
+//  |  AUTHOR(S):      Frej
+//  |  DATE CREATED:   2012
+//  |  DATE UPDATED:   23/10/2012
+//  |  DESCRIPTION:    All button styles
+//  |
+//  |                  * COLOURS
+//  |                  * SIZES
+//  |                  * ICONS
+//  |                  * ICON ONLY BUTTONS
+//  |                  * TAB BUTTONS
+//  |
+//  * ------------------------------------------------------------------- *
+//     EXAMPLE
+//     -------
+// 
+// 
+// 
+//     MIXIN REFERENCE (all options)
+//     -----------------------------
+// 
+//     @include button-ui(
+//         $background-color: #background-color,
+//         $background-color-hover: #hover-background-color,
+//         $color: #text-color,
+//         $padding: px px px px,
+//         $border-color: #border-color,
+//         $border-color-hover: #border-color-hover,
+//         $font-size: px-to-em(16),
+//         $line-height: px-to-em(16),
+//         $icon: 'icon-name',
+//         //$icon-hover: 'icon-name-hover',
+//         $icon-position: 'left/right',
+//         $icon-padding: num,
+//         $icon-offset-x: px,
+//         $icon-offset-y: px,
+//         $icon-only: false/true,
+//         $text-transform: true // default is set to uppercase true=lowercase
+//     );
+// 
+// 
+//  * ------------------------------------------------------------------- */
 
 
 @import "../ui-library/mixin-buttons-new";
