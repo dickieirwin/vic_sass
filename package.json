@@ -1,6 +1,11 @@
 {
   "name": "wip-sass",
   "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victoriauniversity/sass.git"
+  },
+  "private": true,
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "~0.7.3",
