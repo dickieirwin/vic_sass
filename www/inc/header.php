@@ -24,8 +24,7 @@
         <script src='/assets/js/jquery-1.10.2.min.js'></script>
         
         <!-- Sitewide styles -->
-        <link href="/assets/css/style1.css" media="all" rel="stylesheet" type="text/css" />
-        <link href="/assets/css/style2.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
         <link href="/assets/css/squiz-local.css" media="all" rel="stylesheet" type="text/css" />
         <!--[if lte IE 8]><link href="/assets/css/ie8.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
 
