@@ -605,10 +605,11 @@ aside[role='complementary'] {
             width: 25%;
         }
     }
+
+    &.has_feature_search #page {
+      @include mobile {
+        padding-top: $search_strip_height;
+      }
+    }
+
 }
-
-
-
-
-
-
