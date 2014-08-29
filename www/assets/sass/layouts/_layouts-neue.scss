@@ -575,10 +575,41 @@ aside[role='complementary'] {
         }
     } 
 
+
+    .feature_search { //overrides for featured search on .wide_hub
+        
+        .feature_search_fields {
+
+
+            @include desktop {
+                 width: 70%;
+            }
+
+           
+
+            @include mobile {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+             @include skinny {
+                input[type='text'] {
+                    width: 64%;
+                }
+            }
+
+        }
+
+        .feature_search_filters {
+            width: 25%;
+        }
+    }
+
+    &.has_feature_search #page {
+      @include mobile {
+        padding-top: $search_strip_height;
+      }
+    }
+
 }
-
-
-
-
-
-
