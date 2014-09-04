@@ -371,22 +371,22 @@ nav#mobile_masthead,
         width: $nav-x; // Set in variables
 
         & > nav {
-            @include display-flex();
-            @include flex-direction(column);
+            @include display-box;
+            @include box-orient(vertical);
         }
 
 
         .nav_main,
         .nav_support {
-            @include display-flex();
-            @include flex-direction(column);
+            @include display-box;
+            @include box-orient(vertical);
         }
 
         .nav_main li,
         .nav_support li {
 
             border-bottom: 1px solid rgba(0,0,0, .2);
-            @include order(2);
+            @include box-ordinal-group(2);
 
             a {
                 padding: 0 10px; // pixel value as it needs to be consistent across a few text sizes
@@ -428,13 +428,13 @@ nav#mobile_masthead,
 
         .nav_main .home {
             display: block;
-            @include  order(2);
+            @include box-ordinal-group(1);
         }
 
         // Move the main nav first
 
         .nav_main {
-            @include  order(1);
+            @include box-ordinal-group(1);
             li {
                 height: 49px;
                 line-height: 49px;
@@ -445,7 +445,7 @@ nav#mobile_masthead,
 
         .nav_support {
             font-size: 13px;
-            @include  order(2);
+            @include box-ordinal-group(2);
             li {
                 height: 36px;
                 line-height: 36px;
@@ -455,7 +455,7 @@ nav#mobile_masthead,
         // Style the mobile-only contact block
 
         .contact {
-            @include  order(3);
+            @include box-ordinal-group(3);
             color: $white;
             padding: 1em 10px 0 19px; // the links above
             color: #999;
@@ -514,7 +514,7 @@ nav#mobile_masthead,
     }
 
     @include mobile {
-        @include  order(1);
+        @include box-ordinal-group(1);
         position: relative;
         margin: 7px 0 0 0;
         height: 42px;
