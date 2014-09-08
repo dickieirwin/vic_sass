@@ -171,8 +171,11 @@
 
   & h2[itemprop="name"] {
     @extend .h4;
-    @extend %heading_link;
     display: inline;
+  }
+
+  & a h2[itemprop="name"] {
+    @extend %heading_link;
   }
 
 	& h3 {
