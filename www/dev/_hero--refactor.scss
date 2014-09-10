@@ -84,6 +84,16 @@
 
 }
 
+a.hero-image.hero-image--primary .hero-image__text h2 {
+  margin-top: 0.8em;
+  
+  @include mobile {
+    margin-top: 0.15em;
+  }
+
+}
+
+
 .hero-container--gallery-3 .hero-image--primary {
   @include skinny-only {
     width: 100%;
@@ -135,8 +145,8 @@
 /* misnamed - this is the hero image text for the large image in the 3up */
 .left_text{
   right: 0;
-  bottom: 50%;
-  width: 40%;
+  bottom: 40%;
+  width: 50%;
   
   @include mobile {
     width: 100%;
