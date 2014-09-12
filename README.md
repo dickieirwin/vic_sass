@@ -24,7 +24,7 @@ npm install
 
 ## Grunt tasks
 
-### `grunt dev` {#grunt-dev}
+### `grunt dev`
 
 One-off compile from the sass to development-friendly css. Uses sass's [nested output style](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_13), with comments for tracing CSS back to the source SASS. (TODO: Upgrade to sass 3.4 and use sourcemaps instead.) After compiling, the CSS is [blessed](https://github.com/Ponginae/grunt-bless) to split into two files because [IE hates you](http://stackoverflow.com/questions/9906794/internet-explorers-css-rules-limits).
 
