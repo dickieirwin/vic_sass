@@ -1,3 +1,5 @@
+Check the wiki yo!
+
 ## Getting started
 
 To get the repo up and running on a clean machine, you need the following:
