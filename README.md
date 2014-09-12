@@ -1,4 +1,4 @@
-Check the wiki yo!
+[Check the wiki yo!](https://github.com/victoriauniversity/sass/wiki)
 
 ## Getting started
 
