@@ -30,4 +30,8 @@ One-off compile from the sass to development-friendly css. Uses sass's [nested o
 
 ### `grunt prod`
 
+One-off compile from sass to production ready css. Uses sass's minified output style. Again IE hates you so this is aslo blessed.
+
 ### `grunt watch`
+
+The watch task is set to look for changes to .scss, .html and .php files. If a change occurs grunt will run the dev task as above. It also uses [live reload](https://github.com/gruntjs/grunt-contrib-watch#optionslivereload), if you are working on a development .php file from this repo it will automatically refresh any of these open .php files in your browser. Saaweeeet.
