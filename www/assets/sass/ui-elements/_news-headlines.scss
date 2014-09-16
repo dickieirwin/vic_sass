@@ -63,6 +63,10 @@ article {
         padding: 6% 6% 0;
         margin-bottom: 2em;
 
+        & h3 {
+            margin-top: 0;
+        }
+
         header {
             background-color: #ddd;
         }

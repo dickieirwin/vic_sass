@@ -329,13 +329,10 @@
 
 
 
-
-
-
 // Specific for Staff pages at Vic
 
- .theme-staff h3[itemprop="datePublished"] {
-color: #115737;
+ .theme-staff h4[itemprop="datePublished"] {
+    color: #115737;
 }
 
 
@@ -619,7 +616,6 @@ section[role="main"] .content a.external:after {
 
 %narrow-h3 {
 	font-size: px-to-em(18);
-	text-transform: uppercase;
 	line-height: $line_height_heading;
 	&:first-child {
 			margin-top: 0;
@@ -627,7 +623,7 @@ section[role="main"] .content a.external:after {
 }
 
 .widget_narrow h3 {
-	@extend %narrow-h3;
+	//@extend %narrow-h3;
 }
 
 .widget_narrow header h2 {
