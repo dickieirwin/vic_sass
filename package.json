@@ -1,6 +1,7 @@
 {
   "name": "wip-sass",
   "version": "0.2.0",
+  "author": "victoriauniversity",
   "repository": {
     "type": "git",
     "url": "https://github.com/victoriauniversity/sass.git"
