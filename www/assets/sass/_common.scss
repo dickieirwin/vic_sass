@@ -329,13 +329,10 @@
 
 
 
-
-
-
 // Specific for Staff pages at Vic
 
- .theme-staff h3[itemprop="datePublished"] {
-color: #115737;
+ .theme-staff h4[itemprop="datePublished"] {
+    color: #115737;
 }
 
 
@@ -466,9 +463,9 @@ section[role="main"] .content a.external:after {
         text-transform: none;
         font-weight: normal;
         border: 1px solid darkred;
-        padding: 3px 4px;
+        padding: 1px 4px;
         margin-left: 0.3333em;
-        margin-top: -2px;
+        margin-top: 4px;
         vertical-align: middle;
     }
 
@@ -617,14 +614,6 @@ section[role="main"] .content a.external:after {
 }
 
 
-%narrow-h3 {
-	font-size: px-to-em(18);
-	text-transform: uppercase;
-	line-height: $line_height_heading;
-	&:first-child {
-			margin-top: 0;
-	}
-}
 
 .widget_narrow h3 {
 	@extend %narrow-h3;
@@ -634,56 +623,6 @@ section[role="main"] .content a.external:after {
     font-size: 1.3em;
 }
 
-//
-//----------------------------------
-aside[role='complementary'] {
-
-
-//     @include box-sizing(border-box);
-
-
-
-    h3 {
-			@extend %narrow-h3;
-			@include theme-color(
-					$use: key,
-					$property: color
-			);
-
-        text-transform: inherit;
-        margin-bottom: 0.5em;
-
-    }
-
-    .toggle_block {
-        > h4 {
-            margin-top: 0;
-        }
-    }
-}
-
-@include mobile {
-    aside[role="complementary"]>div:last-child {
-        margin-bottom: 1.5em;
-    }
-
-}
-
-
-// hero area
-//----------------------------------
-//add borders to containers at tablet size
-
-// .additional_complementary {
-//     @include skinny {
-//         border-right: 1px solid $color_border;
-//     }
-// }
-// .primary {
-//     @include skinny {
-//         border-right: 1px solid $color_border;
-//     }
-// }
 
 
 

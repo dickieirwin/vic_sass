@@ -114,48 +114,6 @@
 
 
 
-// used on hubs for main links
-//-----------------------------------
-// .link_block {
-//     border-top: 4px solid;
-//     padding: 0.5em 0 2em 0;
-//     @include theme-color(
-//         $use: key,
-//         $property: border-top-color
-//     );
-
-// 	h2:first-child {
-// 		text-transform: uppercase;
-// 		
-// 		a {
-// 			color: #323232;
-// 			font-family: $font_display;
-// 			font-weight: bold;
-// 			font-size: 24px;
-// 			line-height: 1;
-// 			margin-bottom: 15px;
-// 		}
-// 		
-//     }
-	
-	// a {
-        // &:first-child {
-            // text-transform: uppercase;
-            // color: #323232;
-            // font-family: $font_display;
-            // font-weight: bold;
-            // font-size: 24px;
-            // line-height: 1;
-            // margin-bottom: 15px;
-        // }
-    // }
-//}
-
-
-
-// Used in aside column
-//------------------------------
-
 //	partial refactor to create .news_block -KB 2014-02-04
 //  -----------------------------------------------------
 //	- create %aside_block for common styles between .date_block and .news_block
@@ -163,49 +121,63 @@
 //	- at the moment .date_block is used on lots of things that aren't dates e.g. related stories widget
 //	- see also ui-elements/_info-block, ui-elements/_link-blocks, ui-elements/_block-lists - scope to combine/unify into a single inheritance tree?
 
-// (\/) (°,,,°) (\/) FIXME: some refactoring to do here
+// Refactoriing done 15/09/14 could maybe be combined with _link-block.scss - NI
+// ------------------------------------------------------------------------------
+
+
+
+// (\/) (°,,,°) (\/) FIXME
 %aside_block {
 	padding: 0.75em 0;
 	border-bottom: 1px solid $color_border;
   overflow: auto;
 
-  & h2[itemprop="name"] {
-    @extend .h4;
-    @extend %heading_link;
+  & h3[itemprop="name"] {
     display: inline;
   }
 
-	& h3 {
-		@extend .h4;
-		margin: 0 0 0.25em 0;
-		text-transform: inherit;
-	}
-	
+  & a h3[itemprop="name"] {
+    @extend %heading_link;
+    margin-top: 0;
+  }
+
 	& h4 {
-    font-size: 16px;
-    margin-top: 0.25em;
-    margin-bottom: 0.5em;
+    //font-size: 16px;
+    margin:0 0 0.5em 0;
     line-height: 1.3125em;
+    text-transform: inherit;
 	}
-
-  &:last-child {
-    border-bottom: 0px none;
-  }
-
-  & header + p[itemprop="description"] {
-    margin-top: 0.75em;
-  }
 
   & a h4[itemprop="name"] {
     color: #146999; 
     border-bottom: 1px solid #b8d2e0;
   }
 
+  & h6 {
+    color: $color_text_light;
+    margin-bottom: 0;
+  }
+
+  & header + p[itemprop="description"] {
+    margin-top: 0.25em;
+  }
+
   a p {
     color: #444;
   }
 
+  p:last-child {
+      margin-bottom: 0;
+  }
+
+  &:last-child {
+    border-bottom: 0px none;
+  }
+
 	// the extra specificity of this selector is needed for some rules; this is a bug and should be fixed -KB 2014-02-04
+
+  //The bloody _mixin-theme-library.scss creates a bunch of useless classes with some function for some reason, need to sort it out - NI 15/09/14 
+
 	aside[role="complementary"] & {
 		a {
 			h3 {
@@ -222,80 +194,97 @@
 				color: $color_links_hover;
 			}
 		}
+
+    h3 {
+      color: $color-text;
+    }
 	}
 }
 
+
+
+//---------
 .date_block {
-	@extend %aside_block;
 	
-//	a h3 {
-//		@extend %heading_link;
-//	}
-	
-	.info_block:first-child & {
-			padding-top: 0;
-	}
-//	h4, h5 {
-//			margin: 0;
-//	}
-	p:last-child {
-			margin-bottom: 0;
-	}
+  @extend %aside_block;
+
+  & h3 {
+    margin-top: 0;
+  }
+
 	a {
-			// font-weight: bold;
-            font-weight: inherit;
+      font-weight: inherit;
 	}
+
+  .info_block:first-child & {
+      padding-top: 0;
+  }
+ 
+
 	@include mobile {
 		clear: both; 
 	}
 }
 
-	
-	
+//------
 .news_block {
-  @extend %aside_block;
 
-  overflow: auto;
+    overflow: auto;
+   
+    @extend %aside_block;
 
-  &:last-child {
-    border-bottom: 0px none;
-  }
-
-  & header + p[itemprop="description"] {
-    margin-top: 0.75em;
-  }
-
-  & h4[itemprop="name"] { 
-    display: inline;
-  }
-
-  & header h5 {
-    margin-top: 0.5em;
-  }
-
-  & a h4[itemprop="name"] {
-    color: #146999; 
-    border-bottom: 1px solid #b8d2e0;
-  }
-
-  a p {
-    color: #444;
-  }
+    & h6 {
+      margin-top: 0;
+    }
 }
 
 .news_img {
         display: block;
         float: right;
         width: 30%;
-        margin-top: 2em;
+        margin-top: -2em;
+        padding-left: 1em;
 
         @include phone_mobile {
             float: none;
             max-width: 240px;
             width: auto;
-            margin-top: 0;
+            margin-top: 1em;
             margin-bottom: 1em;
+            padding-left: 0;
         }
+}
+
+
+%narrow-h3 {
+    font-size: px-to-em(18);
+    //line-height: $line_height_heading;
+    &:first-child {
+            margin-top: 0;
+    }
+}
+
+aside[role='complementary'] {
+
+    h3 {
+      @extend %narrow-h3;
+      text-transform: inherit;
+      margin-bottom: 0.5em;
+
+    }
+
+    .toggle_block {
+        > h4 {
+            margin-top: 0;
+        }
+    }
+}
+
+@include mobile {
+    aside[role="complementary"]>div:last-child {
+        margin-bottom: 1.5em;
+    }
+
 }
 
 

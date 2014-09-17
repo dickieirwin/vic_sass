@@ -1,3 +1,5 @@
+[Check the wiki yo!](https://github.com/victoriauniversity/sass/wiki)
+
 ## Getting started
 
 To get the repo up and running on a clean machine, you need the following:
@@ -24,10 +26,17 @@ npm install
 
 ## Grunt tasks
 
-### `grunt dev` {#grunt-dev}
+### `grunt dev`
 
 One-off compile from the sass to development-friendly css. Uses sass's [nested output style](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_13), with comments for tracing CSS back to the source SASS. (TODO: Upgrade to sass 3.4 and use sourcemaps instead.) After compiling, the CSS is [blessed](https://github.com/Ponginae/grunt-bless) to split into two files because [IE hates you](http://stackoverflow.com/questions/9906794/internet-explorers-css-rules-limits).
 
 ### `grunt prod`
 
+One-off compile from sass to production ready css. Uses sass's minified output style. Again IE hates you so this is aslo blessed.
+
 ### `grunt watch`
+
+The watch task is set to look for changes to .scss, .html and .php files. If a change occurs grunt will run the dev task as above. It also uses [live reload](https://github.com/gruntjs/grunt-contrib-watch#optionslivereload), if you are working on a development .php file from this repo it will automatically refresh any of these open .php files in your browser. [How?](https://github.com/gruntjs/grunt-contrib-watch/blob/master/docs/watch-examples.md#enabling-live-reload-in-your-html)
+
+
+Saaweeeet.
