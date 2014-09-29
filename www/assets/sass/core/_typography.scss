@@ -343,27 +343,21 @@ a {
 
 
 .entry { // possibly remove this nesting?
+            //-- Yes it's stupid - NI 29-9-14
 
-    
-	// p a:hover {
- //        text-decoration: underline; // for all links in main content block.
-		
- //    } 
-	
-    // removed this style, to be sorted properly post go-live
+
     blockquote {
-        margin: 0;
-    //     font-size: px-to-em(24);
-    //     @include theme-color(
-    //         $use: key,
-    //         $property: color
-    //     );
-    //     @include font_display;
-    //     line-height: $line_height_heading;
-    //     padding: 0;
-    //     margin: 1em 6%;
-    //     line-height: 1.3;
-    //     position: relative;
+        padding: 10px 10px;
+        margin: 0 0 15px;
+        border-left: 5px solid;
+        @include theme-color(
+            $use: key-light,
+            $property: border-color
+        );
+    }
+
+    blockquote p {
+        color: $color_text_light;
     }
 
     .hang_punct {
