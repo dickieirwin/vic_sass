@@ -350,7 +350,6 @@ a {
         padding: 10px 10px;
         margin: 0 0 15px;
         border-left: 5px solid;
-        // border-color: $grey_light;
         @include theme-color(
             $use: key-light,
             $property: border-color
@@ -358,7 +357,7 @@ a {
     }
 
     blockquote p {
-        color: dimgrey;
+        color: $color_text_light;
     }
 
     .hang_punct {
