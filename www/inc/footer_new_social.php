@@ -1,93 +1,10 @@
             </div> <!-- end #page -->
 
- <?php  ?>
-     <!-- /*if (isset($homepage)) {
-        echo "-->
-        <div class='connect_wrapper'>
-          <div class='feeds_wrap'>
-              <aside class='connect-feeds'>
-                  <!-- <article class='connect_intro'>
-                      <h2>Stay in touch&hellip;</h2>
-                      <p>Connect with Victoria by following us on <a href='http://www.facebook.com/victoriauniversityofwellington'>Facebook</a>, <a href='http://twitter.com/VicUniWgtn'>Twitter</a> and <a href='http://www.linkedin.com/company/3693'>LinkedIn</a> or subscribe to our <a href='http://www.youtube.com/user/victoriamarketing'>YouTube channel</a>.</p>
-                  </article> -->
-
-                   <article class='feed'>
-                      <header class='feed__header '>
-                          <h3>Stay in touch</h3>
-                          <p>Connect with Victoria on...</p>
-                          <img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo">
-                          <img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo">
-                          <img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo">
-                          <img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo">
-                      </header>
-                  </article>
-
-                  <article class='feed'>
-                      <header class='feed__header '>
-                          <h3>Stay in touch</h3>
-                          <p>Connect with Victoria on...</p>
-                          <a href='#'>
-                              <span class='icon facebook'></span>
-                              
-                          </a>
-                          <a href='#'>
-                              <span class='icon twitter'></span>
-                          </a>
-                          <a href='#'>
-                              <span class='icon linkedin'></span>
-                          </a>
-                          <a href='#'>
-                              <span class='icon youtube'></span>
-                          </a>
-                          
-                      </header>
-                  </article>
-                 <!--  <article class='feed'>
-                      <h3>&hellip;on Twitter</h3>
-                      <header class='feed__header '>
-                          <a href='#'>
-                              <span class='icon twitter'></span>
-                              Victoria University <b>@VicUniWgtn</b>
-                          </a>
-
-                          <div class='feed__button channel__button'>
-                              <a href='https://twitter.com/VicUniWgtn' class='twitter-follow-button' data-show-count='false' data-dnt='true'>Follow @VicUniWgtn</a>
-                          </div>
-
-                      </header>
-                  </article> -->
-              </aside>
-              </p>
-          </div>
-      </div>
 
         <footer role='contentinfo' class='site_footer'>
             <div class="site_links wrap">
-                <div class="cols">
-
-                         <h2><a href="./?a=113805">Future students</a></h2>
-                  <ul class="link_list">
-                    <li><a href="./?a=127382">Programmes and courses</a></li>
-                    <li><a href="./?a=193470">Apply and enrol</a></li>
-                    <li><a href="./?a=182619">International</a></li>
-                    <li><a href="./?a=127458">Scholarships</a></li>
-                    <li><a href="./?a=192819">Accommodation</a></li>
-                  </ul>
-
-                  <h2><a href="/students">Students</a></h2>
-                  <ul class="link_list">
-                    <li><a href="./?a=118997">Services and support</a></li>
-                    <li><a href="./?a=119313">Financial survival</a></li>
-                    <li><a href="./?a=119079">Key dates</a></li>
-
-                  </ul>
-
-
-                  
-
-
-                </div>
-                <div class="cols">
+             <div class="cols">
+                    <h2> <a class="button" href="./?a=175285">Emergencies</a></h2>
                     <h2><a href="./?a=147146">Faculties</a></h2>
                     <ul class="link_list">
                       <li><a href="./?a=58453">Architecture and Design</a></li>
@@ -100,17 +17,8 @@
                       <li><a href="./?a=189318">Toihuarewa</a></li>
                       <li><a href="./?a=53831">Victoria Business School</a></li>
                     </ul>
-
-                    <h2><a href="./?a=119776">Work at Victoria</a></h2>
-                  <ul class="link_list">
-                    <li><a href="http://vacancies.vuw.ac.nz/">Latest vacancies</a></li>
-                    <li><a href="./?a=127578">Wellington life</a></li>
-                  </ul>
-
-                    
                 </div>
                 <div class="cols">
-
                   <h2><a href="./?a=119780">Contacts and directories</a></h2>
                       <ul class="link_list">
                         <li><a href="./?a=119780">Staff directory</a></li>
@@ -118,7 +26,6 @@
                         <li><a href="http://www.victoria.ac.nz/mediaguide/">Media guide</a></li>
                         <li><a href="./?a=183845">Find a researcher</a></li>
                       </ul>
-
                     <h2><a href="./?a=149162">Campuses &amp; Maps</a></h2>
                     <ul class="link_list">
                       <li><a href="./?a=147075">Kelburn Campus</a></li>
@@ -126,12 +33,26 @@
                       <li><a href="./?a=147087">Karori Campus</a></li>
                       <li><a href="./?a=147083">Te Aro Campus</a></li>
                     </ul>
-
-                  
+                </div>
+                <div class="cols">
+                  <h2><a href="./?a=113805">Future students</a></h2>
+                  <ul class="link_list">
+                    <li><a href="./?a=127382">Programmes and courses</a></li>
+                    <li><a href="./?a=193470">Apply and enrol</a></li>
+                    <li><a href="./?a=182619">International</a></li>
+                    <li><a href="./?a=127458">Scholarships</a></li>
+                    <li><a href="./?a=192819">Accommodation</a></li>
+                  </ul>
+                  <h2><a href="/students">Students</a></h2>
+                  <ul class="link_list">
+                    <li><a href="./?a=118997">Services and support</a></li>
+                    <li><a href="./?a=119313">Financial survival</a></li>
+                    <li><a href="./?a=119079">Key dates</a></li>
+                  </ul>
                 </div>
                 <div class="cols">
                   
-                   <h2><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></h2>
+                  <h2><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></h2>
                   <ul class="link_list">
                     <li><a href="https://www.victoria.ac.nz/alumniandfriends/my-community">Online community</a></li>
                     <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria">Support Victoria</a></li>
@@ -146,34 +67,30 @@
                     <li><a href="http://library.victoria.ac.nz/library/">Library</a></li>
                     <li><a href="http://blackboard.vuw.ac.nz/">Blackboard</a></li>
                   </ul>
-
-                 
-
-                  
                 </div>
                 <div class="cols">
-                    <h2> <a class="button" href="./?a=175285">Emergencies</a></h2>
-                
-
-                    <h2><a href="./?a=123423">Latest news</a></h2>
+                  <h2><a href="./?a=119776">Work at Victoria</a></h2>
+                  <ul class="link_list">
+                    <li><a href="http://vacancies.vuw.ac.nz/">Latest vacancies</a></li>
+                    <li><a href="./?a=127578">Wellington life</a></li>
+                  </ul>
+                  <h2><a href="./?a=123423">Latest news</a></h2>
                   <ul class="link_list">
                     <li><a href="./?a=166245">Events</a></li>
                     <li><a href="./?a=114038">Research expertise</a></li>
                     <li><a href="./?a=127542">Publications</a></li>
                   </ul>
-
-                  
-
                   <h2><a href="#">Social media</a></h2>
+                  <ul class="link_list">
+                    <li>
                         <a href="#"><img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo"></a>
-                        <a href="#"><img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo"></a>
-                        <a href="#"><img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo"></a>
-                        <a href="#"><img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo"></a>
-                  
+                        <a href="#"><img class="social_logo" src="assets/images/twitter_logo.png" alt="Facebook logo"></a>
+                        <a href="#"><img class="social_logo" src="assets/images/yt_logo.png" alt="Facebook logo"></a>
+                        <a href="#"><img class="social_logo" src="assets/images/linkedin_logo.png" alt="Facebook logo"></a>
+                  </li>
+                  </ul>
                 </div>
-
             </div>
-
             <div class="connect_wrapper vic_footer">
                 <div class="fineprint wrap">
 
@@ -215,6 +132,8 @@
 
         .social_logo {
           width: 30px;
+          float: left;
+          padding-right: 8px;
         }
 
         .cols .button {

@@ -35,7 +35,7 @@ includeFile('header.php');
 		  <div class="imagery">
 		    <img src="/images/sarah_banner.jpg"/>
 		  </div>
-		  <div class="hero-image__text top bigger">
+		  <div class="hero-image__text middle bigger">
 		    <h1 class="kym">Know your mind</h1>
 		    <h2>Apply now to study at Victoria in 2015.</h2>
 		  </div>
@@ -103,4 +103,4 @@ includeFile('header.php');
 		</div> <!-- /entry -->
     </div><!-- /content_block -->
 
-    <?php $homepage = true; include('inc/footer_new.php'); ?>
+    <?php $homepage = true; include('inc/footer_new_social.php'); ?>
