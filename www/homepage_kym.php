@@ -14,6 +14,30 @@ includeFile('header.php');
 
 	<style type="text/css">
 
+		.news_block h3 {
+			color: #146999;
+			border-bottom: 1px solid #B8D2E0;
+			display: inline;
+
+		}
+
+		.news_block p {
+			margin-top: 0.3em;
+		}
+
+		a:hover {
+			color: inherit;
+			
+		}
+
+		a:hover > .news_block h3 {
+			color: #0E4F75;
+			border-bottom-color: #5A96B7;
+		}
+
+
+
+		
 		@media all {
 
 			.connect_wrapper {
@@ -51,30 +75,30 @@ includeFile('header.php');
 		<div class='entry'>
 			<section class='news_container'>
 				<div class="news_wrapper">
-					<a class='info_block left_block'>
+					<a class='info_block'>
 						<div class='info_block_secondary'>
 							<img src='http://baconmockup.com/209/135' alt='homepage holder'>
 						</div><!-- /info_block_secondary -->
-						<div class='info_block_primary'>
-							<h2>Top Literary Prize for Gemma</h2>
+						<div class='news_block'>
+							<h3>Top Literary Prize for Gemma</h3>
 							<p>Science graduate and creative writing student Gemma Bowker-Wright has won the top prize in New Zealand’s most distinguished literary awards</p>
 						</div><!-- /info_block_primary -->
 					</a><!-- /info_block -->
-					<a class='info_block left_mid'>
+					<a class='info_block'>
 						<div class='info_block_secondary'>
 							<img src='http://fillmurray.com/209/135' alt='homepage holder'>
 						</div><!-- /info_block_secondary -->
-						<div class='info_block_primary'>
-							<h2>Applications open for 2013 on the 18th of october</h2>
+						<div class='news_block'>
+							<h3>Applications open for 2013 on the 18th of october</h3>
 							<p>Google has donated 50 Android Nexus One phones to Victoria’s School of Engineering and Computer Science for student research.</p>
 						</div><!-- /info_block_primary -->
 					</a><!-- /info_block -->
-					<a class='info_block right_mid'>
+					<a class='info_block'>
 						<div class='info_block_secondary'>
 							<img src='http://placebear.com/209/135' alt='homepage holder'>
 						</div><!-- /info_block_secondary -->
-						<div class='info_block_primary'>
-							<h2>Engineering students go Android!</h2>
+						<div class='news_block'>
+							<h3>Engineering students go Android!</h3>
 							<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
 						</div><!-- /info_block_primary -->
 					</a><!-- /info_block -->
@@ -82,8 +106,8 @@ includeFile('header.php');
 						<div class='info_block_secondary'>
 							<img src='http://placesheen.com/209/135' alt='homepage holder'>
 						</div><!-- /info_block_secondary -->
-						<div class='info_block_primary'>
-							<h2>Success for emerging researchers</h2>
+						<div class='news_block'>
+							<h3>Success for emerging researchers</h3>
 							<p>Victoria University researchers won three of this year’s 10 Rutherford Discovery Fellowships, which support talented emerging researchers.</p>
 						</div><!-- /info_block_primary -->
 					</a><!-- /info_block -->	

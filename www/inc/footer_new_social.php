@@ -95,10 +95,8 @@
                 <div class="fineprint wrap">
 
                             <div class="contact_info">
+                              <a href="http://victoria.ac.nz">
                               <div class="footer_logo">
-                             
-                              <h2 class="word_logo"><a href="http://victoria.ac.nz">VICTORIA</a></h2>
-                              </div> 
                               <ul class="details">
                                  
                                   <!-- <li><h2 class="word_logo"><a href="http://victoria.ac.nz">VICTORIA</a></h2></li> -->
@@ -108,6 +106,9 @@
                                   <li>Emergency: <a href='tel:+6444639999'>+64 4 463 9999</a> or ext. 8888 (internal)</li>
 
                               </ul>
+                              </div>
+                              </a>
+                              
                                 
                               
 
@@ -140,7 +141,7 @@
           margin-top: 0;
         }
         
-         .site_footer .contact_info h2.word_logo {
+         /*.site_footer .contact_info h2.word_logo {
 
           text-transform: uppercase;
           font-family: "Nimbus Roman No 9 L","FreeSerif","Georgia",serif;
@@ -148,17 +149,17 @@
           font-size: 1.5em;
           color: #bbb;
           margin-right: 1em;
-        }
+        }*/
 
-        /*.footer_logo {
-          height: 50px;
+        .footer_logo {
+          height: 40px;
             margin:  0;
             background-image:  url('/assets/images/logo_desktop.png');
-            background-size: 160px;
-            background-position: 0 50%;
+            background-size: 140px;
+            background-position: 0 30%;
             background-repeat: no-repeat;
             padding-left: 180px;
-        }*/
+        }
 
         .homepage .site_footer {
             padding: 0;
@@ -191,7 +192,7 @@
         }
 
         .site_footer .details {
-            line-height: 1.5;
+            line-height: 2.2;
             font-size: 1.15em;
             padding-top: 1px;
         }
@@ -255,7 +256,7 @@
 
 
 
-           /* .footer_logo {
+            .footer_logo {
                  background: url(/assets/images/vic-logo-mobile.png) no-repeat;
             background-size: 128px 17px;
             background-position: 50% 50%;
@@ -264,7 +265,7 @@
             float: none;
             padding: 0;
             margin: 0;
-            }*/
+            }
   
              .site_footer .contact_info {
                 display: block;
