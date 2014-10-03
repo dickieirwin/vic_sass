@@ -24,6 +24,10 @@ npm install
 
 `npm install` will first run `bundle install` to fetch sass and compass, then install the Node dependencies (mostly grunt tasks).
 
+
+Useful: http://git-scm.com/docs/gitcredentials.html
+
+
 ## Grunt tasks
 
 ### `grunt dev`

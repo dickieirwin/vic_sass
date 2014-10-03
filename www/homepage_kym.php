@@ -30,38 +30,17 @@ includeFile('header.php');
 
 	</style>
 
-		<div class='hero-container hero-container--gallery-3 theme-study'>
-            <a class='hero-image hero-image--primary' href='#'>
-                <div class='hero-image__container' >
-                  <img src='/images/kym_h.jpg' alt='research dummy'>
-                </div>
-
-                <div class='hero-image__text -large left_text'>
-                    <h1>Know Your Mind.</h1>
-                    <h2>Apply it now.</h2>
-                </div>
-            </a>
-            <div>
-              <a class='hero-image minor' href='#'>
-                <div class='hero-image__container' >
-                  <img src='images/robby.jpg' alt='research dummy'>
-                </div>
-                  <div class='hero-image__text -large'>
-                     <h2>Forge your path</h2>
-                     <p>“Victoria has opened my mind to what I can do.”</p>
-                  </div>
-              </a>
-              <a class='hero-image minor sub alt_colour' href='#'>
-                <div class='hero-image__container' >
-                  <img src='images/theo.jpg' alt='research dummy'>
-                </div>
-                  <div class='hero-image__text -large'>
-                         <h2>Being a student in Wellington</h2>
-                            <p>“From that first moment—this beautiful sunny day—we walked through the city and I just fell in love with it.”</p>
-                  </div>
-              </a>
-            </div>
-        </div><!-- /hero -->
+		<div id="hero" class="hero-container hero-container--gallery-1">
+		  <a href="./?a=193470">
+		  <div class="imagery">
+		    <img src="/images/sarah_banner.jpg"/>
+		  </div>
+		  <div class="hero-image__text top bigger">
+		    <h1 class="kym">Know your mind</h1>
+		    <h2>Apply now to study at Victoria in 2015.</h2>
+		  </div>
+		  </a>
+		</div>
 
 
 
