@@ -48,16 +48,12 @@
                     <li><a href="./?a=118997">Services and support</a></li>
                     <li><a href="./?a=119313">Financial survival</a></li>
                     <li><a href="./?a=119079">Key dates</a></li>
+                    <li><a href="./?a=217972">Courses</a></li>
                   </ul>
                 </div>
                 <div class="cols">
                   
-                  <h2><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></h2>
-                  <ul class="link_list">
-                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/my-community">Online community</a></li>
-                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria">Support Victoria</a></li>
-                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria/donate" class="button tertiary">Donate online</a></li>
-                  </ul>
+                  
 
                   <h2><a href="">Tools</a></h2>
                   <ul class="link_list">
@@ -66,6 +62,13 @@
                     <li><a href="https://my.vuw.ac.nz/">MyVictoria</a></li>
                     <li><a href="http://library.victoria.ac.nz/library/">Library</a></li>
                     <li><a href="http://blackboard.vuw.ac.nz/">Blackboard</a></li>
+                  </ul>
+
+                  <h2><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></h2>
+                  <ul class="link_list">
+                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/my-community">Online community</a></li>
+                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria">Support Victoria</a></li>
+                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria/donate" class="button tertiary">Donate</a></li>
                   </ul>
                 </div>
                 <div class="cols">

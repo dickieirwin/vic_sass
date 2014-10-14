@@ -1,6 +1,7 @@
 # ignore metadata files
 .DS_Store
 Thumbs.db
+www/.DS_Store
 
 # don't track the compiled CSS
 www/assets/css/
