@@ -69,8 +69,8 @@ VU.slider = function ($slider) {
         }
 
         function updateElements(group) {
-            group.filter('.active').removeClass('active');
-            group.eq(target).addClass('active');
+            // group.filter('.active').removeClass('active');
+            // group.eq(target).addClass('active');
         }
 
         updateElements($slides);
@@ -320,17 +320,19 @@ VU.init = function () {
     //Google analytics for homepage tiles
     var gaClickFunction = function trackTileClicks(e) {
         var $e = $(this);
-        var category = $e.data("gacategory"),
-            action = $e.data("gaaction"),
-            label = $e.data("galabel");
+        var category = $e.data('gacategory'),
+            action = $e.data('gaaction'),
+            label = $e.data('galabel');
 
-        _gaq.push(['_trackEvent', category, action, label]);
+        ga('send', 'event', category, action, label);
+
     };
 
     //Do the GA tracking
-    $("a.info_block").on('click', gaClickFunction);
-    $("a.hero-image").on('click', gaClickFunction);
-    $("#hero").on('click', gaClickFunction);		
+    $('a.info_block').on('click', gaClickFunction);
+    $('a.hero-image').on('click', gaClickFunction);
+    $('#hero').on('click', gaClickFunction);
+
 
 };
 
