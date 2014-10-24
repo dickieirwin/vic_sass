@@ -9,3 +9,6 @@ www/assets/.sass-cache/
 
 # don't track the node modules (use npm install in a clean repo to obtain)
 node_modules/
+
+# don't track .lnk files (windows shortcuts) 
+*.lnk
