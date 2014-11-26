@@ -18,6 +18,7 @@ includeFile('header.php');
 			color: #146999;
 			border-bottom: 1px solid #B8D2E0;
 			display: inline;
+			font-size: 1.4em;
 
 		}
 
