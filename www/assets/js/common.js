@@ -70,7 +70,7 @@ VU.slider = function ($slider) {
 
         function updateElements(group) {
             // group.filter('.active').removeClass('active');
-             group.eq(target).addClass('active');
+            // group.eq(target).addClass('active');
         }
 
         updateElements($slides);
