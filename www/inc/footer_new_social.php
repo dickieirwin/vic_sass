@@ -1,6 +1,66 @@
             </div> <!-- end #page -->
 
+    <?php 
+      if (isset($homepage)) {
+        echo "<div class='connect_wrapper'> 
+                        <div class='feeds_wrap'>
+                        <aside class='connect-feeds'>
+                                                        <article class='connect_intro'>
+                                                            <h2>Stay in touch&hellip;</h2>
+                                                            <p>Connect with Victoria by following us on <a href='http://www.facebook.com/victoriauniversityofwellington'>Facebook</a>, <a href='http://twitter.com/VicUniWgtn'>Twitter</a> and <a href='http://www.linkedin.com/company/3693'>LinkedIn</a> or subscribe to our <a href='http://www.youtube.com/user/victoriamarketing'>YouTube channel</a>.</p>
+                                                        </article>
+                                                        
+                                                        <article class='feed'>
+                                                            <h3>&hellip;on Facebook</h3>
+                                                            <header class='feed__header '>
+                                                                <a href='#'>
+                                                                    <span class='icon facebook'></span>
+                                                                    Victoria University of Wellington
+                                                                </a>
+                                                                <div class='feed__button channel__button'>
+                                                                    <div class='fb-like' data-href='https://www.facebook.com/victoriauniversityofwellington' data-layout='button_count' data-show-faces='true' data-width='450'></div>
+                                                                </div>
+                        
+                                                            </header>
+                                                            <a href='#'><p class='feed__body'>We've been talking to some of our students about their experience at Victoria, and we’re excited to share their stories with you over the next few weeks. Watch this...</p></a>
+                                                            <footer class='feed__footer'>
+                                                            <time>31 Jan</time>  
+                                                            <span class='actions'>
+                                                                <a href='#' class='action'><span class='icon share'></span>Share</a>
+                                                            </span>
+                                                            </footer>
+                                                        </article>
+                                                        
+                                                        <article class='feed'>
+                                                            <h3>&hellip;on Twitter</h3>
+                                                            <header class='feed__header '>
+                                                                <a href='#'>
+                                                                    <span class='icon twitter'></span>
+                                                                    Victoria University <b>@VicUniWgtn</b>
+                                                                </a>
+                        
+                                                                <div class='feed__button channel__button'>
+                                                                    <a href='https://twitter.com/VicUniWgtn' class='twitter-follow-button' data-show-count='false' data-dnt='true'>Follow @VicUniWgtn</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+':// ';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </div>
+                        
+                                                            </header>
+                                                            <p class='feed__body'>Tonight we celebrate our distinguished alumni. Congrats to the six outstanding <a href=''>@VicUniWgtn</a> alumni receiving awards! <a href=''>http://bit.ly/13xCvN2</a></p>
+                                                            <footer class='feed__footer'>
+                                                                 <time>31 Jan</time>  
+                                                                 <span class='actions'>
+                                                                     <a href='#' cdivass='action'><span class='icon fave'></span>Favourite</a> 
+                                                                     <a href='#' class='action'><span class='icon retweet'></span>Retweet</a> 
+                                                                     <a href='#' class='action'><span class='icon reply'></span>Reply</a>
+                                                                 <span>
+                                                            </footer>
+                                                        </article>
+                                                    </aside></p>
+                                                </div>
+</div>";  
 
+      }
+    ?>
         <footer role='contentinfo' class='site_footer'>
             <div class="site_links wrap">
              <div class="cols">
@@ -111,9 +171,6 @@
                               </ul>
                               </div>
                               </a>
-                              
-                                
-                              
 
                               
                             </div>
@@ -155,13 +212,13 @@
         }*/
 
         .footer_logo {
-          height: 40px;
+          height: 60px;
             margin:  0;
             background-image:  url('/assets/images/logo_desktop.png');
-            background-size: 140px;
+            background-size: 190px;
             background-position: 0 30%;
             background-repeat: no-repeat;
-            padding-left: 180px;
+            padding-left: 220px;
         }
 
         .homepage .site_footer {
@@ -229,10 +286,7 @@
             margin-top: 1em;
           }
 
-          .connect_wrapper {
-            margin-top: 0em;
-          }
-
+     
           .site_footer {
             padding-left: 0;
             padding-right: 0;
@@ -254,6 +308,15 @@
               margin: 1em 0;
             }
          }
+
+            @media all {
+              .connect_wrapper {
+                background: #EEEEEE;
+                border-top: 1px solid #ccc;
+                margin-top: 1em;
+              }            
+            }
+
 
          @media all and (max-width: 759px) {
 

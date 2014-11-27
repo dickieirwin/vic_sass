@@ -12,49 +12,6 @@ includeFile('header.php');
 
   <style>@import url('dev/quicklinks_protype.css');</style>
 
-	<style type="text/css">
-
-		.news_block h3 {
-			color: #146999;
-			border-bottom: 1px solid #B8D2E0;
-			display: inline;
-			font-size: 1.4em;
-
-		}
-
-		.news_block p {
-			margin-top: 0.3em;
-		}
-
-		a:hover {
-			color: inherit;
-			
-		}
-
-		a:hover > .news_block h3 {
-			color: #0E4F75;
-			border-bottom-color: #5A96B7;
-		}
-
-
-
-		
-		@media all {
-
-			.connect_wrapper {
-				background: #ddd;
-				border-top: 1px solid #ccc;
-				margin-top: 1em;
-			}
-
-			.connect-feeds {
-				padding: 0 !important;
-			}
-		
-		}
-
-	</style>
-
 		<div id="hero" class="hero-container hero-container--gallery-1">
 		  <a href="./?a=193470">
 		  <div class="imagery">
@@ -67,13 +24,11 @@ includeFile('header.php');
 		  </a>
 		</div>
 
-
-
     <?php $homepage = true; include('inc/feature-search.php'); ?>
 
-    <div id='content'>
 
-		<div class='entry'>
+    <div id='content'>
+				<div class='entry'>
 			<section class='news_container'>
 				<div class="news_wrapper">
 					<a class='info_block'>
@@ -117,6 +72,7 @@ includeFile('header.php');
 		            	<nav class="new_quicklinks">
 						  <h2 id="menu_toggle" class="toggle">Quicklinks</h2>
 						  <ul id="q_links" class="toggle_block">
+						  	<li><a href="#">Course finder</a></li>
 						    <li><a href="http://www.victoria.ac.nz/about/explore-victoria/faculties-schools">Faculties and Schools</a></li>
 						    <li><a href="http://www.victoria.ac.nz/maori-at-victoria/home">Māori at Victoria</a></li>
 						    <li><a href="http://www.victoria.ac.nz/vicpasifika/home">Pasifika at Victoria</a></li>
