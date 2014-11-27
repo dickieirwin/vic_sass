@@ -266,6 +266,27 @@ h6, .h6 {
     @include font_display_extrabold;
 }
 
+.news_block {
+
+     h3 {
+        color: #146999;
+        border-bottom: 1px solid #B8D2E0;
+        display: inline;
+        font-size: 1.4em;
+    }
+
+    p {
+        margin-top: 0.3em;
+        color: #444444;
+    }
+}
+
+a:hover > .news_block h3 {
+    color: #0E4F75;
+    border-bottom-color: #5A96B7;
+}
+
+
 .serif_date {
     font-family: times, serif;
 }

@@ -215,10 +215,11 @@
                 margin-bottom: 1em;
                 margin-right: px-to-em(14);
                 float: left;
-                width: 58px;
-                height: 58px;
+                width: 60px;
+                height: 60px;
                 clear: right; 
                 background: url('/assets/images/social-icons-sprite.png') no-repeat 0 -990px;
+                
 
                 @include mobile {
                     margin-left:0!important;
@@ -232,11 +233,18 @@
                 }
 
                 &.facebook {
-                    background-position: 0 0;
+                    background-position: 2px 0;
                 }  
 
                 &.twitter {
-                    background-position: -78px 0;
+                    background-position: -77px 0;
+                }
+                &.youtube {
+                    background-position: -158px 0;
+                }
+
+                &.linkedin {
+                    background-position: -235px 0;
                 }
             }
         }

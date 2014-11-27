@@ -1,4 +1,3 @@
-<meta name="viewport" content="width=device-width, user-scalable=no">
 
 <style type="text/css">
 	html {
@@ -48,7 +47,17 @@
 	}
 	input:invalid, textarea:invalid {
 	    background-color: #f0dddd;
+		 box-shadow: none;
 	}
+
+	input:-moz-submit-invalid {
+	  box-shadow: none;
+	}
+
+	input:-moz-ui-invalid {
+	  box-shadow:none;
+	}
+
 	.error input {
 	    border-color: #cc328e;
 	}
@@ -94,11 +103,11 @@
 	}
 	.wifi_header_bar {
 	    width: auto;
-	    height: 5.75em;
+	    height: 7em;
 	    background-color: #1d2624;
 	    border-bottom: 5px solid #115737;
 	    margin-top: 15%;
-	    background: url(/assets/images/logo_desktop.png) no-repeat #1d2624 20px 50%;
+	    background: url(/assets/images/logo_desktop.png) no-repeat #1d2624 25px 50%;
 	    background-size: 192px 48px;
 	}
 	.button.primary {
@@ -167,6 +176,11 @@
 	    clear: both;
 	}
 	@media all and (max-width : 990px) {
+	    	
+	    .wifi_header_bar {
+	    	margin-top: 0;
+	    }
+
 	    #content {
 	        max-width: 100%;
 	    }
@@ -226,6 +240,9 @@
 	}
 </style>
 
+<!-- This meta tag in the <head> is important!! -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <div id='content'>
     <div class="wifi_header_bar"></div>
     <div class="entry highlight highlight_tertiary  login_form">
@@ -233,26 +250,26 @@
             <p>Welcome to Victoria. Login with your student or staff account to access our wifi.</p>
         </div>
         <p>If you don't have a student or staff account, connect to the
-            <code>Victoria_Guest</code>network for guest access.</p>
+            <code>Victoria_Guest</code> network for guest access.</p>
         <form class="form_large highlight" action>
             <fieldset>
                 <div class="field_container">
                     <label for="user_name">User name</label>
-                    <div class="field error">
-                        <input type="text" name="user_name" autofocus="autofocus" required="required" tabindex="1" />
-                        <p class="form_error">That username doesn't seem to be correct. Please try again.</p>
+                    <div class="field">
+                        <input type="text" name="user_name" placeholder="Username" autofocus="autofocus" required="required" tabindex="1" />
+                        <!-- <p class="form_error">That username doesn't seem to be correct. Please try again.</p> -->
                     </div>
                 </div>
                 <div class="field_container">
                     <label for="password">Enter your password</label>
                     <div class="field error">
-                        <input type="password" name="password" required="required" tabindex="2" />
+                        <input type="password" name="password" placeholder="Password" required="required" tabindex="2" />
                         <p class="form_error">That password doesn't seem to be correct. Please try again.</p>
                     </div>
                 </div>
                 <div class="field_container form_actions">
                     <div class="field wifi">
-                        <a href="#" class="button primary large">Login</a>
+                        <a href="#" class="button primary large" tabindex="3">Login</a>
                     </div>
                 </div>
             </fieldset>

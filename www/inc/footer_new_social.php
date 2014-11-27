@@ -1,93 +1,70 @@
             </div> <!-- end #page -->
 
- <?php  ?>
-     <!-- /*if (isset($homepage)) {
-        echo "-->
-        <div class='connect_wrapper'>
-          <div class='feeds_wrap'>
-              <aside class='connect-feeds'>
-                  <!-- <article class='connect_intro'>
-                      <h2>Stay in touch&hellip;</h2>
-                      <p>Connect with Victoria by following us on <a href='http://www.facebook.com/victoriauniversityofwellington'>Facebook</a>, <a href='http://twitter.com/VicUniWgtn'>Twitter</a> and <a href='http://www.linkedin.com/company/3693'>LinkedIn</a> or subscribe to our <a href='http://www.youtube.com/user/victoriamarketing'>YouTube channel</a>.</p>
-                  </article> -->
+    <?php 
+      if (isset($homepage)) {
+        echo "<div class='connect_wrapper'> 
+                        <div class='feeds_wrap'>
+                        <aside class='connect-feeds'>
+                                                        <article class='connect_intro'>
+                                                            <h2>Stay in touch&hellip;</h2>
+                                                            <p>Connect with Victoria by following us on <a href='http://www.facebook.com/victoriauniversityofwellington'>Facebook</a>, <a href='http://twitter.com/VicUniWgtn'>Twitter</a> and <a href='http://www.linkedin.com/company/3693'>LinkedIn</a> or subscribe to our <a href='http://www.youtube.com/user/victoriamarketing'>YouTube channel</a>.</p>
+                                                        </article>
+                                                        
+                                                        <article class='feed'>
+                                                            <h3>&hellip;on Facebook</h3>
+                                                            <header class='feed__header '>
+                                                                <a href='#'>
+                                                                    <span class='icon facebook'></span>
+                                                                    Victoria University of Wellington
+                                                                </a>
+                                                                <div class='feed__button channel__button'>
+                                                                    <div class='fb-like' data-href='https://www.facebook.com/victoriauniversityofwellington' data-layout='button_count' data-show-faces='true' data-width='450'></div>
+                                                                </div>
+                        
+                                                            </header>
+                                                            <a href='#'><p class='feed__body'>We've been talking to some of our students about their experience at Victoria, and we’re excited to share their stories with you over the next few weeks. Watch this...</p></a>
+                                                            <footer class='feed__footer'>
+                                                            <time>31 Jan</time>  
+                                                            <span class='actions'>
+                                                                <a href='#' class='action'><span class='icon share'></span>Share</a>
+                                                            </span>
+                                                            </footer>
+                                                        </article>
+                                                        
+                                                        <article class='feed'>
+                                                            <h3>&hellip;on Twitter</h3>
+                                                            <header class='feed__header '>
+                                                                <a href='#'>
+                                                                    <span class='icon twitter'></span>
+                                                                    Victoria University <b>@VicUniWgtn</b>
+                                                                </a>
+                        
+                                                                <div class='feed__button channel__button'>
+                                                                    <a href='https://twitter.com/VicUniWgtn' class='twitter-follow-button' data-show-count='false' data-dnt='true'>Follow @VicUniWgtn</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+':// ';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </div>
+                        
+                                                            </header>
+                                                            <p class='feed__body'>Tonight we celebrate our distinguished alumni. Congrats to the six outstanding <a href=''>@VicUniWgtn</a> alumni receiving awards! <a href=''>http://bit.ly/13xCvN2</a></p>
+                                                            <footer class='feed__footer'>
+                                                                 <time>31 Jan</time>  
+                                                                 <span class='actions'>
+                                                                     <a href='#' cdivass='action'><span class='icon fave'></span>Favourite</a> 
+                                                                     <a href='#' class='action'><span class='icon retweet'></span>Retweet</a> 
+                                                                     <a href='#' class='action'><span class='icon reply'></span>Reply</a>
+                                                                 <span>
+                                                            </footer>
+                                                        </article>
+                                                    </aside></p>
+                                                </div>
+</div>";  
 
-                   <article class='feed'>
-                      <header class='feed__header '>
-                          <h3>Stay in touch</h3>
-                          <p>Connect with Victoria on...</p>
-                          <img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo">
-                          <img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo">
-                          <img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo">
-                          <img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo">
-                      </header>
-                  </article>
-
-                  <article class='feed'>
-                      <header class='feed__header '>
-                          <h3>Stay in touch</h3>
-                          <p>Connect with Victoria on...</p>
-                          <a href='#'>
-                              <span class='icon facebook'></span>
-                              
-                          </a>
-                          <a href='#'>
-                              <span class='icon twitter'></span>
-                          </a>
-                          <a href='#'>
-                              <span class='icon linkedin'></span>
-                          </a>
-                          <a href='#'>
-                              <span class='icon youtube'></span>
-                          </a>
-                          
-                      </header>
-                  </article>
-                 <!--  <article class='feed'>
-                      <h3>&hellip;on Twitter</h3>
-                      <header class='feed__header '>
-                          <a href='#'>
-                              <span class='icon twitter'></span>
-                              Victoria University <b>@VicUniWgtn</b>
-                          </a>
-
-                          <div class='feed__button channel__button'>
-                              <a href='https://twitter.com/VicUniWgtn' class='twitter-follow-button' data-show-count='false' data-dnt='true'>Follow @VicUniWgtn</a>
-                          </div>
-
-                      </header>
-                  </article> -->
-              </aside>
-              </p>
-          </div>
-      </div>
-
+      }
+    ?>
         <footer role='contentinfo' class='site_footer'>
             <div class="site_links wrap">
-                <div class="cols">
-
-                         <h2><a href="./?a=113805">Future students</a></h2>
-                  <ul class="link_list">
-                    <li><a href="./?a=127382">Programmes and courses</a></li>
-                    <li><a href="./?a=193470">Apply and enrol</a></li>
-                    <li><a href="./?a=182619">International</a></li>
-                    <li><a href="./?a=127458">Scholarships</a></li>
-                    <li><a href="./?a=192819">Accommodation</a></li>
-                  </ul>
-
-                  <h2><a href="/students">Students</a></h2>
-                  <ul class="link_list">
-                    <li><a href="./?a=118997">Services and support</a></li>
-                    <li><a href="./?a=119313">Financial survival</a></li>
-                    <li><a href="./?a=119079">Key dates</a></li>
-
-                  </ul>
-
-
-                  
-
-
-                </div>
-                <div class="cols">
+             <div class="cols">
+                    <h2> <a class="button" href="./?a=175285">Emergencies</a></h2>
                     <h2><a href="./?a=147146">Faculties</a></h2>
                     <ul class="link_list">
                       <li><a href="./?a=58453">Architecture and Design</a></li>
@@ -100,17 +77,8 @@
                       <li><a href="./?a=189318">Toihuarewa</a></li>
                       <li><a href="./?a=53831">Victoria Business School</a></li>
                     </ul>
-
-                    <h2><a href="./?a=119776">Work at Victoria</a></h2>
-                  <ul class="link_list">
-                    <li><a href="http://vacancies.vuw.ac.nz/">Latest vacancies</a></li>
-                    <li><a href="./?a=127578">Wellington life</a></li>
-                  </ul>
-
-                    
                 </div>
                 <div class="cols">
-
                   <h2><a href="./?a=119780">Contacts and directories</a></h2>
                       <ul class="link_list">
                         <li><a href="./?a=119780">Staff directory</a></li>
@@ -118,7 +86,6 @@
                         <li><a href="http://www.victoria.ac.nz/mediaguide/">Media guide</a></li>
                         <li><a href="./?a=183845">Find a researcher</a></li>
                       </ul>
-
                     <h2><a href="./?a=149162">Campuses &amp; Maps</a></h2>
                     <ul class="link_list">
                       <li><a href="./?a=147075">Kelburn Campus</a></li>
@@ -126,17 +93,27 @@
                       <li><a href="./?a=147087">Karori Campus</a></li>
                       <li><a href="./?a=147083">Te Aro Campus</a></li>
                     </ul>
-
-                  
+                </div>
+                <div class="cols">
+                  <h2><a href="./?a=113805">Future students</a></h2>
+                  <ul class="link_list">
+                    <li><a href="./?a=127382">Programmes and courses</a></li>
+                    <li><a href="./?a=193470">Apply and enrol</a></li>
+                    <li><a href="./?a=182619">International</a></li>
+                    <li><a href="./?a=127458">Scholarships</a></li>
+                    <li><a href="./?a=192819">Accommodation</a></li>
+                  </ul>
+                  <h2><a href="/students">Students</a></h2>
+                  <ul class="link_list">
+                    <li><a href="./?a=118997">Services and support</a></li>
+                    <li><a href="./?a=119313">Financial survival</a></li>
+                    <li><a href="./?a=119079">Key dates</a></li>
+                    <li><a href="./?a=217972">Courses</a></li>
+                  </ul>
                 </div>
                 <div class="cols">
                   
-                   <h2><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></h2>
-                  <ul class="link_list">
-                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/my-community">Online community</a></li>
-                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria">Support Victoria</a></li>
-                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria/donate" class="button tertiary">Donate online</a></li>
-                  </ul>
+                  
 
                   <h2><a href="">Tools</a></h2>
                   <ul class="link_list">
@@ -147,41 +124,42 @@
                     <li><a href="http://blackboard.vuw.ac.nz/">Blackboard</a></li>
                   </ul>
 
-                 
-
-                  
+                  <h2><a href="https://www.victoria.ac.nz/alumniandfriends/">Alumni</a></h2>
+                  <ul class="link_list">
+                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/my-community">Online community</a></li>
+                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria">Support Victoria</a></li>
+                    <li><a href="https://www.victoria.ac.nz/alumniandfriends/support-victoria/donate" class="button tertiary">Donate</a></li>
+                  </ul>
                 </div>
                 <div class="cols">
-                    <h2> <a class="button" href="./?a=175285">Emergencies</a></h2>
-                
-
-                    <h2><a href="./?a=123423">Latest news</a></h2>
+                  <h2><a href="./?a=119776">Work at Victoria</a></h2>
+                  <ul class="link_list">
+                    <li><a href="http://vacancies.vuw.ac.nz/">Latest vacancies</a></li>
+                    <li><a href="./?a=127578">Wellington life</a></li>
+                  </ul>
+                  <h2><a href="./?a=123423">Latest news</a></h2>
                   <ul class="link_list">
                     <li><a href="./?a=166245">Events</a></li>
                     <li><a href="./?a=114038">Research expertise</a></li>
                     <li><a href="./?a=127542">Publications</a></li>
                   </ul>
-
-                  
-
                   <h2><a href="#">Social media</a></h2>
+                  <ul class="link_list">
+                    <li>
                         <a href="#"><img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo"></a>
-                        <a href="#"><img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo"></a>
-                        <a href="#"><img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo"></a>
-                        <a href="#"><img class="social_logo" src="assets/images/fb_logo.png" alt="Facebook logo"></a>
-                  
+                        <a href="#"><img class="social_logo" src="assets/images/twitter_logo.png" alt="Facebook logo"></a>
+                        <a href="#"><img class="social_logo" src="assets/images/yt_logo.png" alt="Facebook logo"></a>
+                        <a href="#"><img class="social_logo" src="assets/images/linkedin_logo.png" alt="Facebook logo"></a>
+                  </li>
+                  </ul>
                 </div>
-
             </div>
-
             <div class="connect_wrapper vic_footer">
                 <div class="fineprint wrap">
 
                             <div class="contact_info">
+                              <a href="http://victoria.ac.nz">
                               <div class="footer_logo">
-                             
-                              <h2 class="word_logo"><a href="http://victoria.ac.nz">VICTORIA</a></h2>
-                              </div> 
                               <ul class="details">
                                  
                                   <!-- <li><h2 class="word_logo"><a href="http://victoria.ac.nz">VICTORIA</a></h2></li> -->
@@ -191,8 +169,8 @@
                                   <li>Emergency: <a href='tel:+6444639999'>+64 4 463 9999</a> or ext. 8888 (internal)</li>
 
                               </ul>
-                                
-                              
+                              </div>
+                              </a>
 
                               
                             </div>
@@ -215,13 +193,15 @@
 
         .social_logo {
           width: 30px;
+          float: left;
+          padding-right: 8px;
         }
 
         .cols .button {
           margin-top: 0;
         }
         
-         .site_footer .contact_info h2.word_logo {
+         /*.site_footer .contact_info h2.word_logo {
 
           text-transform: uppercase;
           font-family: "Nimbus Roman No 9 L","FreeSerif","Georgia",serif;
@@ -229,17 +209,17 @@
           font-size: 1.5em;
           color: #bbb;
           margin-right: 1em;
-        }
+        }*/
 
-        /*.footer_logo {
-          height: 50px;
+        .footer_logo {
+          height: 60px;
             margin:  0;
             background-image:  url('/assets/images/logo_desktop.png');
-            background-size: 160px;
-            background-position: 0 50%;
+            background-size: 190px;
+            background-position: 0 30%;
             background-repeat: no-repeat;
-            padding-left: 180px;
-        }*/
+            padding-left: 220px;
+        }
 
         .homepage .site_footer {
             padding: 0;
@@ -272,7 +252,7 @@
         }
 
         .site_footer .details {
-            line-height: 1.5;
+            line-height: 2.2;
             font-size: 1.15em;
             padding-top: 1px;
         }
@@ -306,10 +286,7 @@
             margin-top: 1em;
           }
 
-          .connect_wrapper {
-            margin-top: 0em;
-          }
-
+     
           .site_footer {
             padding-left: 0;
             padding-right: 0;
@@ -332,11 +309,20 @@
             }
          }
 
+            @media all {
+              .connect_wrapper {
+                background: #EEEEEE;
+                border-top: 1px solid #ccc;
+                margin-top: 1em;
+              }            
+            }
+
+
          @media all and (max-width: 759px) {
 
 
 
-           /* .footer_logo {
+            .footer_logo {
                  background: url(/assets/images/vic-logo-mobile.png) no-repeat;
             background-size: 128px 17px;
             background-position: 50% 50%;
@@ -345,7 +331,7 @@
             float: none;
             padding: 0;
             margin: 0;
-            }*/
+            }
   
              .site_footer .contact_info {
                 display: block;
