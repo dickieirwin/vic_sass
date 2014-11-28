@@ -7,12 +7,13 @@
 
 .footer_logo {
     height: 60px;
+    width: 60px;
     margin: 0;
     background-image: url('/assets/images/logo_desktop.png');
     background-size: 190px;
     background-position: 0 30%;
     background-repeat: no-repeat;
-    padding-left: 220px;
+    padding-left: 170px;
 
     @include mobile {
                 background: url(/assets/images/vic-logo-mobile.png) no-repeat;
@@ -183,7 +184,7 @@
             padding-right: $page_padding;
             
             a.button {
-              font-family: $font_display-regular;
+              font-family: $font_display;
               text-transform: uppercase;
               padding: 0.4em;
               line-height: 1.4;
