@@ -45,10 +45,14 @@ $site_background:                       #dce0e0;
 // Text colors
 //----------------------------------
 
+//for light background
 $color_text:                    #444444;
 $color_text_light:              #666666;
 
 $color_heading:                 #333333;
+
+//for dark background
+$color_text_light_on_dark:		#bbb;
 
 $color_links:                   #146999;
 $color_links_hover:             #0e4f75;
@@ -101,7 +105,7 @@ $message_base_class:             '.message';
 
 // GENERAL COLORS
 //----------------------------------
-$grey:                          #222;
+$grey:                          #222222;
 $grey_dark:                     #2f2f2f;
 $grey_light:                    #3c3c3c;
 $grey_lighter:                  #fafafa;

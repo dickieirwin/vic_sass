@@ -64,7 +64,7 @@
         <footer role='contentinfo' class='site_footer'>
             <div class="site_links wrap">
              <div class="cols">
-                    <h2> <a class="button" href="./?a=175285">Emergencies</a></h2>
+                    <h2> <a class="button primary" href="./?a=175285">Emergencies</a></h2>
                     <h2><a href="./?a=147146">Faculties</a></h2>
                     <ul class="link_list">
                       <li><a href="./?a=58453">Architecture and Design</a></li>
@@ -174,7 +174,8 @@
 
                               
                             </div>
-                            <hr class="hiding">
+                            <hr class="thin hiding">
+
                             <nav>
                               <ul>
                                 <li><a href="./?a=140138">Site info</a></li>
@@ -183,7 +184,7 @@
                                 <li><a href="./?a=205595">Glossary</a></li>
                               </ul>
                             </nav>
-                            <hr class="showing">
+                            <hr class="thin showing">
                             <p class="copyright">Copyright © Victoria University of Wellington, New Zealand</p>
                         </div>
             </div>
@@ -191,15 +192,7 @@
     </div><!-- /wrapper -->
     <style type="text/css">
 
-        .social_logo {
-          width: 30px;
-          float: left;
-          padding-right: 8px;
-        }
 
-        .cols .button {
-          margin-top: 0;
-        }
         
          /*.site_footer .contact_info h2.word_logo {
 
@@ -211,166 +204,24 @@
           margin-right: 1em;
         }*/
 
-        .footer_logo {
-          height: 60px;
-            margin:  0;
-            background-image:  url('/assets/images/logo_desktop.png');
-            background-size: 190px;
-            background-position: 0 30%;
-            background-repeat: no-repeat;
-            padding-left: 220px;
-        }
 
-        .homepage .site_footer {
-            padding: 0;
-        }
 
-        .connect_wrapper.vic_footer,
-        .connect_wrapper.vic_footer a  {
-            background-color: #1d2624;
-            color: #bbb;
-        }
-
-        .site_footer .contact_info {
-            padding-bottom: 0;
-            padding-top: 0;
-            margin-bottom: 0;
-            margin-left: auto;
-            margin-right: auto;
-            border-bottom: 0;
-        }
-
-        .fineprint.wrap {
-            border-top: 0;
-        }
-
-        .site_footer .contact_info h2 {
+/*        .site_footer .contact_info h2 {
             text-transform: uppercase;
             font-family: "National","Segoe WP Semibold","Nimbus Sans L",Arial,"Helvetica Neue","Helvetica",sans-serif;
             font-weight: 600;
             font-size: 1.5em;
         }
+*/
 
-        .site_footer .details {
-            line-height: 2.2;
-            font-size: 1.15em;
-            padding-top: 1px;
-        }
 
-        .site_footer .fineprint hr {
-            height: 1px;
-            background-color: #999;
-            margin: 0.5em 0;
-        }
-        .site_footer .details li a {
-            color: #fff;
-        }
-
-        .site_links.wrap {
-            padding-top: 1em;
-            padding-bottom: 1em;
-
-        }
-
-        .site_footer .contact_info h2 {
+/*        .site_footer .contact_info h2 {
             margin-bottom: 0;
             margin-top: 0;
             line-height: 1.15;
         }
-
-        .site_footer .fineprint hr.showing {
-              display: none;
-            }
-
-          .details {
-            margin-top: 1em;
-          }
-
-     
-          .site_footer {
-            padding-left: 0;
-            padding-right: 0;
-          }
-
+     */
       
-         @media all and (max-width : 1140px) /*aka @wide*/ {
-
-            .site_links.wrap {
-              padding-left: 1em;
-              padding-right: 1em;
-            }
-
-            .fineprint.wrap {
-               padding-left: 1em;
-              padding-right: 1em;
-            }
-           .footer_logo {
-              margin: 1em 0;
-            }
-         }
-
-            @media all {
-              .connect_wrapper {
-                background: #EEEEEE;
-                border-top: 1px solid #ccc;
-                margin-top: 1em;
-              }            
-            }
-
-
-         @media all and (max-width: 759px) {
-
-
-
-            .footer_logo {
-                 background: url(/assets/images/vic-logo-mobile.png) no-repeat;
-            background-size: 128px 17px;
-            background-position: 50% 50%;
-            width: 100%;
-            height: 30px;
-            float: none;
-            padding: 0;
-            margin: 0;
-            }
-  
-             .site_footer .contact_info {
-                display: block;
-             }
-
-            .site_footer .fineprint {
-              background-color: transparent;
-              color: #999;
-            }
-            .site_footer .fineprint nav a {
-              color: #999;
-            }
-
-            .site_footer .fineprint hr.hiding {
-              display: none;
-            }
-
-            .site_footer .fineprint hr.showing {
-              display: block;
-              margin-bottom: 0;
-            }
-            .footer_logo {
-              float: none;
-              margin-top: 0;
-            }
-            .site_footer p.copyright {
-              margin-top: 0;
-            }
-
-            .site_footer .button {
-              background-color: #3468b0;
-              color: white !important;
-              font-family: "National", "Segoe WP Semibold", "Nimbus Sans L", Arial, "Helvetica Neue", "Helvetica", sans-serif;
-              text-transform: uppercase;
-
-            }
-
-         }
-
 
     </style>
 	<script src='/assets/js/common.js'></script>

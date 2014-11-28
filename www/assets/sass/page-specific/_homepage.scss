@@ -246,7 +246,6 @@
                 margin-bottom:0;
 
                 .info_block_secondary {
-                    float: left; 
                     margin: 0 1em 2em 0;
 
                     img {
@@ -341,17 +340,7 @@
         }
     }
     
-	.site_footer {
-		margin-top: 0;
-        height: auto;
-	}
 
-    .connect_wrapper {
-        //position: relative;
-        //margin-top: -246px; //negative value of footer height
-        //height: 246px;
-        clear:both;
-    }
 
     #page{
         //padding-bottom: 246px;
