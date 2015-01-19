@@ -107,7 +107,8 @@
 //----------------------------------
 
 .connect_wrapper { 
-    background-color: #EEEEEE;
+    background: $color_highlight_tertiary;
+    margin-top: 1em;
 }
 
 .connect-feeds {
@@ -225,7 +226,7 @@
                     margin-left:0!important;
                 }
 
-                @include retina{
+                @include retina {
 
                     background: url('/assets/images/social-icons-sprite-2x.png');
                     background-size: 295px 119px;
