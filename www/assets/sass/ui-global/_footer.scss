@@ -2,8 +2,51 @@
 // Footer
 //----------------------------------
 
-.site_footer {
 
+// Here much wat find you will. Messed up is this file. Needs serious refactoring - irwinna 28/11/14
+
+.footer_logo {
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    background-image: url('/assets/images/logo_desktop.png');
+    background-size: 190px;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+    padding-left: 170px;
+
+    @include mobile {
+                background: url(/assets/images/vic-logo-mobile.png) no-repeat;
+                background-size: 128px 17px;
+                background-position: 50% 50%;
+                width: 100%;
+                height: 30px;
+                float: none;
+                padding: 0;
+                margin: 0;
+    }
+}
+
+.homepage {
+    .site_footer {
+        padding: 0;
+        margin-top: 0;
+        height: auto;
+
+        .site_links, .vic_footer {
+            @include skinny {
+                  padding-left: 1em;
+                  padding-right: 1em;
+            }
+        }
+    }
+
+    
+}
+
+
+.site_footer {
+    padding: 0;
     margin-top: 2em;
     clear: both;
     background: #ddd;
@@ -15,7 +58,7 @@
         @include mobile {
             display: block;
         }
-        color: $grey_light;
+        color: $color_text;
 
         &:hover {
             text-decoration: underline;
@@ -32,31 +75,91 @@
         }
     }
 
-
-
     .contact_info {
 
         width: 100%;
         float: none;
         clear: both;
-        @include pie-clearfix();
-        padding: 1em 0;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0;
 
-        @include mobile {
-        	display: none; // if this can be handled server side that would be cool
+        @include pie-clearfix();
+        
+
+        h2 {
+            display: inline;
+            float: left;
+            font-family: $font_alt;
+            font-weight: normal;
+            font-size: 1.7em;
+            line-height:1;
+            margin-right: 0.8em;
+            margin-bottom: 0.1em;
+            margin-top: 0.15em;
+            text-transform: none;
+        }
+        
+
+        a.button {
+            float: right;
+            margin-top:0;
         }
 
     }
 
-    .fineprint nav a {
-        padding: 0.5em;
+
+    .vic_footer {
+        background-color: $black;
+        color: $color_text_light_on_dark;
+        clear: both;
+
+
+        a {
+            color: $color_text_light_on_dark;
+        }
+    }
+
+
+    .fineprint {
+
+        padding: 1em 0;
+
+         nav a {
+            padding: 0.5em;
+        }
+
+        hr {
+            background-color: $color_text_light_on_dark;
+            margin: 0.5em 0;
+
+            &.showing {
+                display: none;
+            }
+        }
+
+    }
+
+    .site_links {
+        padding-top: 1em;
+        
+        .cols .button {
+            margin-top: 0;
+        }
+
+        .social_logo {
+            width: 30px;
+            float: left;
+            padding-right: 8px;
+        }
+
     }
 
 
 }
 
 
-
+//mobile styles
 .site_footer {
 
     @include mobile {
@@ -79,7 +182,15 @@
             padding-bottom: 1em;
             padding-left: $page_padding;
             padding-right: $page_padding;
-          }
+            
+            a.button {
+              font-family: $font_display;
+              text-transform: uppercase;
+              padding: 0.4em;
+              line-height: 1.4;
+            }
+
+        }
 
         div.cols {
             display: inline;
@@ -94,7 +205,7 @@
             font-weight: normal;
 
             a {
-                padding: 0.45em 0.6em;
+                padding: 0.3em 0.5em;
                 display: block;
                 background: #f0f0f0;
                 margin: 0.2em;
@@ -104,7 +215,6 @@
 
         .fineprint {
 
-            background: #c3c3c3;
             padding: 0.75em 0;
             text-align: center;
 
@@ -121,7 +231,7 @@
 
                 a {
                     font-size: 14px;
-                    color: $grey;
+                    color: $color_text_light_on_dark;
 
                     &:hover{
                         color: $grey_light;
@@ -132,16 +242,29 @@
                     border: none;
                 }
             }
+
+            hr {
+                &.hiding {
+                    display: none;
+                }
+
+                &.showing {
+                    display: block;
+                    margin-bottom: 0;
+                }
+            }
         }
 
         .copyright {
-        	padding: 0.5em $page_padding;
+        	margin-top: 0;
+            padding: 0.5em $page_padding;
         	line-height: 1.4;
+            
         }
     }
 }
 
-
+//skinny styles
 .site_footer {
 
     @include skinny {
@@ -273,49 +396,14 @@
             @include pie-clearfix();
         }
 
-    }
-
+    } //skinny ends here
+    
+    //wat is this doing here?! ಠ_ಠ
     .old_ie & .cols {
         width: 17%!important;
     }
 
-    .contact_info {
-
-        border-bottom: 1px solid #ccc;
-        overflow: hidden;
-        margin: 0em 0 1.4em;
-        padding: 2em 0;
-
-
-        h2 {
-            display: inline;
-            float: left;
-            font-family: $font_alt;
-            font-weight: normal;
-            font-size: 1.7em;
-            line-height:1;
-            margin-right: 0.8em;
-            margin-bottom: 0.1em;
-            margin-top: 0.15em;
-            text-transform: none;
-        }
-
-
-        a.button {
-            float: right;
-            margin-top:0;
-        }
-
-    }
-
-    // moved .details as it's needed in sub footer too
-
-    .fineprint {
-
-        padding: 1em 0;
-        border-top: 1px solid #ccc;
-
-    }
+    
 }
 
 .site_footer, 
@@ -323,12 +411,12 @@
     
     .details {
 
-        font-size: 1.2em;
+        font-size: 1.15em;
         list-style: none;
-        padding: 0;
+        padding: 1px 0 0;
         margin: 0;
         float: left;
-        line-height: 30px;        // hard value to match the h2
+        line-height: 3.1;
 
         @include pie-clearfix();
 
@@ -339,7 +427,7 @@
 
             a {
                 font-weight: bold;
-                color: $color_links;
+                color: $white;
             }
 
             &:last-child {
@@ -359,14 +447,5 @@ footer[role='contentinfo'] {
     }
 }
 
-
-.site_footer {
-    @include skinny {
-        padding: {
-            left: 1.5%; //exact calculation required
-            right: 1.5%; //exact calculation required
-        }
-    }
-}
 
 

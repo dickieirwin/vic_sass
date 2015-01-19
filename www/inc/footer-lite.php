@@ -7,7 +7,7 @@
         </footer>
     </div><!-- /wrapper -->
     
-	<script src='/assets/js/common.js'></script>
+  	<script src='/assets/js/common.js'></script>
     <script src='/assets/js/search.js'></script>
     
 	

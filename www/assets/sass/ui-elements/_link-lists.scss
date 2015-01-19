@@ -224,6 +224,10 @@
     & h6 {
       margin-top: 0;
     }
+
+    @include mobile {
+      padding: 0;
+    }
 }
 
 .news_img {
