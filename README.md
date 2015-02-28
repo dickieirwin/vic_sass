@@ -30,6 +30,14 @@ Useful: http://git-scm.com/docs/gitcredentials.html
 
 ## Grunt tasks
 
+## `grunt`
+
+Running 'grunt' with no parameters is equivalent to running 'grunt watch'
+
+## `grunt help`
+
+Shows this help, what else do you want?!
+
 ### `grunt dev`
 
 One-off compile from the sass to development-friendly css. Uses sass's [nested output style](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_13), with comments for tracing CSS back to the source SASS. (TODO: Upgrade to sass 3.4 and use sourcemaps instead.) After compiling, the CSS is [blessed](https://github.com/Ponginae/grunt-bless) to split into two files because [IE hates you](http://stackoverflow.com/questions/9906794/internet-explorers-css-rules-limits).
@@ -42,5 +50,19 @@ One-off compile from sass to production ready css. Uses sass's minified output s
 
 The watch task is set to look for changes to .scss, .html and .php files. If a change occurs grunt will run the dev task as above. It also uses [live reload](https://github.com/gruntjs/grunt-contrib-watch#optionslivereload), if you are working on a development .php file from this repo it will automatically refresh any of these open .php files in your browser. [How?](https://github.com/gruntjs/grunt-contrib-watch/blob/master/docs/watch-examples.md#enabling-live-reload-in-your-html)
 
+
+##Plumbing task
+
+You can run these directly if you need.
+
+
+
+### `grunt bless`
+
+Split the CSS output into multiple files to work around Internet Explorer's 4096-selector limitation. Requires the output of the sass task to work on.
+
+### `grunt sass:[task]`
+
+Compile the .scss files. Never just run 'grunt sass'! If you do have a need to use this task, specify a target, either sass:dev or sass:prod.
 
 Saaweeeet.
