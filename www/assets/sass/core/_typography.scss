@@ -476,27 +476,28 @@ a {
         margin:0.3em 0 0 0;
         text-align: right;
         
-        &:after {
-            // content: '\25b6 ';
-            // margin-left: 0.2em;
-            
-
-            content: '';
-            margin-left: 0.4em;
-            display: inline-block;
-            border-width: 0.35em 0.6em;
-            border-color: transparent transparent transparent $color_heading;
-            border-style: solid;
-            height: 0;
-            width: 0;
-
-            .highlight_primary &, 
-            .highlight_secondary & {
-                border-color: transparent transparent transparent $white;
-            } 
-        }
     }
 
+    a figcaption:after {
+      // content: '\25b6 ';
+      // margin-left: 0.2em;
+      
+
+      content: '';
+      margin-left: 0.4em;
+      display: inline-block;
+      border-width: 0.35em 0.6em;
+      border-color: transparent transparent transparent $color_heading;
+      border-style: solid;
+      height: 0;
+      width: 0;
+
+      .highlight_primary &, 
+      .highlight_secondary & {
+          border-color: transparent transparent transparent $white;
+      } 
+    }
+    
     .cta {
         text-align: right;
         display: block;
