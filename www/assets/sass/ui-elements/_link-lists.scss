@@ -137,11 +137,11 @@
     margin-top: px-to-em(13);
   }
 
-  & h3[itemprop="name"] {
+  & header h3 {
     display: inline;
   }
 
-  & a h3[itemprop="name"] {
+  & a h3 {
     @extend %heading_link;
     margin-top: 0;
   }
@@ -245,6 +245,13 @@
             margin-bottom: 1em;
             padding-left: 0;
         }
+}
+
+.course_block {
+  @extend %aside_block; 
+  
+  h5 { margin-top: 0.2em; }
+  p { margin-top: 0.75em; }
 }
 
 
